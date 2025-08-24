@@ -1,0 +1,30 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+
+@import "./variables";
+@import "./variables-dark";
+//@import "./reset";
+
+
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/grid";
+
+//6. 我自己的樣式
+@import 'style/typography';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'pages/index';
+
