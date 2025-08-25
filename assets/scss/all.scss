@@ -15,10 +15,8 @@
 // 4. Include any default map overrides here
 
 // 5. Include remainder of required parts
-@import "bootstrap/scss/maps";
-@import "bootstrap/scss/mixins";
-@import "bootstrap/scss/buttons";
-@import "bootstrap/scss/grid";
+@import "bootstrap/scss/bootstrap";
+
 
 //6. 我自己的樣式
 @import 'style/typography';
