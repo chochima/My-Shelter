@@ -1,4 +1,26 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.img-fluid {
+  width: 100%;
+  height: auto;
+  max-width: 56px;
+}
+.img-logo {
+  width: 100%;
+  height: auto;
+  max-width: 236px;
+}
+.img-list {
+  width: 100%;
+  height: auto;
+  max-width: 40px;
+}
+@media (min-width: 992px) {
+  .email-input {
+    width: 493px; /* 直接指定 */
+    max-width: 100%; /* 但保險，避免超出容器 */
+  }
+}
+@media (max-width: 992px) {
+  .line{
+    border-bottom: 1px solid #BEBEBE;
+  }
 }
