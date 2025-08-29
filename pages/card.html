@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <title>index</title>
+  <style>
+    .card-pet {
+      border-radius: 0 6rem 3rem 3rem;
+    }
+
+    .card-helpBadge-position {
+      left: 59px;
+      top: 37px;
+    }
+  </style>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+
+    <div class="container mt-64">
+
+
+
+      <div class="row mb-64">
+        <div class="col-md-4">
+
+          <!-- card 1 機構agency -->
+          <div class="card border  position-relative ">
+            <!-- top-0 start-0 mt-5 ms-4 -->
+            <span
+              class="badge position-absolute  card-helpBadge-position  translate-middle bg-info px-4 py-1 fs-6 rounded-1">
+              HELP!
+            </span>
+            <img src="/assets/images/iStock-843909350 1.jpg" class="card-img-top" alt="機構卡片圖片">
+            <div class="card-body px-4 py-5">
+              <h3 class="card-title text-secondary mb-2">南區保育場受颱風重創，急需救援...</h3>
+              <p class="mb-4 text-primary">毛寶寶基金會</p>
+              <p class="card-text mb-5">因颱風來襲，台南分區部分保育場遭受重創，急需協助場區修復，為毛寶寶們搭建一座可以遮風避雨的...</p>
+
+              <div class="d-flex align-items-center">
+                <div>
+                  <span class="badge text-bg-primary-400 text-secondary px-2 py-1 me-2">新北市</span>
+                  <span class="badge text-bg-primary-400 text-secondary px-2 py-1">新北市</span>
+                </div>
+                <h2 class=" text-primary ms-auto">＄500/次</h2>
+              </div>
+            </div>
+          </div>
+          <!-- card 1 機構 -->
+
+        </div>
+      </div>
+
+
+
+      <div class="row mb-64">
+        <div class="col-md-4">
+
+          <!-- card 2 寶貝pet -->
+          <div class="card-pet shadow overflow-auto">
+
+            <img src="/assets/images/orange cats 1.jpg" class="card-img-top" alt="寶貝卡片圖片">
+            <div class="card-body px-5 py-7 bg-primary-100">
+              <div class="d-flex align-items-center">
+                <h3 class="card-title text-gray-900 mb-2">阿橘橘</h3>
+                <span class="fs-6 badge bg-primary px-4 py-1  ms-auto rounded-1">可認養</span>
+              </div>
+              <p class="mb-4 text-primary">喵了個咪中途之家</p>
+              <p class="card-text mb-5">阿橘橘在意外中失去了一條腿，卻從不氣餒，還總是精神滿滿地奔跑玩耍，彷彿在說：三條腿...</p>
+
+              <div class="d-flex align-items-center">
+                <div>
+                  <span class="badge text-bg-primary-400 text-secondary px-2 py-1 me-2">新北市</span>
+                  <span class="badge text-bg-primary-400 text-secondary px-2 py-1 me-2">已結紮</span>
+                  <span class="badge text-bg-primary-400 text-secondary px-2 py-1">醫療協助</span>
+                </div>
+                <h2 class=" text-primary ms-auto">＄50/次</h2>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 寶貝pet -->
+
+        </div>
+      </div>
+
+
+
+      <div class="row mb-64 justify-content-center">
+        <div class="col-md-10">
+
+          <!-- card 3 優惠活動promotion -->
+          <div class="row">
+            <div class="col-md-6">
+              <img src="/assets/images/meet dogs 1.jpg" alt="">
+            </div>
+            <div class="col-md-6 p-5 d-flex flex-column">
+              <div>
+                <h2 class="text-primary mb-5">滿額參加│狗狗見面會開放報名</h2>
+                <p class="fs-5">即日起，單筆訂單金額滿NT$520，即可免費報名參加雲端狗狗見面會!活動當天將與其他領養者一同互動交流，還有可愛驚喜等你來體驗。名額有限，立刻報名參加吧!</p>
+              </div>
+              <div class="d-grid mt-auto">
+                <button class="btn btn-primary text-start rounded-1 fs-4 py-2 px-4 d-flex " type="button">
+                  <div>
+                    <img src="/assets/icon/speaker.svg" alt="speaker_icon" class="me-4">
+                    <span>本次活動由毛寶寶基金會主辦</span>
+                  </div>
+                  <img src="/assets/icon/right arrow.svg" alt="rightarrow_icon" class="ms-auto">
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 3 優惠活動promotion -->
+
+        </div>
+      </div>
+
+
+
+      <div class="row">
+        <div class="col-md-5">
+
+          <!-- card 4 最新消息news -->
+          <div class="rounded overflow-auto">
+            <img src="/assets/images/dog in park 1.jpg" class="card-img-top" alt="News卡片圖片">
+            <div class="px-4 pt-4 pb-7">
+              <h4 class=" text-secondary mb-2 fw-medium">山友通報，近期有惡意人士在南投山區放置捕獸夾。</h4>
+            </div>
+          </div>
+          <!-- card 4 最新消息news -->
+
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+    <%- include('./layout/footer'); -%>
+      <!-- JavaScript Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>
