@@ -10,13 +10,80 @@
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <title>index</title>
   <style>
-    .card-pet {
-      border-radius: 0 6rem 3rem 3rem;
+    .img-fluid-card {
+      width: 100%;
+      height: auto;
     }
 
+
+    /* 寶貝卡片的圓角設定 */
+    .card-pet-radius {
+      border-radius: 0 6rem 2rem 2rem;
+    }
+
+    @media(min-width:992px) {
+      .card-pet-radius {
+        border-radius: 0 6rem 3rem 3rem;
+      }
+    }
+
+
+
+    /* 機構卡片左上角help標籤位置設定 */
     .card-helpBadge-position {
-      left: 59px;
-      top: 37px;
+      left: 4px;
+      top: 24px;
+      transform: none;
+    }
+
+    /* 桌機以上 (md: 768px↑) */
+    @media (min-width: 992px) {
+      .card-helpBadge-position {
+        left: 16px;
+        /* 清掉 left */
+      }
+    }
+
+    /* card內價格的響應式字重設定 */
+    @media(min-width:992px) {
+      .card-price {
+        font-weight: 700;
+      }
+    }
+
+
+
+    /* 毛玻璃效果設定 */
+    .glass-card {
+      position: relative;
+      overflow: hidden;
+      /* 保證 overlay 不超出卡片 */
+      transition: all 0.3s ease;
+    }
+
+    .glass-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      /* 半透明毛玻璃底 */
+      backdrop-filter: blur(5px);
+      /* 毛玻璃模糊 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      /* 初始隱藏 */
+      transition: all 0.3s ease;
+    }
+
+    .glass-card:hover .glass-overlay {
+      opacity: 1;
+      /* hover 顯示 */
+      backdrop-filter: blur(8px);
+      /* hover 模糊更明顯 */
     }
   </style>
 </head>
@@ -29,29 +96,47 @@
 
 
       <div class="row mb-64">
-        <div class="col-md-4 col-8">
+        <div class="col-lg-4 col-8">
 
           <!-- card 1 機構agency -->
-          <div class="card border  position-relative ">
+          <div class="card border  position-relative glass-card">
             <!-- top-0 start-0 mt-5 ms-4 -->
-            <span
-              class="badge position-absolute  card-helpBadge-position  translate-middle bg-info px-4 py-1 fs-6 rounded-1">
+            <span class="badge position-absolute  card-helpBadge-position  bg-info px-4 py-1 fs-6 rounded-1">
               HELP!
             </span>
-            <img src="/assets/images/iStock-843909350 1.jpg" class="card-img-top" alt="機構卡片圖片">
-            <div class="card-body px-4 py-5">
-              <h3 class="card-title text-secondary mb-2">南區保育場受颱風重創，急需救援...</h3>
-              <p class="mb-4 text-primary">毛寶寶基金會</p>
-              <p class="card-text mb-5">因颱風來襲，台南分區部分保育場遭受重創，急需協助場區修復，為毛寶寶們搭建一座可以遮風避雨的...</p>
 
-              <div class="d-flex align-items-center">
+            <img src="/assets/images/iStock-843909350 1.jpg" class="card-img-top" alt="機構卡片圖片">
+            <div class="card-body px-2 px-md-4 py-md-5">
+              <h3 class="card-title text-secondary mb-1 mb-md-2 lh-sm">南區保育場受颱風重創，急需救援...</h3>
+              <p class="mb-md-4 mb-2 text-primary">毛寶寶基金會</p>
+              <p class="card-text mb-md-5 mb-4">因颱風來襲，台南分區部分保育場遭受重創，急需協助場區修復，為毛寶寶們搭建一座可以遮風避雨的...</p>
+
+              <div class="d-flex flex-column flex-md-row  align-items-start align-items-md-center">
                 <div>
-                  <span class="badge text-bg-primary-400 text-secondary px-2 py-1 me-2">新北市</span>
-                  <span class="badge text-bg-primary-400 text-secondary px-2 py-1">新北市</span>
+                  <span
+                    class="badge rounded-3 text-bg-primary-400 text-secondary fw-normal fs-8 fs-md-6 px-2 py-1 me-1 mb-1 me-md-2">新北市</span>
+                  <span
+                    class="badge rounded-3  text-bg-primary-400  text-secondary fw-normal fs-8 fs-md-6 px-2 py-1">新北市</span>
                 </div>
-                <h2 class=" text-primary ms-auto">＄500/次</h2>
+                <h4 class="card-price fs-lg-2 text-primary ms-md-auto mt-2 mt-md-0">＄500/次</h4>
               </div>
             </div>
+
+
+            <!-- 毛玻璃 hover overlay -->
+            <div class="glass-overlay d-flex justify-content-center align-items-center">
+              <span class="text-light fs-md-2 fs-5">
+                我要支援
+                <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="ms-2">
+                  <path d="M0.999999 1.5L8 8.5L1 15.5" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+
+              </span>
+            </div>
+            <!-- 毛玻璃 hover overlay -->
+
           </div>
           <!-- card 1 機構 -->
 
@@ -61,29 +146,47 @@
 
 
       <div class="row mb-64">
-        <div class="col-md-4 col-8">
+        <div class="col-lg-4 col-8">
 
           <!-- card 2 寶貝pet -->
-          <div class="card-pet shadow overflow-auto">
+          <div class="card-pet-radius shadow overflow-auto position-relative glass-card">
 
             <img src="/assets/images/orange cats 1.jpg" class="card-img-top" alt="寶貝卡片圖片">
-            <div class="card-body px-5 py-7 bg-primary-100">
+            <div class="card-body px-2 py-4 px-md-5 py-md-7 bg-primary-100">
               <div class="d-flex align-items-center">
-                <h3 class="card-title text-gray-900 mb-2">阿橘橘</h3>
-                <span class="fs-6 badge bg-primary px-4 py-1  ms-auto rounded-1">可認養</span>
+                <h3 class="card-title text-gray-900 mb-md-2">阿橘橘</h3>
+                <span class="fs-6 badge bg-primary px-4 py-1  ms-auto rounded-3 fw-normal">可認養</span>
               </div>
-              <p class="mb-4 text-primary">喵了個咪中途之家</p>
-              <p class="card-text mb-5">阿橘橘在意外中失去了一條腿，卻從不氣餒，還總是精神滿滿地奔跑玩耍，彷彿在說：三條腿...</p>
+              <p class="mb-md-4 mb-2 text-primary">喵了個咪中途之家</p>
+              <p class="card-text mb-md-5 mb-4">阿橘橘在意外中失去了一條腿，卻從不氣餒，還總是精神滿滿地奔跑玩耍，彷彿在說：三條腿...</p>
 
-              <div class="d-flex align-items-center">
+              <div class="d-flex flex-column flex-md-row  align-items-start align-items-md-center">
                 <div>
-                  <span class="badge text-bg-primary-400 text-secondary px-2 py-1 me-2">新北市</span>
-                  <span class="badge text-bg-primary-400 text-secondary px-2 py-1 me-2">已結紮</span>
-                  <span class="badge text-bg-primary-400 text-secondary px-2 py-1">醫療協助</span>
+                  <span
+                    class="badge rounded-3 text-bg-primary-400 text-secondary fw-normal fs-8 fs-md-6 px-2 py-1  mb-1  me-1 me-md-2">新北市</span>
+                  <span
+                    class="badge rounded-3 text-bg-primary-400 text-secondary fw-normal fs-8 fs-md-6 px-2 py-1 mb-1  me-1 me-md-2">已結紮</span>
+                  <span
+                    class="badge rounded-3 fw-normal  fs-8 fs-md-6 text-bg-primary-400 text-secondary px-2 py-1">醫療協助</span>
                 </div>
-                <h2 class=" text-primary ms-auto">＄50/次</h2>
+                <h4 class="card-price fs-lg-2 text-primary ms-md-auto mt-2 mt-md-0">＄50/次</h4>
               </div>
             </div>
+
+
+            <!-- 毛玻璃 hover overlay -->
+            <div class="glass-overlay d-flex justify-content-center align-items-center">
+              <span class="text-light fs-md-2 fs-5">
+                我要認養
+                <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="ms-2">
+                  <path d="M0.999999 1.5L8 8.5L1 15.5" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
+            <!-- 毛玻璃 hover overlay -->
+
           </div>
           <!-- card 2 寶貝pet -->
 
@@ -93,25 +196,37 @@
 
 
       <div class="row mb-64">
-        <div class="col-md-10 ">
+        <div class="col-lg-10 col-md-10 col-12">
 
           <!-- card 3 優惠活動promotion -->
           <div class="row">
-            <div class="col-md-6 col-12">
-              <img src="/assets/images/meet dogs 1.jpg" alt="">
+            <div class="col-md-12 col-lg-6 col-12">
+              <img src="/assets/images/meet dogs 1.jpg" alt="優惠活動圖片" class="img-fluid-card mx-auto d-block ">
             </div>
-            <div class="col-md-6 col-12 p-5 d-flex flex-column">
+            <div class="col-md-12 col-lg-6 col-12 p-md-5 pt-4 pb-2 d-flex flex-column">
               <div>
                 <h2 class="text-primary mb-5">滿額參加│狗狗見面會開放報名</h2>
                 <p class="fs-5">即日起，單筆訂單金額滿NT$520，即可免費報名參加雲端狗狗見面會!活動當天將與其他領養者一同互動交流，還有可愛驚喜等你來體驗。名額有限，立刻報名參加吧!</p>
               </div>
               <div class="d-grid mt-auto">
-                <button class="btn btn-primary text-start rounded-1 fs-4 py-2 px-4 d-flex " type="button">
+                <button
+                  class="btn btn-primary rounded-3 fs-4 py-2 px-4 d-flex align-items-center justify-content-between"
+                  type="button">
                   <div>
-                    <img src="/assets/icon/speaker.svg" alt="speaker_icon" class="me-4">
-                    <span>本次活動由毛寶寶基金會主辦</span>
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg" class="me-4">
+                      <path
+                        d="M19.5999 2.0999C19.5999 1.68401 19.3846 1.29777 19.0308 1.07912C18.677 0.860475 18.2352 0.840598 17.8632 1.02659L8.51662 5.6999H3.9999C2.01168 5.6999 0.399902 7.31168 0.399902 9.2999C0.399902 11.2881 2.01168 12.8999 3.9999 12.8999H4.335L6.46149 19.2794C6.62483 19.7694 7.0834 20.0999 7.59991 20.0999H8.79991C9.46265 20.0999 9.99991 19.5626 9.99991 18.8999V13.6416L17.8632 17.5732C18.2352 17.7592 18.677 17.7393 19.0308 17.5207C19.3846 17.302 19.5999 16.9158 19.5999 16.4999V2.0999Z"
+                        fill="#F4F0EC" />
+                    </svg>
+
+                    <span class="fs-7 fs-md-6">本次活動由毛寶寶基金會主辦</span>
                   </div>
-                  <img src="/assets/icon/right arrow.svg" alt="rightarrow_icon" class="ms-auto">
+                  <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="ms-auto">
+                    <path d="M0.999999 1.5L8 8.5L1 15.5" stroke="white" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
                 </button>
               </div>
             </div>
@@ -127,11 +242,27 @@
         <div class="col-md-5 col-6">
 
           <!-- card 4 最新消息news -->
-          <div class="rounded overflow-auto">
+          <div class="rounded overflow-auto position-relative glass-card">
+
             <img src="/assets/images/dog in park 1.jpg" class="card-img-top" alt="News卡片圖片">
-            <div class="px-4 pt-4 pb-7">
-              <h4 class=" text-secondary mb-2 fw-medium">山友通報，近期有惡意人士在南投山區放置捕獸夾。</h4>
+            <div class="p-2  p-md-4">
+              <p class=" text-secondary mb-2 fw-medium fs-6 fs-md-4 lh-sm ">山友通報，近期有惡意人士在南投山區放置捕獸夾。</p>
             </div>
+
+
+            <!-- 毛玻璃 hover overlay -->
+            <div class="glass-overlay d-flex justify-content-center align-items-center">
+              <span class="text-light fs-md-2 fs-5">
+                Read More
+                <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="ms-2">
+                  <path d="M0.999999 1.5L8 8.5L1 15.5" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
+            <!-- 毛玻璃 hover overlay -->
+
           </div>
           <!-- card 4 最新消息news -->
 
