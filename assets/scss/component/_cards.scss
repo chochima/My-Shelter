@@ -5,6 +5,24 @@
 
 
 
+// 卡片文字超過省略設定
+/* 單行截斷 */
+.card-title-truncate {
+  white-space: nowrap;       /* 不換行 */
+  overflow: hidden;          /* 超過部分隱藏 */
+  text-overflow: ellipsis;   /* 顯示省略號 */
+}
+
+/* 多行截斷（兩行） */
+.card-text-truncate {
+  display: -webkit-box;           /* 必須 */
+  -webkit-box-orient: vertical;   /* 必須 */
+  -webkit-line-clamp: 2;          /* 限制兩行 */
+  line-clamp: 2;                   /* 標準屬性 */
+  overflow: hidden;               /* 超過隱藏 */
+  text-overflow: ellipsis;        /* 超過部分顯示… */
+}
+
 
 
 
