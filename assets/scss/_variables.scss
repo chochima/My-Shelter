@@ -458,6 +458,7 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 
 // scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
+// 間距改過
 $spacers: (
   0: 0,
   1: $spacer * .25,
@@ -469,8 +470,10 @@ $spacers: (
   7: $spacer * 2,
   8: $spacer * 2.5,
   9: $spacer * 3,
+  56: $spacer * 3.5,
   64: $spacer * 4,
   80: $spacer * 5,
+  120: $spacer * 7.5,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -681,12 +684,12 @@ $font-weight-bold:            700 !default;
 $font-weight-bolder:          bolder !default;
 
 $font-weight-base:            $font-weight-normal !default;
-
+// ine-height-sm 改過 8/27
 $line-height-base:            1.5 !default;
 $line-height-sm:              1.2 !default;
 //$line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
-
+// 字體大小改過 8/27
 $h1-font-size:                $font-size-base * 2.5 !default;
 $h2-font-size:                $font-size-base * 2 !default;
 $h3-font-size:                $font-size-base * 1.75 !default;

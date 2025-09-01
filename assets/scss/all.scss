@@ -23,7 +23,7 @@
 
 @import 'bootstrap/scss/bootstrap';
 
-// 產生 fs-{breakpoint}-{size}
+// 產生 fs-{breakpoint}-{size} 8/27
 @each $breakpoint in map-keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {
     @each $size, $value in $font-sizes {
@@ -39,6 +39,7 @@
 
 @import 'layout/header';
 @import 'layout/footer';
+@import 'layout//select.scss';
 
 @import 'pages/index';
 

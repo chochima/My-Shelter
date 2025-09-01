@@ -1,0 +1,28 @@
+  .custom-select {
+    appearance: none;         /* 標準 */
+    -webkit-appearance: none; /* Chrome / Safari */
+    -moz-appearance: none;    /* Firefox */
+    background: none;         /* 移除可能的背景箭頭 */
+    border-radius: 100px;
+    padding-right: 48px;      /* 預留空間給 SVG */
+  }
+.select-wrapper {
+  transition: background-color 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+
+.cs-btn:hover {
+  background-color: #7C6952; /* 棕色背景 */
+}
+
+
+.cs-btn:hover select {
+  color: #ffffff;
+  background-color: transparent; /* 保持背景透明 */
+  -webkit-text-fill-color: #ffffff; /* Safari */
+}
+
+.cs-btn:hover svg path {
+  stroke: #ffffff;
+}
