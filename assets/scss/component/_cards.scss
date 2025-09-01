@@ -1,0 +1,98 @@
+.img-fluid-card {
+  width: 100%;
+  height: auto;
+}
+
+
+
+// 卡片文字超過省略設定
+/* 單行截斷 */
+.card-title-truncate {
+  white-space: nowrap;       /* 不換行 */
+  overflow: hidden;          /* 超過部分隱藏 */
+  text-overflow: ellipsis;   /* 顯示省略號 */
+}
+
+/* 多行截斷（兩行） */
+.card-text-truncate {
+  display: -webkit-box;           /* 必須 */
+  -webkit-box-orient: vertical;   /* 必須 */
+  -webkit-line-clamp: 2;          /* 限制兩行 */
+  line-clamp: 2;                   /* 標準屬性 */
+  overflow: hidden;               /* 超過隱藏 */
+  text-overflow: ellipsis;        /* 超過部分顯示… */
+}
+
+
+
+
+
+/* 寶貝卡片的圓角設定 */
+.card-pet-radius {
+  border-radius: 0 6rem 2rem 2rem;
+}
+
+@media(min-width:992px) {
+  .card-pet-radius {
+    border-radius: 0 6rem 3rem 3rem;
+  }
+}
+
+
+
+/* 機構卡片左上角help標籤位置設定 */
+.card-helpBadge-position {
+  left: 4px;
+  top: 24px;
+  transform: none;
+}
+
+/* 桌機以上 (md: 768px↑) */
+@media (min-width: 992px) {
+  .card-helpBadge-position {
+    left: 16px;
+    /* 清掉 left */
+  }
+}
+
+/* card內價格的響應式字重設定 */
+@media(min-width:992px) {
+  .card-price {
+    font-weight: 700;
+  }
+}
+
+
+
+/* 毛玻璃效果設定 */
+.glass-card {
+  position: relative;
+  overflow: hidden;
+  /* 保證 overlay 不超出卡片 */
+  transition: all 0.3s ease;
+}
+
+.glass-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* 半透明毛玻璃底 */
+  backdrop-filter: blur(5px);
+  /* 毛玻璃模糊 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  /* 初始隱藏 */
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover .glass-overlay {
+  opacity: 1;
+  /* hover 顯示 */
+  backdrop-filter: blur(8px);
+  /* hover 模糊更明顯 */
+}

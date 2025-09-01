@@ -1,0 +1,29 @@
+//頁面回到最上層，補點擊
+.btn-scroll-top{
+    display: inline-flex;
+    position: relative;
+    position: fixed;
+    top: 80%;
+    right: 0;
+    z-index: 0;
+
+}
+.btn-scroll-top svg path{
+    fill: $primary-600;
+}
+.btn-scroll-top-text {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 18px;
+    font-weight: 900;
+    color: $secondary-700;
+}
+
+
+//
