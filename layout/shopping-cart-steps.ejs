@@ -1,0 +1,93 @@
+
+
+<style>
+  /* 步驟容器 */
+  .stepper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 2rem;
+  }
+
+/* 背景線 */
+.stepper::before {
+  content: "";
+  position: absolute;
+  top: 45px; 
+  left: 16%;  
+  width: 68%;
+  height: 4px;
+  background-color: #dee2e6;
+  z-index: 1;
+}
+
+
+
+
+  /* 每個步驟 */
+  .step {
+    position: relative;
+    text-align: center;
+    z-index: 5;
+    flex: 1;
+  }
+
+  /* 圓圈 */
+  .step .circle {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #dee2e6;
+    color: #fff;
+    line-height: 40px;
+    font-weight: bold;
+     position: relative;   
+     z-index: 10;          
+  }
+
+  /* 已完成或進行中的步驟 */
+  .step.active .circle,
+  .step.completed .circle {
+    background-color: #A88760; 
+  }
+
+  /* 步驟文字 */
+  .step small {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+
+  /* 已完成的線條 */
+  .stepper .completed::after {
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    width: 100%;
+    height: 4px;
+    background-color: #a87e60;
+    z-index: 1;
+  }
+</style>
+
+<div class="container my-5">
+
+  <!-- 三個步驟 -->
+  <div class="stepper">
+    <div class="step completed">
+      <small>購物車</small>
+      <div class="circle">1</div>
+    </div>
+    <div class="step active">
+      <small>付款資訊</small>
+      <div class="circle">2</div>
+    </div>
+    <div class="step">
+        <small>訂​單明細​</small>
+      <div class="circle">3</div>
+    </div>
+  </div>
+
+</div>
