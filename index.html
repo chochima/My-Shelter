@@ -180,136 +180,126 @@
 
     <div>
       <div class="container">
-        <div class="py-80 d-flex justify-content-between align-items-center m-auto">
-<div class="d-lg-flex align-items-center gap-5 m-auto  m-lg-0">
- <div class="d-flex gap-5">
-<div class="select-wrapper d-flex justify-content-between align-items-center border border-2 border-primary-700 px-3 py-2 px-lg-5 py-lg-3 cs-btn" style="border-radius: 100px;">
-  <select id="regionSelect" class="form-select custom-select text-primary-700 border-0 shadow-none fs-lg-4 lh-sm fw-medium" style="border-radius: 100px;">
-    <option selected>地區</option>
-    <option value="北部">北部</option>
-    <option value="中部">中部</option>
-    <option value="南部">南部</option>
-    <option value="東部">東部</option>
-    <option value="離島">離島</option>
-  </select> 
-  
-  <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M20.3334 1L11 10.3333L1.66669 1" stroke="#7C6952" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+        
 
-</div>
-<div class="select-wrapper d-flex justify-content-between align-items-center border border-2 border-primary-700 px-3 py-2 px-lg-5 py-lg-3 cs-btn" style="border-radius: 100px;">
-  <select class="form-select custom-select text-primary-700 border-0 shadow-none fs-lg-4 lh-sm fw-medium " 
-          aria-label="Default select example" 
-          style="border-radius: 100px; appearance: none; ">
-    <option selected>寶貝類型</option>
-    <option value="糧食緊缺">糧食緊缺</option>
-    <option value="醫療幫助">醫療幫助</option>
-    <option value="建設幫助">建設幫助</option>
-    <option value="設備支援">設備支援</option>
-    <option value="生命禮儀">生命禮儀</option>
-  </select>
- 
-    <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M20.3334 1L11 10.3333L1.66669 1" stroke="#7C6952" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+<style>
+  /* 步驟容器 */
+  .stepper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 2rem;
+  }
 
-</div>
-</div>
-<div>
-<div class=" d-flex  align-items-center border border-2 border-primary-700 px-3 py-2 px-lg-5 py-lg-3 mt-4 mt-lg-0" style="border-radius: 100px;">
-  <input type="search" class="border-0 secondary-600 border-0 fs-lg-4 lh-sm fw-medium "  placeholder="搜尋寶貝" style="border: none; outline: none; background: transparent; width: 100%;">
- 
-    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="36" height="36" rx="18" fill="#7C6952"/>
-<path d="M17.1111 24.2223C21.0385 24.2223 24.2223 21.0385 24.2223 17.1111C24.2223 13.1838 21.0385 10 17.1111 10C13.1838 10 10 13.1838 10 17.1111C10 21.0385 13.1838 24.2223 17.1111 24.2223Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M26 26L22.1333 22.1333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+/* 背景線 */
+.stepper::before {
+  content: "";
+  position: absolute;
+  top: 45px; 
+  left: 16%;  
+  width: 68%;
+  height: 4px;
+  background-color: #dee2e6;
+  z-index: 1;
+}
 
 
-</div>
-</div>
-</div>
 
 
-<div class="d-none d-lg-block">
-    <div class="select-wrapper d-flex  align-items-center  border border-2 border-primary-700 px-5 py-3 cs-btn" style="border-radius: 100px;">
-  <select class="form-select custom-select text-primary-700 border-0 shadow-none fs-4 lh-sm fw-medium " 
-          aria-label="Default select example" 
-          style="border-radius: 100px; appearance: none;">
-    <option selected>由新到舊</option>
-    <option value="由舊到新">由舊到新</option>
-    <option value="急需幫助">醫療幫助</option>
-    <option value="關注中">關注中</option>
+  /* 每個步驟 */
+  .step {
+    position: relative;
+    text-align: center;
+    z-index: 5;
+    flex: 1;
+  }
 
-  </select>
- 
-    <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M20.3334 1L11 10.3333L1.66669 1" stroke="#7C6952" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+  /* 圓圈 */
+  .step .circle {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #dee2e6;
+    color: #fff;
+    line-height: 40px;
+    font-weight: bold;
+     position: relative;   
+     z-index: 10;          
+  }
 
-</div>
-</div>
-</div>
-<div class="dropdown" style="width: 250px;">
-  <button class="btn btn-outline-primary w-100 border-2 text-start d-flex flex-column align-items-start p-4 shadow-none" 
-          type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 24px;">
-    
-    
-    <div class="d-flex w-100 align-items-center justify-content-between mb-1">
-      <span class="selected-title fw-medium fs-4">營養補充劑</span>
-      <svg width="22" height="12" viewBox="0 0 22 12" fill="none" 
-           xmlns="http://www.w3.org/2000/svg">
-        <path d="M20.3334 1L11 10.3333L1.66669 1" stroke="#7C6952" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
+  /* 已完成或進行中的步驟 */
+  .step.active .circle,
+  .step.completed .circle {
+    background-color: #A88760; 
+  }
+
+  /* 步驟文字 */
+  .step small {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+
+  /* 已完成的線條 */
+  .stepper .completed::after {
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    width: 100%;
+    height: 4px;
+    background-color: #a87e60;
+    z-index: 1;
+  }
+</style>
+
+<div class="container my-5">
+
+  <!-- 三個步驟 -->
+  <div class="stepper">
+    <div class="step completed">
+      <small>購物車</small>
+      <div class="circle">1</div>
     </div>
+    <div class="step active">
+      <small>付款資訊</small>
+      <div class="circle">2</div>
+    </div>
+    <div class="step">
+        <small>訂​單明細​</small>
+      <div class="circle">3</div>
+    </div>
+  </div>
 
-    
-    <div style="width: 100%; height: 1px; background-color: #7C6952; margin-bottom: 4px;"></div>
-
-    
-    <small class="selected-desc text-muted">彌補飲食中缺乏的營養素，增強免疫力，促進消化，維持狗狗的活力</small>
-  </button>
-
-  <!-- 下拉選單 -->
-  <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
-    <li>
-      <button class="dropdown-item">
-        <div class="option-title fw-medium fs-4 ">健康檢查</div>
-        <small class="option-desc text-muted">持續追蹤健康狀況進度</small>
-      </button>
-    </li>
-    <li>
-      <button class="dropdown-item">
-        <div class="option-title fw-medium fs-4">益生菌消化酵素</div>
-        <small class="option-desc text-muted">維持腸道菌叢平衡，減少害菌生長，<br>促進消化和營養吸收</small>
-      </button>
-    </li>
-    <li>
-      <button class="dropdown-item">
-        <div class="option-title fw-medium fs-4">鮮食提供</div>
-        <small class="option-desc text-muted">更容易消化，有助於營養吸收</small>
-      </button>
-    </li>
-  </ul>
 </div>
+        <div class="container mt-5">
+    <div class="d-flex align-items-center gap-2 mt-3">
+      <button id="decrement" class="btn  bg-white text-primary-700 border-primary-700 shadow-none fw-bold " style="max-width:50px ;"><span>-</span></button>
+      <input type="text" id="number" class="form-control text-center  bg-white text-primary-700 border-0 shadow-none" style="max-width: 50px;" value="0" readonly>
+      <button id="increment" class="btn   bg-white text-primary-700 border-primary-700 shadow-none fw-bold" style="max-width:50px ;"><span>+</span></button>
+    </div>
+  </div>
 
+  <!-- Bootstrap JS & Popper -->
 
-<script>
-const dropdownItems = document.querySelectorAll('.dropdown-item');
-const selectedTitle = document.querySelector('.selected-title');
-const selectedDesc = document.querySelector('.selected-desc');
+  <script>
+    const decrementBtn = document.getElementById('decrement');
+    const incrementBtn = document.getElementById('increment');
+    const numberInput = document.getElementById('number');
 
-dropdownItems.forEach(item => {
-  item.addEventListener('click', () => {
-    selectedTitle.textContent = item.querySelector('.option-title').textContent;
-    selectedDesc.textContent = item.querySelector('.option-desc').textContent;
-  });
-});
+    decrementBtn.addEventListener('click', () => {
+      let currentValue = parseInt(numberInput.value);
+      if(currentValue > 0) { // 防止數字小於0
+        numberInput.value = currentValue - 1;
+      }
+    });
 
-</script>
-
-      </div>
+    incrementBtn.addEventListener('click', () => {
+      let currentValue = parseInt(numberInput.value);
+      numberInput.value = currentValue + 1;
+    });
+  </script>      </div>
     </div>
     
 
