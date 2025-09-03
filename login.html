@@ -13,8 +13,8 @@
 
   <title>login</title>
 
-  <script type="module" crossorigin src="/My-Shelter/assets/main-DNC88qGT.js"></script>
-  <link rel="stylesheet" crossorigin href="/My-Shelter/assets/main-CM0AI8Nc.css">
+  <script type="module" crossorigin src="/My-Shelter/assets/main-BphpIYX_.js"></script>
+  <link rel="stylesheet" crossorigin href="/My-Shelter/assets/main-Dl_YYxol.css">
 </head>
 
 <body>
@@ -193,62 +193,89 @@
     <span class="btn-scroll-top-text">TOP</span>
 </div>
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <div class="border border-primary p-8 bg-primary-100 shadow">
-              <h3 class="text-center text-primary mb-2">會員登入</h3>
-              <div class="">
+        <div class="row justify-content-center my-3">
+          <div class="col-md-8 col-lg-6">
+
+
+            <div class="border border-primary p-64 bg-primary-100 shadow"><!-- 登入區塊外框底色設定 -->
+
+              <h4 class="text-center text-primary mb-2">會員登入</h4>
+
+              <div class=""> <!--以下是form表單-->
+
                 <form action="">
 
-                  <div>
-                    <!-- 帳號 -->
-                    <div class="mb-4">
-                      <p class="fs-6 mb-2">帳號</p>
-                      <div class="form-floating ">
-                        <input type="email" class="form-control" id="account-login" placeholder="登入帳號"
-                          aria-describedby="emailHelp">
-                        <label for="account-login" class="form-label">電子郵件</label>
-                      </div>
+                  <!-- 帳號 -->
+                  <div class="mb-4">
+                    <p class="mb-2">帳號</p>
+                    <div class="form-floating ">
+                      <input type="email" class="form-control" id="account-login" placeholder="登入帳號"
+                        aria-describedby="emailHelp">
+                      <label for="account-login" class="form-label fs-8">電子郵件</label>
                     </div>
-
-                    <!-- 密碼 -->
-                    <div class="mb-4">
-                      <p class="fs-6 mb-2">密碼</p>
-                      <div class="form-floating text-end">
-                        <input type="password" class="form-control" id="password-login" placeholder="登入密碼">
-                        <label for="password-login">密碼</label>
-                        <a href="#" class="fs-8 text-secondary-700">忘記密碼</a>
-                      </div>
-                    </div>
-
-
-                    <!-- 快速登入 -->
-                    <div class="mb-6">
-                      <p class="mb-1 fs-6 text-center text-secondary-700">快速登入</p>
-                      <div class="d-flex justify-content-center text-secondary">
-                        <a href="#" class="pe-4 fs-4 text-secondary-700"><i class="bi bi-browser-chrome"></i></a>
-                        <a href="#" class="pe-4 fs-4 text-secondary-700"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="fs-4 text-secondary-700"><i class="bi bi-line"></i></a>
-                      </div>
-                    </div>
-
-
-
-                    <div class="d-grid text-center">
-                      <button type="button" class="btn border btn-primary fs-6 py-3 "> 登入 </button>
-                      <a href="#" class="fs-8 text-secondary-700">還沒有帳戶？點擊此處註冊</a>
-                    </div>
-
                   </div>
-              </div>
+                  <!-- 帳號 -->
 
-              </form>
+                  <!-- 密碼 -->
+                  <div class="mb-6">
+                    <p class=" mb-2">密碼</p>
+                    <div class="form-floating text-end">
+                      <input type="password" class="form-control" id="password-login" placeholder="登入密碼">
+                      <label for="password-login" class="form-label fs-8">密碼</label>
+                      <a href="#" class="fs-8 text-secondary-700">忘記密碼</a>
+                    </div>
+                  </div>
+                  <!-- 密碼 -->
 
-            </div>
+                  <!-- 快速登入 -->
+                  <div class="mb-6">
+                    <p class="mb-1 fs-7 text-center text-secondary-800">快速登入</p>
+                    <div class="d-flex justify-content-center text-secondary">
+                      <a href="#" class="pe-4 fs-4 text-secondary"><i class="bi bi-browser-chrome"></i></a>
+                      <a href="#" class="pe-4 fs-4 text-secondary"><i class="bi bi-facebook"></i></a>
+                      <a href="#" class="fs-4 text-secondary"><i class="bi bi-line"></i></a>
+                    </div>
+                  </div>
+                  <!-- 快速登入 -->
+
+                  <!-- 登入按鈕 -->
+                  <div class="d-grid text-center">
+                    <button type="button" class="btn border btn-primary fs-6 py-3 mb-2" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"> 登入 </button>
+                    <a href="#" class="fs-8 text-secondary-700">還沒有帳戶？點擊此處註冊</a>
+                  </div>
+                  <!-- 登入按鈕 -->
+
+                  <!-- Button trigger modal -->
+                  <!-- Modal 彈出視窗-->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">登入失敗</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          您輸入的帳號或密碼有誤，請重新輸入。
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">確定</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal 彈出視窗-->
+
+                </form>
+
+              </div> <!--form表單結束-->
+
+            </div><!-- 登入區塊外框底色設定 -->
+
 
           </div>
         </div>
-      </div>
       </div>
 
       <div class="pt-64 pb-5 pt-lg-80 pb-lg-8 d-flex flex-column gap-64 gap-lg-80">
@@ -379,7 +406,7 @@
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-          crossorigin="anonymous"></script>
+          crossorigin="anonymous"></script>
 </body>
 
 </html>
