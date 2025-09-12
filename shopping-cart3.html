@@ -199,16 +199,16 @@
   <!-- 三個步驟 -->
   <div class="stepper">
     <div class="step completed">
-      <small>購物車</small>
-      <div class="circle">1</div>
+      <small class="fs-3">購物車</small>
+      <div class="circle fs-3 d-flex justify-content-center align-items-center">1</div>
     </div>
     <div class="step completed">
-      <small>付款資訊</small>
-      <div class="circle">2</div>
+      <small class="fs-3">付款資訊</small>
+      <div class="circle fs-3 d-flex justify-content-center align-items-center">2</div>
     </div>
     <div class="step active">
-        <small>訂​單明細​</small>
-      <div class="circle">3</div>
+        <small class="fs-3">訂​單明細​</small>
+      <div class="circle fs-3 d-flex justify-content-center align-items-center">3</div>
     </div>
   </div>
 
@@ -337,9 +337,9 @@
       </div>
        
       </div>
-      <div class="container d-lg-flex gap-4  ">
+      <div class="container d-lg-flex gap-4 mt-9 ">
        <div class="p-4 bg-white  w-100 border border-primary-700 border-3 mb-4 mb-lg-0" style="border-radius: 24px;">
-        <div class="text-center fs-4 fw-bold">發票</div>
+        <div class="text-center fs-3 fw-bold">發票</div>
         <div>
           <table class="table table-borderless">
   <thead>
@@ -373,7 +373,7 @@
         </div>
        </div>
        <div class="p-4 bg-white  w-100 border border-primary-700 border-3" style="border-radius: 24px;">
-        <div class="text-center fs-4 fw-bold">付款資訊</div>
+        <div class="text-center fs-3 fw-bold">付款資訊</div>
         <div>
           <table class="table table-borderless">
   <thead>
@@ -547,7 +547,7 @@
 .stepper::before {
   content: "";
   position: absolute;
-  top: 45px; 
+  top: 70px; 
   left: 16%;  
   width: 68%;
   height: 4px;
@@ -568,8 +568,8 @@
 
   /* 圓圈 */
   .step .circle {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     margin: 0 auto;
     border-radius: 50%;
     background-color: #dee2e6;
@@ -597,14 +597,14 @@
   .stepper .completed::after {
     content: "";
     position: absolute;
-    top: 45px;
+    top: 70px;
     left: 50%;
     width: 100%;
     height: 4px;
     background-color: #a87e60;
     z-index: 1;
   }
-</style>
+</style>
 </body>
 
 </html>

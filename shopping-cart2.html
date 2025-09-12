@@ -38,8 +38,14 @@
   pointer-events: none;   /* 讓SVG不擋住下拉操作 */
 }
 @media (min-width: 992px) {
+  .w-lg-25 {
+    width: 25% !important;
+  }
   .w-lg-50 {
     width: 50% !important;
+  }
+  .w-lg-75 {
+    width: 75% !important;
   }
 }
       
@@ -223,16 +229,16 @@
   <!-- 三個步驟 -->
   <div class="stepper">
     <div class="step completed">
-      <small>購物車</small>
-      <div class="circle">1</div>
+      <small class="fs-3">購物車</small>
+      <div class="circle fs-3 d-flex justify-content-center align-items-center">1</div>
     </div>
     <div class="step active">
-      <small>付款資訊</small>
-      <div class="circle">2</div>
+      <small class="fs-3">付款資訊</small>
+      <div class="circle fs-3 d-flex justify-content-center align-items-center">2</div>
     </div>
     <div class="step ">
-        <small>訂​單明細​</small>
-      <div class="circle">3</div>
+        <small class="fs-3">訂​單明細​</small>
+      <div class="circle fs-3 d-flex justify-content-center align-items-center">3</div>
     </div>
   </div>
 
@@ -258,7 +264,7 @@
         <div class="d-lg-flex align-items-center gap-4">
           <div class="box d-inline-block d-inline-block"></div>
           <div>
-            <div class="fs-lg-6 fs-7 fw-bold text-secondary-300">毛寶寶基金會</div>
+            <div class="fs-lg-6 fs-7 fw-bold text-primary-600">毛寶寶基金會</div>
             <div class="fs-lg-5 fs-6 fw-bold text-secondary-700">設施重建</div>
           </div>
         </div>
@@ -272,7 +278,7 @@
         <div class="d-lg-flex align-items-center gap-4">
           <div class="box d-inline-block"></div>
           <div>
-            <div class="fs-lg-6 fs-7 fw-bold text-secondary-300">毛寶寶基金會 - 蹲蹲</div>
+            <div class="fs-lg-6 fs-7 fw-bold text-primary-600">毛寶寶基金會 - 蹲蹲</div>
             <div class="fs-lg-5 fs-6 fw-bold text-secondary-700">營養補充劑</div>
           </div>
         </div>
@@ -286,7 +292,7 @@
         <div class="d-lg-flex align-items-center gap-4">
           <div class="box d-inline-block"></div>
           <div>
-            <div class="fs-lg-6 fs-7 fw-bold text-secondary-300">喵了個咪中途之家</div>
+            <div class="fs-lg-6 fs-7 fw-bold text-primary-600">喵了個咪中途之家</div>
             <div class="fs-lg-5 fs-6 fw-bold text-secondary-700">幼貓疫苗(三合一)</div>
           </div>
         </div>
@@ -300,7 +306,7 @@
         <div class="d-lg-flex align-items-center gap-4">
           <div class="box d-inline-block"></div>
           <div>
-            <div class="fs-lg-6 fs-7 fw-bold text-secondary-300">喵了個咪中途之家 -  阿橘橘</div>
+            <div class="fs-lg-6 fs-7 fw-bold text-primary-600">喵了個咪中途之家 -  阿橘橘</div>
             <div class="fs-lg-5 fs-6 fw-bold text-secondary-700">磨牙零食</div>
           </div>
         </div>
@@ -314,7 +320,7 @@
         <div class="d-lg-flex align-items-center gap-4">
           <div class="box d-inline-block"></div>
           <div>
-            <div class="fs-lg-6 fs-7 fw-bold text-secondary-300">喵了個咪中途之家 -  阿橘橘</div>
+            <div class="fs-lg-6 fs-7 fw-bold text-primary-600">喵了個咪中途之家 -  阿橘橘</div>
             <div class="fs-lg-5 fs-6 fw-bold text-secondary-700">健康檢查</div>
           </div>
         </div>
@@ -328,7 +334,7 @@
         <div class="d-lg-flex align-items-center gap-4">
           <div class="box d-inline-block"></div>
           <div>
-            <div class="fs-lg-6 fs-7 fw-bold text-secondary-300">為寶貝送一份禮</div>
+            <div class="fs-lg-6 fs-7 fw-bold text-primary-600">為寶貝送一份禮</div>
             <div class="fs-lg-5 fs-6 fw-bold text-secondary-700"> (貓飼料) 無穀全齡貓-雞肉&鮭魚(低脂) 4磅</div>
           </div>
         </div>
@@ -362,8 +368,8 @@
        
       </div>
       <div class="container mb-4">
-        <div class="container bg-white p-8 border border-3 border-primary-700 d-lg-flex align-items-stretch gap-4" style="border-radius: 24px;">
-          <div class="w-lg-50">
+        <div class="container bg-white p-8 border border-3 border-primary-700 d-lg-flex align-items-stretch gap-8" style="border-radius: 24px;">
+          <div class="w-lg-75">
           <div class="text-secondary-700 fw-bold fs-3 p-4">付款方式</div>
           <div class="position-relative w-50">
   
@@ -371,7 +377,7 @@
                <path d="M20.3334 1L11 10.3333L1.66669 1" stroke="#7C6952" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
            </svg>
 
-           <select class="form-select p-4 text-secondary-600 fw-bold custom-select text-center border border-3 border-primary-700" aria-label="Default select example">
+           <select class="form-select p-4 text-secondary-600 fw-bold custom-select  border border-3 border-primary-700" aria-label="Default select example" style="border-radius: 24px;">
                 <option selected>信用卡</option>
                 <option value="信用卡分期">信用卡分期</option>
                 <option value="ATM">ATM</option>
@@ -389,7 +395,7 @@
                <path d="M20.3334 1L11 10.3333L1.66669 1" stroke="#7C6952" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
            </svg>
 
-           <select class="form-select p-4 text-secondary-600 fw-bold custom-select text-center border border-3 border-primary-700" aria-label="Default select example">
+           <select class="form-select p-4 text-secondary-600 fw-bold custom-select  border border-3 border-primary-700" aria-label="Default select example" style="border-radius: 24px;">
                 <option selected value="二聯式">二聯式</option>
                 <option value="三聯式">三聯式</option>
           </select>
@@ -401,7 +407,7 @@
                <path d="M20.3334 1L11 10.3333L1.66669 1" stroke="#7C6952" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
            </svg>
 
-           <select class="form-select p-4 text-secondary-600 fw-bold custom-select text-center border border-3 border-primary-700" aria-label="Default select example">
+           <select class="form-select p-4 text-secondary-600 fw-bold custom-select  border border-3 border-primary-700" aria-label="Default select example" style="border-radius: 24px;">
                 <option selected value="電子發票載具">電子發票載具</option>
                 <option value="手機載具">手機載具</option>
                 <option value="捐贈發票">捐贈發票</option>
@@ -409,11 +415,11 @@
           </div>
           <div class="text-secondary-700 fw-bold  p-4">電子發票載具</div>
           <div class="form-floating mb-3">
-           <input type="email" class="form-control border border-3 border-primary-700" id="electronic-invoice" placeholder="name@example.com" style="border-radius: 100px;">
+           <input type="email" class="form-control border border-3 border-primary-700" id="electronic-invoice" placeholder="name@example.com" style="border-radius: 24px;">
            <label for="electronic-invoice">EMAIL</label>
           </div>
           </div>
-          <div class="w-lg-50 d-lg-flex flex-column">
+          <div class="w-lg-25 d-lg-flex flex-column">
             <div class="text-secondary-700 fw-bold fs-3 p-4">本次支援的機構</div>
             <div class="p-4 border border-3 border-primary-700 h-100" style="border-radius: 24px;">
               <div class="text-secondary-700 fw-bold fs-5 p-4">毛寶寶基金會</div>
@@ -428,8 +434,8 @@
         <div class="container bg-white p-8 border border-3 border-primary-700"  style="border-radius: 24px;">
           <div class="fs-5 fs-lg-2 p-4 text-center">付款即同意接受<a href="#">服務條款</a>和<a href="#">隱私權政策</a></div>
           <div class="text-center p-6 d-flex flex-column flex-lg-row gap-4 justify-content">
-            <a href="#" class="text-decoration-none py-2 px-3 bg-primary-400 text-secondary-600 fs-5 fs-lg-3 w-100 cs-btn" style="border-radius: 100px;">返回上一步</a>
-            <a href="./shopping-cart3.html"  class="text-decoration-none py-2 px-3 bg-primary-400 text-secondary-600 fs-5 fs-lg-3 w-100 cs-btn" style="border-radius: 100px;">送出訂單</a>
+            <a href="#" class="text-decoration-none py-2 px-3 bg-white text-primary-700 border border-3 border-primary-700 fs-5 fs-lg-3 w-100 cs-btn" style="border-radius: 100px;">返回上一步</a>
+            <a href="./shopping-cart3.html"  class="text-decoration-none py-2 px-3 bg-white text-primary-700 border border-3 border-primary-700 fs-5 fs-lg-3 w-100 cs-btn" style="border-radius: 100px;">送出訂單</a>
           </div>
         </div>
       </div>
@@ -588,7 +594,7 @@
 .stepper::before {
   content: "";
   position: absolute;
-  top: 45px; 
+  top: 70px; 
   left: 16%;  
   width: 68%;
   height: 4px;
@@ -609,8 +615,8 @@
 
   /* 圓圈 */
   .step .circle {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     margin: 0 auto;
     border-radius: 50%;
     background-color: #dee2e6;
@@ -638,14 +644,14 @@
   .stepper .completed::after {
     content: "";
     position: absolute;
-    top: 45px;
+    top: 70px;
     left: 50%;
     width: 100%;
     height: 4px;
     background-color: #a87e60;
     z-index: 1;
   }
-</style>
+</style>
 </body>
 
 </html>
