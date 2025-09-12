@@ -1,5 +1,18 @@
     /* 快速登入hover 狀態 */
-.mb-6 a:hover .bi {
+.fastLogin:hover{
   color: #1877f2;
 }
 
+.underline-link:hover{
+  text-decoration: none;
+}
+
+
+// register badge
+.register-badge{
+  color: $info;
+  font-size: 12px;
+  margin-left: 1.5rem;
+  background: #FFD2D2	;
+  border-radius: 0;
+}
