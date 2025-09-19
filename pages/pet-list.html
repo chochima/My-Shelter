@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <!-- bootstrap icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <title>寶貝篩選</title>
+  <style>
+    .page-link {
+      border: none !important;
+      /* color: var(--primary); */
+    }
+
+    .page-link:hover {
+      background-color: red;
+      color: red;
+      /* 改成品牌色 */
+    }
+
+    .page-item {
+      color: red;
+    }
+
+    .page-item:hover {
+      background-color: red;
+      color: red;
+      /* 改成品牌色 */
+    }
+
+  </style>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+
+    <div class="container py-80">
+
+      <img src="/assets/images/petlist_banner.png" alt="banner" class="mb-56">
+
+      <div class="row">
+        <!-- card 2 寶貝pet -->
+        <div class="col-lg-4 col-8 mb-md-5">
+          <div class="card-pet-radius shadow overflow-auto position-relative glass-card">
+            <img src="/assets/images/orange cats 1.jpg" class="card-img-top" alt="寶貝卡片圖片">
+            <div class="card-body px-2 py-4 px-md-5 py-md-7 bg-primary-100">
+              <div class="d-flex align-items-center">
+                <h3 class="card-title text-gray-900 mb-md-2 card-title-truncate">阿橘橘</h3>
+                <span class="fs-6 badge bg-primary px-4 py-1  ms-auto rounded-3 fw-normal">可認養</span>
+              </div>
+              <p class="mb-md-4 mb-2 text-primary">喵了個咪中途之家</p>
+              <p class="card-text mb-md-5 mb-4 card-text-truncate">阿橘橘在意外中失去了一條腿，卻從不氣餒，還總是精神滿滿地奔跑玩耍，彷彿在說：三條腿也可以</p>
+
+              <div class="d-flex flex-column flex-md-row  align-items-start align-items-md-center">
+                <div>
+                  <span
+                    class="badge rounded-3 text-bg-primary-400 text-secondary fw-normal fs-8 fs-md-6 px-2 py-1  mb-1  me-1 me-md-2">新北市</span>
+                  <span
+                    class="badge rounded-3 text-bg-primary-400 text-secondary fw-normal fs-8 fs-md-6 px-2 py-1 mb-1  me-1 me-md-2">已結紮</span>
+                  <span
+                    class="badge rounded-3 fw-normal  fs-8 fs-md-6 text-bg-primary-400 text-secondary px-2 py-1">醫療協助</span>
+                </div>
+                <h4 class="card-price fs-lg-2 text-primary ms-md-auto mt-2 mt-md-0">＄50/次</h4>
+              </div>
+            </div>
+
+            <!-- 毛玻璃 hover overlay -->
+            <div class="glass-overlay d-flex justify-content-center align-items-center">
+              <span class="text-light fs-md-2 fs-5">
+                我要認養
+                <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="ms-2">
+                  <path d="M0.999999 1.5L8 8.5L1 15.5" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
+            <!-- 毛玻璃 hover overlay -->
+          </div>
+        </div>
+        <!-- card 2 寶貝pet -->
+        <!-- card 2 寶貝pet -->
+        <div class="col-lg-4 col-8 mb-md-5">
+          <div class="card-pet-radius shadow overflow-auto position-relative glass-card">
+            <img src="/assets/images/orange cats 1.jpg" class="card-img-top" alt="寶貝卡片圖片">
+            <div class="card-body px-2 py-4 px-md-5 py-md-7 bg-primary-100">
+              <div class="d-flex align-items-center">
+                <h3 class="card-title text-gray-900 mb-md-2 card-title-truncate">阿橘橘</h3>
+                <span class="fs-6 badge bg-primary px-4 py-1  ms-auto rounded-3 fw-normal">可認養</span>
+              </div>
+              <p class="mb-md-4 mb-2 text-primary">喵了個咪中途之家</p>
+              <p class="card-text mb-md-5 mb-4 card-text-truncate">阿橘橘在意外中失去了一條腿，卻從不氣餒，還總是精神滿滿地奔跑玩耍，彷彿在說：三條腿也可以</p>
+
+              <div class="d-flex flex-column flex-md-row  align-items-start align-items-md-center">
+                <div>
+                  <span
+                    class="badge rounded-3 text-bg-primary-400 text-secondary fw-normal fs-8 fs-md-6 px-2 py-1  mb-1  me-1 me-md-2">新北市</span>
+                  <span
+                    class="badge rounded-3 text-bg-primary-400 text-secondary fw-normal fs-8 fs-md-6 px-2 py-1 mb-1  me-1 me-md-2">已結紮</span>
+                  <span
+                    class="badge rounded-3 fw-normal  fs-8 fs-md-6 text-bg-primary-400 text-secondary px-2 py-1">醫療協助</span>
+                </div>
+                <h4 class="card-price fs-lg-2 text-primary ms-md-auto mt-2 mt-md-0">＄50/次</h4>
+              </div>
+            </div>
+
+            <!-- 毛玻璃 hover overlay -->
+            <div class="glass-overlay d-flex justify-content-center align-items-center">
+              <span class="text-light fs-md-2 fs-5">
+                我要認養
+                <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="ms-2">
+                  <path d="M0.999999 1.5L8 8.5L1 15.5" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
+            <!-- 毛玻璃 hover overlay -->
+          </div>
+        </div>
+        <!-- card 2 寶貝pet -->
+        <!-- card 2 寶貝pet -->
+        <div class="col-lg-4 col-8 mb-md-5">
+          <div class="card-pet-radius shadow overflow-auto position-relative glass-card">
+            <img src="/assets/images/orange cats 1.jpg" class="card-img-top" alt="寶貝卡片圖片">
+            <div class="card-body px-2 py-4 px-md-5 py-md-7 bg-primary-100">
+              <div class="d-flex align-items-center">
+                <h3 class="card-title text-gray-900 mb-md-2 card-title-truncate">阿橘橘</h3>
+                <span class="fs-6 badge bg-primary px-4 py-1  ms-auto rounded-3 fw-normal">可認養</span>
+              </div>
+              <p class="mb-md-4 mb-2 text-primary">喵了個咪中途之家</p>
+              <p class="card-text mb-md-5 mb-4 card-text-truncate">阿橘橘在意外中失去了一條腿，卻從不氣餒，還總是精神滿滿地奔跑玩耍，彷彿在說：三條腿也可以</p>
+
+              <div class="d-flex flex-column flex-md-row  align-items-start align-items-md-center">
+                <div>
+                  <span
+                    class="badge rounded-3 text-bg-primary-400 text-secondary fw-normal fs-8 fs-md-6 px-2 py-1  mb-1  me-1 me-md-2">新北市</span>
+                  <span
+                    class="badge rounded-3 text-bg-primary-400 text-secondary fw-normal fs-8 fs-md-6 px-2 py-1 mb-1  me-1 me-md-2">已結紮</span>
+                  <span
+                    class="badge rounded-3 fw-normal  fs-8 fs-md-6 text-bg-primary-400 text-secondary px-2 py-1">醫療協助</span>
+                </div>
+                <h4 class="card-price fs-lg-2 text-primary ms-md-auto mt-2 mt-md-0">＄50/次</h4>
+              </div>
+            </div>
+
+            <!-- 毛玻璃 hover overlay -->
+            <div class="glass-overlay d-flex justify-content-center align-items-center">
+              <span class="text-light fs-md-2 fs-5">
+                我要認養
+                <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="ms-2">
+                  <path d="M0.999999 1.5L8 8.5L1 15.5" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
+            <!-- 毛玻璃 hover overlay -->
+          </div>
+        </div>
+        <!-- card 2 寶貝pet -->
+        <!-- card 2 寶貝pet -->
+        <div class="col-lg-4 col-8 mb-md-5">
+          <div class="card-pet-radius shadow overflow-auto position-relative glass-card">
+            <img src="/assets/images/orange cats 1.jpg" class="card-img-top" alt="寶貝卡片圖片">
+            <div class="card-body px-2 py-4 px-md-5 py-md-7 bg-primary-100">
+              <div class="d-flex align-items-center">
+                <h3 class="card-title text-gray-900 mb-md-2 card-title-truncate">阿橘橘</h3>
+                <span class="fs-6 badge bg-primary px-4 py-1  ms-auto rounded-3 fw-normal">可認養</span>
+              </div>
+              <p class="mb-md-4 mb-2 text-primary">喵了個咪中途之家</p>
+              <p class="card-text mb-md-5 mb-4 card-text-truncate">阿橘橘在意外中失去了一條腿，卻從不氣餒，還總是精神滿滿地奔跑玩耍，彷彿在說：三條腿也可以</p>
+
+              <div class="d-flex flex-column flex-md-row  align-items-start align-items-md-center">
+                <div>
+                  <span
+                    class="badge rounded-3 text-bg-primary-400 text-secondary fw-normal fs-8 fs-md-6 px-2 py-1  mb-1  me-1 me-md-2">新北市</span>
+                  <span
+                    class="badge rounded-3 text-bg-primary-400 text-secondary fw-normal fs-8 fs-md-6 px-2 py-1 mb-1  me-1 me-md-2">已結紮</span>
+                  <span
+                    class="badge rounded-3 fw-normal  fs-8 fs-md-6 text-bg-primary-400 text-secondary px-2 py-1">醫療協助</span>
+                </div>
+                <h4 class="card-price fs-lg-2 text-primary ms-md-auto mt-2 mt-md-0">＄50/次</h4>
+              </div>
+            </div>
+
+            <!-- 毛玻璃 hover overlay -->
+            <div class="glass-overlay d-flex justify-content-center align-items-center">
+              <span class="text-light fs-md-2 fs-5">
+                我要認養
+                <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="ms-2">
+                  <path d="M0.999999 1.5L8 8.5L1 15.5" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
+            <!-- 毛玻璃 hover overlay -->
+          </div>
+        </div>
+        <!-- card 2 寶貝pet -->
+        <!-- card 2 寶貝pet -->
+        <div class="col-lg-4 col-8 mb-md-5">
+          <div class="card-pet-radius shadow overflow-auto position-relative glass-card">
+            <img src="/assets/images/orange cats 1.jpg" class="card-img-top" alt="寶貝卡片圖片">
+            <div class="card-body px-2 py-4 px-md-5 py-md-7 bg-primary-100">
+              <div class="d-flex align-items-center">
+                <h3 class="card-title text-gray-900 mb-md-2 card-title-truncate">阿橘橘</h3>
+                <span class="fs-6 badge bg-primary px-4 py-1  ms-auto rounded-3 fw-normal">可認養</span>
+              </div>
+              <p class="mb-md-4 mb-2 text-primary">喵了個咪中途之家</p>
+              <p class="card-text mb-md-5 mb-4 card-text-truncate">阿橘橘在意外中失去了一條腿，卻從不氣餒，還總是精神滿滿地奔跑玩耍，彷彿在說：三條腿也可以</p>
+
+              <div class="d-flex flex-column flex-md-row  align-items-start align-items-md-center">
+                <div>
+                  <span
+                    class="badge rounded-3 text-bg-primary-400 text-secondary fw-normal fs-8 fs-md-6 px-2 py-1  mb-1  me-1 me-md-2">新北市</span>
+                  <span
+                    class="badge rounded-3 text-bg-primary-400 text-secondary fw-normal fs-8 fs-md-6 px-2 py-1 mb-1  me-1 me-md-2">已結紮</span>
+                  <span
+                    class="badge rounded-3 fw-normal  fs-8 fs-md-6 text-bg-primary-400 text-secondary px-2 py-1">醫療協助</span>
+                </div>
+                <h4 class="card-price fs-lg-2 text-primary ms-md-auto mt-2 mt-md-0">＄50/次</h4>
+              </div>
+            </div>
+
+            <!-- 毛玻璃 hover overlay -->
+            <div class="glass-overlay d-flex justify-content-center align-items-center">
+              <span class="text-light fs-md-2 fs-5">
+                我要認養
+                <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="ms-2">
+                  <path d="M0.999999 1.5L8 8.5L1 15.5" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
+            <!-- 毛玻璃 hover overlay -->
+          </div>
+        </div>
+        <!-- card 2 寶貝pet -->
+        <!-- card 2 寶貝pet -->
+        <div class="col-lg-4 col-8 mb-md-5">
+          <div class="card-pet-radius shadow overflow-auto position-relative glass-card">
+            <img src="/assets/images/orange cats 1.jpg" class="card-img-top" alt="寶貝卡片圖片">
+            <div class="card-body px-2 py-4 px-md-5 py-md-7 bg-primary-100">
+              <div class="d-flex align-items-center">
+                <h3 class="card-title text-gray-900 mb-md-2 card-title-truncate">阿橘橘</h3>
+                <span class="fs-6 badge bg-primary px-4 py-1  ms-auto rounded-3 fw-normal">可認養</span>
+              </div>
+              <p class="mb-md-4 mb-2 text-primary">喵了個咪中途之家</p>
+              <p class="card-text mb-md-5 mb-4 card-text-truncate">阿橘橘在意外中失去了一條腿，卻從不氣餒，還總是精神滿滿地奔跑玩耍，彷彿在說：三條腿也可以</p>
+
+              <div class="d-flex flex-column flex-md-row  align-items-start align-items-md-center">
+                <div>
+                  <span
+                    class="badge rounded-3 text-bg-primary-400 text-secondary fw-normal fs-8 fs-md-6 px-2 py-1  mb-1  me-1 me-md-2">新北市</span>
+                  <span
+                    class="badge rounded-3 text-bg-primary-400 text-secondary fw-normal fs-8 fs-md-6 px-2 py-1 mb-1  me-1 me-md-2">已結紮</span>
+                  <span
+                    class="badge rounded-3 fw-normal  fs-8 fs-md-6 text-bg-primary-400 text-secondary px-2 py-1">醫療協助</span>
+                </div>
+                <h4 class="card-price fs-lg-2 text-primary ms-md-auto mt-2 mt-md-0">＄50/次</h4>
+              </div>
+            </div>
+
+            <!-- 毛玻璃 hover overlay -->
+            <div class="glass-overlay d-flex justify-content-center align-items-center">
+              <span class="text-light fs-md-2 fs-5">
+                我要認養
+                <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="ms-2">
+                  <path d="M0.999999 1.5L8 8.5L1 15.5" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
+            <!-- 毛玻璃 hover overlay -->
+          </div>
+        </div>
+        <!-- card 2 寶貝pet -->
+        <!-- card 2 寶貝pet -->
+        <div class="col-lg-4 col-8 mb-md-5">
+          <div class="card-pet-radius shadow overflow-auto position-relative glass-card">
+            <img src="/assets/images/orange cats 1.jpg" class="card-img-top" alt="寶貝卡片圖片">
+            <div class="card-body px-2 py-4 px-md-5 py-md-7 bg-primary-100">
+              <div class="d-flex align-items-center">
+                <h3 class="card-title text-gray-900 mb-md-2 card-title-truncate">阿橘橘</h3>
+                <span class="fs-6 badge bg-primary px-4 py-1  ms-auto rounded-3 fw-normal">可認養</span>
+              </div>
+              <p class="mb-md-4 mb-2 text-primary">喵了個咪中途之家</p>
+              <p class="card-text mb-md-5 mb-4 card-text-truncate">阿橘橘在意外中失去了一條腿，卻從不氣餒，還總是精神滿滿地奔跑玩耍，彷彿在說：三條腿也可以</p>
+
+              <div class="d-flex flex-column flex-md-row  align-items-start align-items-md-center">
+                <div>
+                  <span
+                    class="badge rounded-3 text-bg-primary-400 text-secondary fw-normal fs-8 fs-md-6 px-2 py-1  mb-1  me-1 me-md-2">新北市</span>
+                  <span
+                    class="badge rounded-3 text-bg-primary-400 text-secondary fw-normal fs-8 fs-md-6 px-2 py-1 mb-1  me-1 me-md-2">已結紮</span>
+                  <span
+                    class="badge rounded-3 fw-normal  fs-8 fs-md-6 text-bg-primary-400 text-secondary px-2 py-1">醫療協助</span>
+                </div>
+                <h4 class="card-price fs-lg-2 text-primary ms-md-auto mt-2 mt-md-0">＄50/次</h4>
+              </div>
+            </div>
+
+            <!-- 毛玻璃 hover overlay -->
+            <div class="glass-overlay d-flex justify-content-center align-items-center">
+              <span class="text-light fs-md-2 fs-5">
+                我要認養
+                <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="ms-2">
+                  <path d="M0.999999 1.5L8 8.5L1 15.5" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
+            <!-- 毛玻璃 hover overlay -->
+          </div>
+        </div>
+        <!-- card 2 寶貝pet -->
+        <!-- card 2 寶貝pet -->
+        <div class="col-lg-4 col-8 mb-md-5">
+          <div class="card-pet-radius shadow overflow-auto position-relative glass-card">
+            <img src="/assets/images/orange cats 1.jpg" class="card-img-top" alt="寶貝卡片圖片">
+            <div class="card-body px-2 py-4 px-md-5 py-md-7 bg-primary-100">
+              <div class="d-flex align-items-center">
+                <h3 class="card-title text-gray-900 mb-md-2 card-title-truncate">阿橘橘</h3>
+                <span class="fs-6 badge bg-primary px-4 py-1  ms-auto rounded-3 fw-normal">可認養</span>
+              </div>
+              <p class="mb-md-4 mb-2 text-primary">喵了個咪中途之家</p>
+              <p class="card-text mb-md-5 mb-4 card-text-truncate">阿橘橘在意外中失去了一條腿，卻從不氣餒，還總是精神滿滿地奔跑玩耍，彷彿在說：三條腿也可以</p>
+
+              <div class="d-flex flex-column flex-md-row  align-items-start align-items-md-center">
+                <div>
+                  <span
+                    class="badge rounded-3 text-bg-primary-400 text-secondary fw-normal fs-8 fs-md-6 px-2 py-1  mb-1  me-1 me-md-2">新北市</span>
+                  <span
+                    class="badge rounded-3 text-bg-primary-400 text-secondary fw-normal fs-8 fs-md-6 px-2 py-1 mb-1  me-1 me-md-2">已結紮</span>
+                  <span
+                    class="badge rounded-3 fw-normal  fs-8 fs-md-6 text-bg-primary-400 text-secondary px-2 py-1">醫療協助</span>
+                </div>
+                <h4 class="card-price fs-lg-2 text-primary ms-md-auto mt-2 mt-md-0">＄50/次</h4>
+              </div>
+            </div>
+
+            <!-- 毛玻璃 hover overlay -->
+            <div class="glass-overlay d-flex justify-content-center align-items-center">
+              <span class="text-light fs-md-2 fs-5">
+                我要認養
+                <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="ms-2">
+                  <path d="M0.999999 1.5L8 8.5L1 15.5" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
+            <!-- 毛玻璃 hover overlay -->
+          </div>
+        </div>
+        <!-- card 2 寶貝pet -->
+        <!-- card 2 寶貝pet -->
+        <div class="col-lg-4 col-8 mb-md-5">
+          <div class="card-pet-radius shadow overflow-auto position-relative glass-card">
+            <img src="/assets/images/orange cats 1.jpg" class="card-img-top" alt="寶貝卡片圖片">
+            <div class="card-body px-2 py-4 px-md-5 py-md-7 bg-primary-100">
+              <div class="d-flex align-items-center">
+                <h3 class="card-title text-gray-900 mb-md-2 card-title-truncate">阿橘橘</h3>
+                <span class="fs-6 badge bg-primary px-4 py-1  ms-auto rounded-3 fw-normal">可認養</span>
+              </div>
+              <p class="mb-md-4 mb-2 text-primary">喵了個咪中途之家</p>
+              <p class="card-text mb-md-5 mb-4 card-text-truncate">阿橘橘在意外中失去了一條腿，卻從不氣餒，還總是精神滿滿地奔跑玩耍，彷彿在說：三條腿也可以</p>
+
+              <div class="d-flex flex-column flex-md-row  align-items-start align-items-md-center">
+                <div>
+                  <span
+                    class="badge rounded-3 text-bg-primary-400 text-secondary fw-normal fs-8 fs-md-6 px-2 py-1  mb-1  me-1 me-md-2">新北市</span>
+                  <span
+                    class="badge rounded-3 text-bg-primary-400 text-secondary fw-normal fs-8 fs-md-6 px-2 py-1 mb-1  me-1 me-md-2">已結紮</span>
+                  <span
+                    class="badge rounded-3 fw-normal  fs-8 fs-md-6 text-bg-primary-400 text-secondary px-2 py-1">醫療協助</span>
+                </div>
+                <h4 class="card-price fs-lg-2 text-primary ms-md-auto mt-2 mt-md-0">＄50/次</h4>
+              </div>
+            </div>
+
+            <!-- 毛玻璃 hover overlay -->
+            <div class="glass-overlay d-flex justify-content-center align-items-center">
+              <span class="text-light fs-md-2 fs-5">
+                我要認養
+                <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="ms-2">
+                  <path d="M0.999999 1.5L8 8.5L1 15.5" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
+            <!-- 毛玻璃 hover overlay -->
+          </div>
+        </div>
+        <!-- card 2 寶貝pet -->
+
+      </div><!--row-->
+
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center mb-0">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item active"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+          <li class="page-item"><a class="page-link" href="#">7</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </div><!--container-->
+
+
+
+
+
+    <%- include('./layout/footer'); -%>
+      <%- include('./layout/scroll-top-button'); -%>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+          crossorigin="anonymous"></script>
+        <script type="module" src="../main.js"></script>
+</body>
+
+</html>
