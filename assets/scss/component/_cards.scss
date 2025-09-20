@@ -1,38 +1,62 @@
-
-
-
-
 // 卡片文字超過省略設定
 /* 單行截斷 */
 .card-title-truncate {
-  white-space: nowrap;       /* 不換行 */
-  overflow: hidden;          /* 超過部分隱藏 */
-  text-overflow: ellipsis;   /* 顯示省略號 */
+  white-space: nowrap;
+  /* 不換行 */
+  overflow: hidden;
+  /* 超過部分隱藏 */
+  text-overflow: ellipsis;
+  /* 顯示省略號 */
 }
 
 /* 多行截斷（兩行） */
 .card-text-truncate {
-  display: -webkit-box;           /* 必須 */
-  -webkit-box-orient: vertical;   /* 必須 */
-  -webkit-line-clamp: 2;          /* 限制兩行 */
-  line-clamp: 2;                   /* 標準屬性 */
-  overflow: hidden;               /* 超過隱藏 */
-  text-overflow: ellipsis;        /* 超過部分顯示… */
+  display: -webkit-box;
+  /* 必須 */
+  -webkit-box-orient: vertical;
+  /* 必須 */
+  -webkit-line-clamp: 2;
+  /* 限制兩行 */
+  line-clamp: 2;
+  /* 標準屬性 */
+  overflow: hidden;
+  /* 超過隱藏 */
+  text-overflow: ellipsis;
+  /* 超過部分顯示… */
 }
 
 
 
 
 
-/* 寶貝卡片的圓角設定 */
-.card-pet-radius {
+/* 寶貝卡片的設定-圓角 */
+.card-pet {
   border-radius: 0 6rem 2rem 2rem;
+  background-color: var(--bs-primary-100);
 }
 
 @media(min-width:992px) {
-  .card-pet-radius {
+  .card-pet {
     border-radius: 0 6rem 3rem 3rem;
   }
+}
+
+/* 寶貝卡片的設定-hover */
+.card-pet:hover {
+  border: 1px solid var(--bs-primary-500);
+  background-color: var(--bs-primary-300);
+}
+
+/* 寶貝卡片左上愛心設定 */
+.card-heartbtn-position {
+  top: 1rem;
+  left: 1rem;
+}
+
+
+
+.card-agency:hover {
+  background-color: var(--bs-primary-100);
 }
 
 
@@ -58,6 +82,7 @@
     font-weight: 700;
   }
 }
+
 
 
 
@@ -92,10 +117,4 @@
   /* hover 顯示 */
   backdrop-filter: blur(8px);
   /* hover 模糊更明顯 */
-}
-
-
-.card-heartbtn-position{
-  top: 1rem;
-  left: 1rem;
 }

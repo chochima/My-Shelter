@@ -12,44 +12,42 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
   <title>寶貝篩選</title>
+
   <style>
-    .page-link {
-      border: none !important;
-      /* color: var(--primary); */
-    }
-
-    .page-link:hover {
-      background-color: red;
-      color: red;
-      /* 改成品牌色 */
-    }
-
-    .page-item {
-      color: red;
-    }
-
-    .page-item:hover {
-      background-color: red;
-      color: red;
-      /* 改成品牌色 */
-    }
 
   </style>
+
 </head>
 
 <body>
   <%- include('./layout/header'); -%>
 
-    <div class="container py-80">
+    <div class="container pt-56 pb-80">
 
-      <img src="/assets/images/petlist_banner.png" alt="banner" class="mb-56">
+      <img src="/assets/images/petlist_banner.png" alt="banner" class="mb-56" style="max-height: 432px;">
 
-      <div class="row">
-        <!-- card 2 寶貝pet -->
+      <div class="mb-56">下拉式選單</div>
+      <div class="row mb-56">
+
+
         <div class="col-lg-4 col-8 mb-md-5">
-          <div class="card-pet-radius shadow overflow-auto position-relative glass-card">
+          <!-- card 2 寶貝pet -->
+          <div class="card-pet shadow overflow-auto position-relative">
+
+            <!-- 愛心按鈕 -->
+            <button type="button" class="btn p-0 border-0 bg-transparent position-absolute card-heartbtn-position">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.9702 7.6665C23.4937 7.66654 25.6393 9.81907 25.6665 12.5435C25.6915 15.0994 24.8104 17.4861 22.8823 19.8735C21.9844 20.9847 20.312 22.8256 16.356 25.5532L16.354 25.5552C16.2481 25.6285 16.1245 25.6654 15.9995 25.6655C15.8751 25.665 15.7524 25.6273 15.647 25.5542L15.645 25.5532L14.9292 25.0522C11.4817 22.598 9.95944 20.9143 9.11768 19.8726C7.30935 17.6341 6.42342 15.3967 6.34033 13.02L6.33447 12.5425C6.36176 9.81887 8.5064 7.66672 11.0298 7.6665C12.8741 7.6665 14.1864 8.71676 15.0044 9.68311L15.0083 9.68701C15.13 9.82917 15.2814 9.94464 15.4526 10.0239C15.6239 10.1032 15.811 10.144 16.0005 10.144C16.19 10.144 16.377 10.1033 16.5483 10.0239C16.7196 9.94457 16.871 9.82927 16.9927 9.68701L16.9956 9.68213C17.8132 8.71541 19.1257 7.6665 20.9702 7.6665Z"
+                  fill="white" stroke="#7C6952" stroke-width="2" />
+              </svg>
+            </button>
+            <!-- 愛心按鈕 -->
+
             <img src="/assets/images/orange cats 1.jpg" class="card-img-top" alt="寶貝卡片圖片">
-            <div class="card-body px-2 py-4 px-md-5 py-md-7 bg-primary-100">
+
+            <!-- card body -->
+            <div class="card-body px-2 py-4 px-md-5 py-md-7 ">
               <div class="d-flex align-items-center">
                 <h3 class="card-title text-gray-900 mb-md-2 card-title-truncate">阿橘橘</h3>
                 <span class="fs-6 badge bg-primary px-4 py-1  ms-auto rounded-3 fw-normal">可認養</span>
@@ -68,28 +66,28 @@
                 </div>
                 <h4 class="card-price fs-lg-2 text-primary ms-md-auto mt-2 mt-md-0">＄50/次</h4>
               </div>
-            </div>
-
-            <!-- 毛玻璃 hover overlay -->
-            <div class="glass-overlay d-flex justify-content-center align-items-center">
-              <span class="text-light fs-md-2 fs-5">
-                我要認養
-                <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  class="ms-2">
-                  <path d="M0.999999 1.5L8 8.5L1 15.5" stroke="white" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </span>
-            </div>
-            <!-- 毛玻璃 hover overlay -->
+            </div> <!-- card body -->
           </div>
+          <!-- card 2 寶貝pet -->
         </div>
-        <!-- card 2 寶貝pet -->
-        <!-- card 2 寶貝pet -->
         <div class="col-lg-4 col-8 mb-md-5">
-          <div class="card-pet-radius shadow overflow-auto position-relative glass-card">
+          <!-- card 2 寶貝pet -->
+          <div class="card-pet shadow overflow-auto position-relative">
+
+            <!-- 愛心按鈕 -->
+            <button type="button" class="btn p-0 border-0 bg-transparent position-absolute card-heartbtn-position">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.9702 7.6665C23.4937 7.66654 25.6393 9.81907 25.6665 12.5435C25.6915 15.0994 24.8104 17.4861 22.8823 19.8735C21.9844 20.9847 20.312 22.8256 16.356 25.5532L16.354 25.5552C16.2481 25.6285 16.1245 25.6654 15.9995 25.6655C15.8751 25.665 15.7524 25.6273 15.647 25.5542L15.645 25.5532L14.9292 25.0522C11.4817 22.598 9.95944 20.9143 9.11768 19.8726C7.30935 17.6341 6.42342 15.3967 6.34033 13.02L6.33447 12.5425C6.36176 9.81887 8.5064 7.66672 11.0298 7.6665C12.8741 7.6665 14.1864 8.71676 15.0044 9.68311L15.0083 9.68701C15.13 9.82917 15.2814 9.94464 15.4526 10.0239C15.6239 10.1032 15.811 10.144 16.0005 10.144C16.19 10.144 16.377 10.1033 16.5483 10.0239C16.7196 9.94457 16.871 9.82927 16.9927 9.68701L16.9956 9.68213C17.8132 8.71541 19.1257 7.6665 20.9702 7.6665Z"
+                  fill="white" stroke="#7C6952" stroke-width="2" />
+              </svg>
+            </button>
+            <!-- 愛心按鈕 -->
+
             <img src="/assets/images/orange cats 1.jpg" class="card-img-top" alt="寶貝卡片圖片">
-            <div class="card-body px-2 py-4 px-md-5 py-md-7 bg-primary-100">
+
+            <!-- card body -->
+            <div class="card-body px-2 py-4 px-md-5 py-md-7 ">
               <div class="d-flex align-items-center">
                 <h3 class="card-title text-gray-900 mb-md-2 card-title-truncate">阿橘橘</h3>
                 <span class="fs-6 badge bg-primary px-4 py-1  ms-auto rounded-3 fw-normal">可認養</span>
@@ -108,28 +106,28 @@
                 </div>
                 <h4 class="card-price fs-lg-2 text-primary ms-md-auto mt-2 mt-md-0">＄50/次</h4>
               </div>
-            </div>
-
-            <!-- 毛玻璃 hover overlay -->
-            <div class="glass-overlay d-flex justify-content-center align-items-center">
-              <span class="text-light fs-md-2 fs-5">
-                我要認養
-                <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  class="ms-2">
-                  <path d="M0.999999 1.5L8 8.5L1 15.5" stroke="white" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </span>
-            </div>
-            <!-- 毛玻璃 hover overlay -->
+            </div> <!-- card body -->
           </div>
+          <!-- card 2 寶貝pet -->
         </div>
-        <!-- card 2 寶貝pet -->
-        <!-- card 2 寶貝pet -->
         <div class="col-lg-4 col-8 mb-md-5">
-          <div class="card-pet-radius shadow overflow-auto position-relative glass-card">
+          <!-- card 2 寶貝pet -->
+          <div class="card-pet shadow overflow-auto position-relative">
+
+            <!-- 愛心按鈕 -->
+            <button type="button" class="btn p-0 border-0 bg-transparent position-absolute card-heartbtn-position">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.9702 7.6665C23.4937 7.66654 25.6393 9.81907 25.6665 12.5435C25.6915 15.0994 24.8104 17.4861 22.8823 19.8735C21.9844 20.9847 20.312 22.8256 16.356 25.5532L16.354 25.5552C16.2481 25.6285 16.1245 25.6654 15.9995 25.6655C15.8751 25.665 15.7524 25.6273 15.647 25.5542L15.645 25.5532L14.9292 25.0522C11.4817 22.598 9.95944 20.9143 9.11768 19.8726C7.30935 17.6341 6.42342 15.3967 6.34033 13.02L6.33447 12.5425C6.36176 9.81887 8.5064 7.66672 11.0298 7.6665C12.8741 7.6665 14.1864 8.71676 15.0044 9.68311L15.0083 9.68701C15.13 9.82917 15.2814 9.94464 15.4526 10.0239C15.6239 10.1032 15.811 10.144 16.0005 10.144C16.19 10.144 16.377 10.1033 16.5483 10.0239C16.7196 9.94457 16.871 9.82927 16.9927 9.68701L16.9956 9.68213C17.8132 8.71541 19.1257 7.6665 20.9702 7.6665Z"
+                  fill="white" stroke="#7C6952" stroke-width="2" />
+              </svg>
+            </button>
+            <!-- 愛心按鈕 -->
+
             <img src="/assets/images/orange cats 1.jpg" class="card-img-top" alt="寶貝卡片圖片">
-            <div class="card-body px-2 py-4 px-md-5 py-md-7 bg-primary-100">
+
+            <!-- card body -->
+            <div class="card-body px-2 py-4 px-md-5 py-md-7 ">
               <div class="d-flex align-items-center">
                 <h3 class="card-title text-gray-900 mb-md-2 card-title-truncate">阿橘橘</h3>
                 <span class="fs-6 badge bg-primary px-4 py-1  ms-auto rounded-3 fw-normal">可認養</span>
@@ -148,28 +146,29 @@
                 </div>
                 <h4 class="card-price fs-lg-2 text-primary ms-md-auto mt-2 mt-md-0">＄50/次</h4>
               </div>
-            </div>
-
-            <!-- 毛玻璃 hover overlay -->
-            <div class="glass-overlay d-flex justify-content-center align-items-center">
-              <span class="text-light fs-md-2 fs-5">
-                我要認養
-                <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  class="ms-2">
-                  <path d="M0.999999 1.5L8 8.5L1 15.5" stroke="white" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </span>
-            </div>
-            <!-- 毛玻璃 hover overlay -->
+            </div> <!-- card body -->
           </div>
+          <!-- card 2 寶貝pet -->
         </div>
-        <!-- card 2 寶貝pet -->
-        <!-- card 2 寶貝pet -->
+
         <div class="col-lg-4 col-8 mb-md-5">
-          <div class="card-pet-radius shadow overflow-auto position-relative glass-card">
+          <!-- card 2 寶貝pet -->
+          <div class="card-pet shadow overflow-auto position-relative">
+
+            <!-- 愛心按鈕 -->
+            <button type="button" class="btn p-0 border-0 bg-transparent position-absolute card-heartbtn-position">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.9702 7.6665C23.4937 7.66654 25.6393 9.81907 25.6665 12.5435C25.6915 15.0994 24.8104 17.4861 22.8823 19.8735C21.9844 20.9847 20.312 22.8256 16.356 25.5532L16.354 25.5552C16.2481 25.6285 16.1245 25.6654 15.9995 25.6655C15.8751 25.665 15.7524 25.6273 15.647 25.5542L15.645 25.5532L14.9292 25.0522C11.4817 22.598 9.95944 20.9143 9.11768 19.8726C7.30935 17.6341 6.42342 15.3967 6.34033 13.02L6.33447 12.5425C6.36176 9.81887 8.5064 7.66672 11.0298 7.6665C12.8741 7.6665 14.1864 8.71676 15.0044 9.68311L15.0083 9.68701C15.13 9.82917 15.2814 9.94464 15.4526 10.0239C15.6239 10.1032 15.811 10.144 16.0005 10.144C16.19 10.144 16.377 10.1033 16.5483 10.0239C16.7196 9.94457 16.871 9.82927 16.9927 9.68701L16.9956 9.68213C17.8132 8.71541 19.1257 7.6665 20.9702 7.6665Z"
+                  fill="white" stroke="#7C6952" stroke-width="2" />
+              </svg>
+            </button>
+            <!-- 愛心按鈕 -->
+
             <img src="/assets/images/orange cats 1.jpg" class="card-img-top" alt="寶貝卡片圖片">
-            <div class="card-body px-2 py-4 px-md-5 py-md-7 bg-primary-100">
+
+            <!-- card body -->
+            <div class="card-body px-2 py-4 px-md-5 py-md-7 ">
               <div class="d-flex align-items-center">
                 <h3 class="card-title text-gray-900 mb-md-2 card-title-truncate">阿橘橘</h3>
                 <span class="fs-6 badge bg-primary px-4 py-1  ms-auto rounded-3 fw-normal">可認養</span>
@@ -188,28 +187,28 @@
                 </div>
                 <h4 class="card-price fs-lg-2 text-primary ms-md-auto mt-2 mt-md-0">＄50/次</h4>
               </div>
-            </div>
-
-            <!-- 毛玻璃 hover overlay -->
-            <div class="glass-overlay d-flex justify-content-center align-items-center">
-              <span class="text-light fs-md-2 fs-5">
-                我要認養
-                <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  class="ms-2">
-                  <path d="M0.999999 1.5L8 8.5L1 15.5" stroke="white" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </span>
-            </div>
-            <!-- 毛玻璃 hover overlay -->
+            </div> <!-- card body -->
           </div>
+          <!-- card 2 寶貝pet -->
         </div>
-        <!-- card 2 寶貝pet -->
-        <!-- card 2 寶貝pet -->
         <div class="col-lg-4 col-8 mb-md-5">
-          <div class="card-pet-radius shadow overflow-auto position-relative glass-card">
+          <!-- card 2 寶貝pet -->
+          <div class="card-pet shadow overflow-auto position-relative">
+
+            <!-- 愛心按鈕 -->
+            <button type="button" class="btn p-0 border-0 bg-transparent position-absolute card-heartbtn-position">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.9702 7.6665C23.4937 7.66654 25.6393 9.81907 25.6665 12.5435C25.6915 15.0994 24.8104 17.4861 22.8823 19.8735C21.9844 20.9847 20.312 22.8256 16.356 25.5532L16.354 25.5552C16.2481 25.6285 16.1245 25.6654 15.9995 25.6655C15.8751 25.665 15.7524 25.6273 15.647 25.5542L15.645 25.5532L14.9292 25.0522C11.4817 22.598 9.95944 20.9143 9.11768 19.8726C7.30935 17.6341 6.42342 15.3967 6.34033 13.02L6.33447 12.5425C6.36176 9.81887 8.5064 7.66672 11.0298 7.6665C12.8741 7.6665 14.1864 8.71676 15.0044 9.68311L15.0083 9.68701C15.13 9.82917 15.2814 9.94464 15.4526 10.0239C15.6239 10.1032 15.811 10.144 16.0005 10.144C16.19 10.144 16.377 10.1033 16.5483 10.0239C16.7196 9.94457 16.871 9.82927 16.9927 9.68701L16.9956 9.68213C17.8132 8.71541 19.1257 7.6665 20.9702 7.6665Z"
+                  fill="white" stroke="#7C6952" stroke-width="2" />
+              </svg>
+            </button>
+            <!-- 愛心按鈕 -->
+
             <img src="/assets/images/orange cats 1.jpg" class="card-img-top" alt="寶貝卡片圖片">
-            <div class="card-body px-2 py-4 px-md-5 py-md-7 bg-primary-100">
+
+            <!-- card body -->
+            <div class="card-body px-2 py-4 px-md-5 py-md-7 ">
               <div class="d-flex align-items-center">
                 <h3 class="card-title text-gray-900 mb-md-2 card-title-truncate">阿橘橘</h3>
                 <span class="fs-6 badge bg-primary px-4 py-1  ms-auto rounded-3 fw-normal">可認養</span>
@@ -228,28 +227,28 @@
                 </div>
                 <h4 class="card-price fs-lg-2 text-primary ms-md-auto mt-2 mt-md-0">＄50/次</h4>
               </div>
-            </div>
-
-            <!-- 毛玻璃 hover overlay -->
-            <div class="glass-overlay d-flex justify-content-center align-items-center">
-              <span class="text-light fs-md-2 fs-5">
-                我要認養
-                <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  class="ms-2">
-                  <path d="M0.999999 1.5L8 8.5L1 15.5" stroke="white" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </span>
-            </div>
-            <!-- 毛玻璃 hover overlay -->
+            </div> <!-- card body -->
           </div>
+          <!-- card 2 寶貝pet -->
         </div>
-        <!-- card 2 寶貝pet -->
-        <!-- card 2 寶貝pet -->
         <div class="col-lg-4 col-8 mb-md-5">
-          <div class="card-pet-radius shadow overflow-auto position-relative glass-card">
+          <!-- card 2 寶貝pet -->
+          <div class="card-pet shadow overflow-auto position-relative">
+
+            <!-- 愛心按鈕 -->
+            <button type="button" class="btn p-0 border-0 bg-transparent position-absolute card-heartbtn-position">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.9702 7.6665C23.4937 7.66654 25.6393 9.81907 25.6665 12.5435C25.6915 15.0994 24.8104 17.4861 22.8823 19.8735C21.9844 20.9847 20.312 22.8256 16.356 25.5532L16.354 25.5552C16.2481 25.6285 16.1245 25.6654 15.9995 25.6655C15.8751 25.665 15.7524 25.6273 15.647 25.5542L15.645 25.5532L14.9292 25.0522C11.4817 22.598 9.95944 20.9143 9.11768 19.8726C7.30935 17.6341 6.42342 15.3967 6.34033 13.02L6.33447 12.5425C6.36176 9.81887 8.5064 7.66672 11.0298 7.6665C12.8741 7.6665 14.1864 8.71676 15.0044 9.68311L15.0083 9.68701C15.13 9.82917 15.2814 9.94464 15.4526 10.0239C15.6239 10.1032 15.811 10.144 16.0005 10.144C16.19 10.144 16.377 10.1033 16.5483 10.0239C16.7196 9.94457 16.871 9.82927 16.9927 9.68701L16.9956 9.68213C17.8132 8.71541 19.1257 7.6665 20.9702 7.6665Z"
+                  fill="white" stroke="#7C6952" stroke-width="2" />
+              </svg>
+            </button>
+            <!-- 愛心按鈕 -->
+
             <img src="/assets/images/orange cats 1.jpg" class="card-img-top" alt="寶貝卡片圖片">
-            <div class="card-body px-2 py-4 px-md-5 py-md-7 bg-primary-100">
+
+            <!-- card body -->
+            <div class="card-body px-2 py-4 px-md-5 py-md-7 ">
               <div class="d-flex align-items-center">
                 <h3 class="card-title text-gray-900 mb-md-2 card-title-truncate">阿橘橘</h3>
                 <span class="fs-6 badge bg-primary px-4 py-1  ms-auto rounded-3 fw-normal">可認養</span>
@@ -268,28 +267,29 @@
                 </div>
                 <h4 class="card-price fs-lg-2 text-primary ms-md-auto mt-2 mt-md-0">＄50/次</h4>
               </div>
-            </div>
-
-            <!-- 毛玻璃 hover overlay -->
-            <div class="glass-overlay d-flex justify-content-center align-items-center">
-              <span class="text-light fs-md-2 fs-5">
-                我要認養
-                <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  class="ms-2">
-                  <path d="M0.999999 1.5L8 8.5L1 15.5" stroke="white" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </span>
-            </div>
-            <!-- 毛玻璃 hover overlay -->
+            </div> <!-- card body -->
           </div>
+          <!-- card 2 寶貝pet -->
         </div>
-        <!-- card 2 寶貝pet -->
-        <!-- card 2 寶貝pet -->
-        <div class="col-lg-4 col-8 mb-md-5">
-          <div class="card-pet-radius shadow overflow-auto position-relative glass-card">
+
+        <div class="col-lg-4 col-8">
+          <!-- card 2 寶貝pet -->
+          <div class="card-pet shadow overflow-auto position-relative">
+
+            <!-- 愛心按鈕 -->
+            <button type="button" class="btn p-0 border-0 bg-transparent position-absolute card-heartbtn-position">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.9702 7.6665C23.4937 7.66654 25.6393 9.81907 25.6665 12.5435C25.6915 15.0994 24.8104 17.4861 22.8823 19.8735C21.9844 20.9847 20.312 22.8256 16.356 25.5532L16.354 25.5552C16.2481 25.6285 16.1245 25.6654 15.9995 25.6655C15.8751 25.665 15.7524 25.6273 15.647 25.5542L15.645 25.5532L14.9292 25.0522C11.4817 22.598 9.95944 20.9143 9.11768 19.8726C7.30935 17.6341 6.42342 15.3967 6.34033 13.02L6.33447 12.5425C6.36176 9.81887 8.5064 7.66672 11.0298 7.6665C12.8741 7.6665 14.1864 8.71676 15.0044 9.68311L15.0083 9.68701C15.13 9.82917 15.2814 9.94464 15.4526 10.0239C15.6239 10.1032 15.811 10.144 16.0005 10.144C16.19 10.144 16.377 10.1033 16.5483 10.0239C16.7196 9.94457 16.871 9.82927 16.9927 9.68701L16.9956 9.68213C17.8132 8.71541 19.1257 7.6665 20.9702 7.6665Z"
+                  fill="white" stroke="#7C6952" stroke-width="2" />
+              </svg>
+            </button>
+            <!-- 愛心按鈕 -->
+
             <img src="/assets/images/orange cats 1.jpg" class="card-img-top" alt="寶貝卡片圖片">
-            <div class="card-body px-2 py-4 px-md-5 py-md-7 bg-primary-100">
+
+            <!-- card body -->
+            <div class="card-body px-2 py-4 px-md-5 py-md-7 ">
               <div class="d-flex align-items-center">
                 <h3 class="card-title text-gray-900 mb-md-2 card-title-truncate">阿橘橘</h3>
                 <span class="fs-6 badge bg-primary px-4 py-1  ms-auto rounded-3 fw-normal">可認養</span>
@@ -308,28 +308,28 @@
                 </div>
                 <h4 class="card-price fs-lg-2 text-primary ms-md-auto mt-2 mt-md-0">＄50/次</h4>
               </div>
-            </div>
-
-            <!-- 毛玻璃 hover overlay -->
-            <div class="glass-overlay d-flex justify-content-center align-items-center">
-              <span class="text-light fs-md-2 fs-5">
-                我要認養
-                <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  class="ms-2">
-                  <path d="M0.999999 1.5L8 8.5L1 15.5" stroke="white" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </span>
-            </div>
-            <!-- 毛玻璃 hover overlay -->
+            </div> <!-- card body -->
           </div>
+          <!-- card 2 寶貝pet -->
         </div>
-        <!-- card 2 寶貝pet -->
-        <!-- card 2 寶貝pet -->
-        <div class="col-lg-4 col-8 mb-md-5">
-          <div class="card-pet-radius shadow overflow-auto position-relative glass-card">
+        <div class="col-lg-4 col-8">
+          <!-- card 2 寶貝pet -->
+          <div class="card-pet shadow overflow-auto position-relative">
+
+            <!-- 愛心按鈕 -->
+            <button type="button" class="btn p-0 border-0 bg-transparent position-absolute card-heartbtn-position">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.9702 7.6665C23.4937 7.66654 25.6393 9.81907 25.6665 12.5435C25.6915 15.0994 24.8104 17.4861 22.8823 19.8735C21.9844 20.9847 20.312 22.8256 16.356 25.5532L16.354 25.5552C16.2481 25.6285 16.1245 25.6654 15.9995 25.6655C15.8751 25.665 15.7524 25.6273 15.647 25.5542L15.645 25.5532L14.9292 25.0522C11.4817 22.598 9.95944 20.9143 9.11768 19.8726C7.30935 17.6341 6.42342 15.3967 6.34033 13.02L6.33447 12.5425C6.36176 9.81887 8.5064 7.66672 11.0298 7.6665C12.8741 7.6665 14.1864 8.71676 15.0044 9.68311L15.0083 9.68701C15.13 9.82917 15.2814 9.94464 15.4526 10.0239C15.6239 10.1032 15.811 10.144 16.0005 10.144C16.19 10.144 16.377 10.1033 16.5483 10.0239C16.7196 9.94457 16.871 9.82927 16.9927 9.68701L16.9956 9.68213C17.8132 8.71541 19.1257 7.6665 20.9702 7.6665Z"
+                  fill="white" stroke="#7C6952" stroke-width="2" />
+              </svg>
+            </button>
+            <!-- 愛心按鈕 -->
+
             <img src="/assets/images/orange cats 1.jpg" class="card-img-top" alt="寶貝卡片圖片">
-            <div class="card-body px-2 py-4 px-md-5 py-md-7 bg-primary-100">
+
+            <!-- card body -->
+            <div class="card-body px-2 py-4 px-md-5 py-md-7 ">
               <div class="d-flex align-items-center">
                 <h3 class="card-title text-gray-900 mb-md-2 card-title-truncate">阿橘橘</h3>
                 <span class="fs-6 badge bg-primary px-4 py-1  ms-auto rounded-3 fw-normal">可認養</span>
@@ -348,28 +348,28 @@
                 </div>
                 <h4 class="card-price fs-lg-2 text-primary ms-md-auto mt-2 mt-md-0">＄50/次</h4>
               </div>
-            </div>
-
-            <!-- 毛玻璃 hover overlay -->
-            <div class="glass-overlay d-flex justify-content-center align-items-center">
-              <span class="text-light fs-md-2 fs-5">
-                我要認養
-                <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  class="ms-2">
-                  <path d="M0.999999 1.5L8 8.5L1 15.5" stroke="white" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </span>
-            </div>
-            <!-- 毛玻璃 hover overlay -->
+            </div> <!-- card body -->
           </div>
+          <!-- card 2 寶貝pet -->
         </div>
-        <!-- card 2 寶貝pet -->
-        <!-- card 2 寶貝pet -->
-        <div class="col-lg-4 col-8 mb-md-5">
-          <div class="card-pet-radius shadow overflow-auto position-relative glass-card">
+        <div class="col-lg-4 col-8">
+          <!-- card 2 寶貝pet -->
+          <div class="card-pet shadow overflow-auto position-relative">
+
+            <!-- 愛心按鈕 -->
+            <button type="button" class="btn p-0 border-0 bg-transparent position-absolute card-heartbtn-position">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.9702 7.6665C23.4937 7.66654 25.6393 9.81907 25.6665 12.5435C25.6915 15.0994 24.8104 17.4861 22.8823 19.8735C21.9844 20.9847 20.312 22.8256 16.356 25.5532L16.354 25.5552C16.2481 25.6285 16.1245 25.6654 15.9995 25.6655C15.8751 25.665 15.7524 25.6273 15.647 25.5542L15.645 25.5532L14.9292 25.0522C11.4817 22.598 9.95944 20.9143 9.11768 19.8726C7.30935 17.6341 6.42342 15.3967 6.34033 13.02L6.33447 12.5425C6.36176 9.81887 8.5064 7.66672 11.0298 7.6665C12.8741 7.6665 14.1864 8.71676 15.0044 9.68311L15.0083 9.68701C15.13 9.82917 15.2814 9.94464 15.4526 10.0239C15.6239 10.1032 15.811 10.144 16.0005 10.144C16.19 10.144 16.377 10.1033 16.5483 10.0239C16.7196 9.94457 16.871 9.82927 16.9927 9.68701L16.9956 9.68213C17.8132 8.71541 19.1257 7.6665 20.9702 7.6665Z"
+                  fill="white" stroke="#7C6952" stroke-width="2" />
+              </svg>
+            </button>
+            <!-- 愛心按鈕 -->
+
             <img src="/assets/images/orange cats 1.jpg" class="card-img-top" alt="寶貝卡片圖片">
-            <div class="card-body px-2 py-4 px-md-5 py-md-7 bg-primary-100">
+
+            <!-- card body -->
+            <div class="card-body px-2 py-4 px-md-5 py-md-7 ">
               <div class="d-flex align-items-center">
                 <h3 class="card-title text-gray-900 mb-md-2 card-title-truncate">阿橘橘</h3>
                 <span class="fs-6 badge bg-primary px-4 py-1  ms-auto rounded-3 fw-normal">可認養</span>
@@ -388,43 +388,28 @@
                 </div>
                 <h4 class="card-price fs-lg-2 text-primary ms-md-auto mt-2 mt-md-0">＄50/次</h4>
               </div>
-            </div>
-
-            <!-- 毛玻璃 hover overlay -->
-            <div class="glass-overlay d-flex justify-content-center align-items-center">
-              <span class="text-light fs-md-2 fs-5">
-                我要認養
-                <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  class="ms-2">
-                  <path d="M0.999999 1.5L8 8.5L1 15.5" stroke="white" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </span>
-            </div>
-            <!-- 毛玻璃 hover overlay -->
+            </div> <!-- card body -->
           </div>
+          <!-- card 2 寶貝pet -->
         </div>
-        <!-- card 2 寶貝pet -->
 
-      </div><!--row-->
 
-      <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-center mb-0">
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-            </a>
+      </div>
+
+
+
+
+      <!-- 分頁 -->
+      <nav aria-label="Page navigation example mb-80">
+        <ul class="pagination justify-content-center">
+          <li class="page-item me-4"><a class="page-link text-primary" href="#"><i class="bi bi-chevron-left"></i></a>
           </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item active"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
-          <li class="page-item"><a class="page-link" href="#">7</a></li>
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-            </a>
-          </li>
+          <li class="page-item me-4 active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item me-4"><a class="page-link" href="#">2</a></li>
+          <li class="page-item me-4"><a class="page-link" href="#">3</a></li>
+          <li class="page-item me-4"><a class="page-link" href="#">...</a></li>
+          <li class="page-item me-4"><a class="page-link" href="#">7</a></li>
+          <li class="page-item"><a class="page-link text-primary" href="#"><i class="bi bi-chevron-right"></i></a></li>
         </ul>
       </nav>
 
