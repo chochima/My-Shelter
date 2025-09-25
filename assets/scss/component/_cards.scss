@@ -26,7 +26,9 @@
 }
 
 
-
+.ratio-3x2 {
+  aspect-ratio: 3 / 2;
+}
 
 
 /* 寶貝卡片的設定-圓角 */
@@ -34,6 +36,10 @@
   border-radius: 0 6rem 2rem 2rem;
   background-color: var(--bs-primary-100);
 }
+
+  .card-pet img{
+    object-fit: cover;
+  }
 
 @media(min-width:992px) {
   .card-pet {
@@ -55,11 +61,11 @@
 
 
 
+
+/* 機構卡片hover設定 */
 .card-agency:hover {
   background-color: var(--bs-primary-100);
 }
-
-
 
 /* 機構卡片左上角help標籤位置設定 */
 .card-helpBadge-position {
