@@ -29,6 +29,64 @@
     .user-left-list:hover {
       background-color: bisque;
     }
+    .order:hover{
+      color: black !important; 
+    }
+    .sm-btn:hover{
+      color: #E7DFD7 !important; 
+      background-color: #887258 !important;
+    }
+  /* 收縮 */
+.content-preview {
+  overflow: hidden;
+  display: -webkit-box;   /* Safari / Chrome 需要 */
+  display: box;           /* 舊版 spec */
+  -webkit-box-orient: vertical;
+  box-orient: vertical;   /* 舊版 spec */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.content-preview.collapsed {
+  -webkit-line-clamp: 1; /* WebKit 瀏覽器 */
+  line-clamp: 1;         /* 標準屬性 */
+}
+
+.content-preview.expanded {
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+}
+
+/* 卡片容器可以上下滑動 */
+.scroll-area {
+  max-height: 300px; /* 你要顯示的高度 */
+  overflow-y: auto;
+  -ms-overflow-style: none;  /* 隱藏 IE scrollbar */
+  scrollbar-width: none;     /* 隱藏 Firefox scrollbar */
+}
+.scroll-area::-webkit-scrollbar {
+  display: none;             /* 隱藏 Chrome / Safari scrollbar */
+}
+
+/* 移除 nav-tabs 預設的邊框 */
+.nav-tabs {
+  border-bottom: none !important;
+}
+
+/* 移除按鈕本身的邊框 */
+.nav-tabs .nav-link {
+  border: none !important;
+  border-radius: 6px;  
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  color: #6c757d; /* 預設文字顏色 */
+}
+
+/* active 狀態樣式 */
+.nav-tabs .nav-link.active {
+  background-color: #887258 !important; /* 你要的主色 */
+  color: #E7DFD7 !important;
+}
   </style>
 </head>
 
@@ -75,7 +133,8 @@
 
             <!-- 右側選單 -->
             <div class="col-md-8">
-              <div class="tab-content user-right-content" id="v-pills-tabContent">
+              <!-- pt-0 -->
+              <div class="tab-content user-right-content pt-md-0" id="v-pills-tabContent">  
 
                 <!-- 個人資訊 -->
                 <div class="tab-pane fade show active" id="v-pills-user" role="tabpanel"
@@ -125,22 +184,418 @@
                 <!-- 通知訊息 -->
                 <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"
                   tabindex="0">
-                  <h4>通知訊息</h4>
-                  <p>這裡放通知訊息。</p>
+                  <div class="bg-white" style="border-radius: 16px;">
+                    <div>
+                      <!-- header -->
+                      <div class="d-flex justify-content-between align-items-center p-5">
+                        <div class="d-flex align-items-center gap-2">
+                          <div class="fs-4 fw-bold text-primary-600">通知訊息</div>
+                          <div><a href="#" class="p-3 text-primary-700 bg-primary-400 text-decoration-none sm-btn fs-8 fw-bold" style="border-radius: 16px;">一鍵已讀</a></div>
+                        </div>
+                        
+                        <div class="d-flex align-items-center gap-2">
+                          <div>通知類別</div>
+                          <div>
+                            <select class="form-select form-select-lg fs-8" aria-label=".form-select-lg example" style="border-radius: 100px;">
+                                 <option selected>全部內容</option>
+                                 <option value="訂單與領養">訂單與領養</option>
+                                 <option value="會員活動與優惠">會員活動與優惠</option>
+                                 <option value="系統與帳號">系統與帳號</option>
+                            </select>
+                          </div>
+                        
+                      </div>
+                    </div>
+                    <!-- content -->
+                    <div class="p-5">
+                      
+                       <div class="py-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="fw-bold fs-4 text-primary-600 lh-sm">📣訂單更新</div>
+                          <div class="fw-medium text-secondary-400 lh-base">2024-08-18</div>
+                        </div>
+                        <div class="text-secondary-600">
+                          <div class="content-preview collapsed py-4 lh-base fw-medium fs-6">
+                            您的訂單<a href="#" class="text-decoration-none">#4081846</a>  已成功付款，您的愛心已透過雲端送達牠的身邊。<br><br>若有任何訂單問題或需求，歡迎隨時聯繫客服，我們將竭誠為您服務。謝謝您與My-Shelter一起守護每一位毛寶貝的幸福！
+                          </div>
+                        </div>
+                       </div>
+                       <div class="py-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="fw-bold fs-4 text-primary-600 lh-sm">📣領養審核通過</div>
+                          <div class="fw-medium text-secondary-400 lh-base">2024-08-16</div>
+                        </div>
+                        <div class="text-secondary-600">
+                          <div class="content-preview collapsed py-4 lh-base fw-medium fs-6">恭喜！您申請領養的「蹲蹲」已通過初步審核，所屬機構將於7日內與您聯繫，請配合機構完成後續領養程序。
+                            <br><br>接下來，所屬機構將安排後續的領養流程與訪視時間。請您保持電話暢通並留意相關訊息，以便順利完成領養手續。
+                            <br><br>如有任何問題，歡迎隨時與我們聯繫。祝您與新夥伴生活愉快！<br><br>
+                            謝謝您對動物的愛心與支持！
+                            <br>My-Shelter 敬上
+                          </div>
+                        </div>
+                       </div>
+                       <div class="py-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="fw-bold fs-4 text-primary-600 lh-sm">🎁生日快樂！為你送上生日祝福</div>
+                          <div class="fw-medium text-secondary-400 lh-base">2024-08-13</div>
+                        </div>
+                        <div class="text-secondary-600">
+                          <div class="content-preview collapsed py-4 lh-base fw-medium fs-6">
+                            生日快樂！
+                            <br><br>My-Shelter為您送上NT$100優惠券，讓我們一起透過雲端為寶貝傳遞愛心！🎉🎂
+                            <br><br>感謝您一直以來對毛寶貝們的關懷與支持，這份小小的心意希望能為您的生日增添一點溫暖與喜悅。
+                            <br><br>在結帳時使用優惠券即可享有$100折扣優惠。
+                            <br><br>優惠券有效期限至2024-09-13，一起向毛寶貝們分享這份喜悅吧！
+                            <div class="my-6"><a href="index.html" class="p-2 bg-primary-400 text-primary-700 text-decoration-none sm-btn" style="border-radius: 4px;">【分享喜悅】</a></div>
+                          </div>
+                        </div>
+                       </div>
+                       <div class="py-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="fw-bold fs-4 text-primary-600 lh-sm">🏆等級升級</div>
+                          <div class="fw-medium text-secondary-400 lh-base">2024-08-09</div>
+                        </div>
+                        <div class="text-secondary-600">
+                          <div class="content-preview collapsed py-4 lh-base fw-medium fs-6">
+                            恭喜您！您的會員等級已升級為「Lv.5銀牌守護者」，感謝您持續的支持與愛心，讓更多寶貝們感受到世界的溫暖與關懷。🐾💖
+                            <br><br>身為銀牌守護者，您將享有更多專屬福利與驚喜禮遇，未來也請繼續與我們一同守護這些可愛的小生命！
+                            <br><br>感謝您為寶貝的愛心與對我們的信任！
+                            <br>My-Shelter 敬上
+                          </div>
+                        </div>
+                       </div>
+                       <div class="py-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="fw-bold fs-4 text-primary-600 lh-sm">📣寶貝影片來囉！</div>
+                          <div class="fw-medium text-secondary-400 lh-base">2024-07-29</div>
+                        </div>
+                        <div class="text-secondary-600">
+                          <div class="content-preview collapsed py-4 lh-base fw-medium fs-6">
+                           訂單 <a href="#" class="text-decoration-none">#2068439 </a>感謝您支援「幼貓疫苗接種協助-幼貓疫苗(三合一)」
+                           <br><br>所屬機構「喵了個咪中途之家」已經將您的回饋影片上傳囉🎥🐾
+                           <br><br>點擊下方連結，感受這些毛孩子滿滿的活力與幸福瞬間吧！
+                            <div class="my-6"><a href="index.html" class="p-2 bg-primary-400 text-primary-700 text-decoration-none sm-btn" style="border-radius: 4px;">【觀看影片】</a></div>
+                          
+                           <br>未來也讓我們一起陪伴寶貝們走過每一步，傳遞更多溫暖。
+                           <br>My-Shelter 敬上
+                          </div>
+                        </div>
+                       </div>
+                       <div class="py-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="fw-bold fs-4 text-primary-600 lh-sm">⚙️系統通知</div>
+                          <div class="fw-medium text-secondary-400 lh-base">2024-07-25</div>
+                        </div>
+                        <div class="text-secondary-600">
+                          <div class="content-preview collapsed py-4 lh-base fw-medium fs-6">
+                          為了提升服務品質，我們將於【2024-07-26】進行系統維護作業。屆時平台部分功能可能暫時無法使用，造成不便敬請見諒。
+                          <br><br><span class="text-secondary-900">維護時間：<br>2024-07-26 12:00至2024-07-26 14:00</span> 
+                          <br><br>期間如有緊急問題，請透過客服信箱或電話與我們聯繫，我們將盡快為您處理。感謝您的理解與支持，期待維護後為您帶來更流暢的使用體驗！
+                          <br><br>My-Shelter 敬上 
+                        </div>
+                        </div>
+                       </div>
+
+                    </div>
+                    <!-- footer -->
+                    <div class="d-flex justify-content-end fs-5 px-4 py-5 bg-white" style="border-bottom-right-radius:16px ; border-bottom-left-radius:16px ;">
+                    </div>
+  
+                  </div>
+                </div>
                 </div>
 
                 <!-- 訂單資訊 -->
                 <div class="tab-pane fade" id="v-pills-orders" role="tabpanel" aria-labelledby="v-pills-orders-tab"
                   tabindex="0">
-                  <h4>訂單資訊</h4>
-                  <p>這裡放訂單紀錄。</p>
+                  <div class="bg-white" style="border-radius: 16px;">
+                    <div class=" ">
+                      <div class="d-flex justify-content-between align-items-center p-5">
+                        <div class="fs-4 fw-bold text-primary-600">訂單資訊</div>
+                        <div class="d-flex align-items-center gap-2">
+                          <div>篩選</div>
+                          <div>
+                            <select class="form-select form-select-lg fs-8" aria-label=".form-select-lg example" style="border-radius: 100px;">
+                                 <option selected>3個月</option>
+                                 <option value="1">6個月</option>
+                                 <option value="2">1年內</option>
+                            </select>
+                          </div>
+                        
+                      </div>
+                    </div>
+                    <div>
+                     
+    <table class="table align-middle mb-0 table-borderless" >
+  <thead >
+    <tr class="text-center">
+      <th  class="bg-primary-400  py-4 text-secondary-800  fs-7 fw-medium">訂單編號</th>
+      <th  class="bg-primary-400  py-4 text-secondary-800  fs-7 fw-medium">訂單時間</th>
+      <th  class="bg-primary-400  py-4 text-secondary-800  fs-7 fw-medium">訂單狀態</th>
+      <th  class="bg-primary-400  py-4 text-secondary-800  fs-7 fw-medium">付款狀態</th>
+      <th  class="bg-primary-400  py-4 text-secondary-800  fs-7 fw-medium">合計</th>
+    </tr>
+  </thead>
+  <tbod >
+    <tr class="text-center">
+      <td class="py-lg-7"><a href="#" class="text-decoration-none fw-bold text-primary-600 order">4081864</a></td>
+      
+      <td>
+       <div class="text-secondary-400 fw-medium">2024-08-18</div>
+       <div class="text-secondary-400 fw-medium">01:44:13</div>
+      </td>
+
+      <td>處理中</td>
+
+      <td>已付款</td>
+
+      <td class="text-danger fw-medium">$2100</td>
+    </tr>
+    <tr class="text-center">
+      <td class="py-lg-7"><a href="#" class="text-decoration-none fw-bold text-primary-600 order">3080511</a></td>
+      
+      <td>
+       <div class="text-secondary-400 fw-medium">2025-08-05</div>
+       <div class="text-secondary-400 fw-medium">22:26:41</div>
+      </td>
+
+      <td>已取消</td>
+
+      <td>超過付款時間</td>
+
+      <td class="text-danger fw-medium">$900</td>
+    </tr>
+    <tr class="text-center">
+      <td class="py-lg-7"><a href="#" class="text-decoration-none fw-bold text-primary-600 order">2068439</a></td>
+      
+      <td>
+       <div class="text-secondary-400 fw-medium">2025-07-22</div>
+       <div class="text-secondary-400 fw-medium">21:13:08</div>
+      </td>
+
+      <td>已完成</td>
+
+      <td>已付款</td>
+
+      <td class="text-danger fw-medium">$1500</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="d-flex justify-content-end fs-5 px-4 py-5 bg-white" style="border-bottom-right-radius:16px ; border-bottom-left-radius:16px ;">
+</div>
+  
+                    </div>
+                  </div>
                 </div>
+              </div>
 
                 <!-- 我的關注 -->
                 <div class="tab-pane fade" id="v-pills-follow" role="tabpanel" aria-labelledby="v-pills-follow-tab"
                   tabindex="0">
-                  <h4>我的關注</h4>
-                  <p>這裡放關注機構／寶貝。</p>
+                  <div class="bg-white" style="border-radius: 16px;">
+                    <div>
+                      <!-- header -->
+                      <div class="d-flex justify-content-between align-items-center p-5">
+                        <div >
+                          <div class="fs-4 fw-bold text-primary-600">我的收藏</div>
+                        </div>
+                        
+                        <div class="d-flex align-items-center gap-2">
+                          <div>順序</div>
+                          <div>
+                            <select class="form-select form-select-lg fs-8" aria-label=".form-select-lg example" style="border-radius: 100px;">
+                                 <option selected>新至舊</option>
+                                 <option value="舊至新">舊至新</option>
+                            </select>
+                          </div>
+                        
+                      </div>
+                    </div>
+                    <!-- content -->
+                    <div class="p-5">
+                    <ul class="nav nav-tabs mb-3" id="favTabs" role="tablist">
+                      <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pets-tab" data-bs-toggle="tab" data-bs-target="#pets" type="button" role="tab">
+                        寶貝
+                      </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="org-tab" data-bs-toggle="tab" data-bs-target="#org" type="button" role="tab">
+                        機構
+                      </button>
+                      </li>
+                    </ul>
+                      <!-- Tab 內容 -->
+  <div class="tab-content">
+    <!-- 寶貝 -->
+    <div class="tab-pane fade show active" id="pets" role="tabpanel">
+      <div class="container scroll-area">
+        <div class="row g-4">
+          
+          <div class="col-md-4 col-6">
+            <div class="card  border-primary " >
+            <img src="/assets/images/orange cats 1.jpg" alt="#" class="w-100" style="border-radius: 16px; position: relative;">
+            <img src="/assets/icon/type=heat-full.svg" alt="heat" style="position: absolute; top: 10px; right: 10px;">
+            <div class="card-body">
+             <div class="text-center py-3">
+              <div class="fw-bold fs-3 text-primary-600 lh-sm">阿橘橘</div>
+              <div class="fw-bold fs-7 text-secondary-400 lh-sm">喵了個咪中途之家</div>
+             </div>
+             <div class="d-flex justify-content-between">
+              <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700" style="border-radius: 16px;">新北市</div>
+              <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700" style="border-radius: 16px;">已結紮</div>
+              <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700" style="border-radius: 16px;">可領養</div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="col-md-4 col-6">
+            <div class="card border-primary" >
+            <img src="/assets/images/mix breed 1.jpg" alt="#" class="w-100" style="border-radius: 16px; position: relative;">
+            <img src="/assets/icon/type=heat-full.svg" alt="heat" style="position: absolute; top: 10px; right: 10px;">
+            <div class="card-body">
+             <div class="text-center py-3">
+              <div class="fw-bold fs-3 text-primary-600 lh-sm">蹲蹲</div>
+              <div class="fw-bold fs-7 text-secondary-400 lh-sm">毛寶寶基金會</div>
+             </div>
+             <div class="d-flex justify-content-between">
+              <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700" style="border-radius: 16px;">新北市</div>
+              <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700" style="border-radius: 16px;">已結紮</div>
+              <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700" style="border-radius: 16px;">可領養</div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="col-md-4 col-6">
+            <div class="card border-primary" >
+            <img src="/assets/images/chihuahua 1.jpg" alt="#" class="w-100" style="border-radius: 16px; position: relative;">
+            <img src="/assets/icon/type=heat-full.svg" alt="heat" style="position: absolute; top: 10px; right: 10px;">
+            <div class="card-body">
+             <div class="text-center py-3">
+              <div class="fw-bold fs-3 text-primary-600 lh-sm">Money</div>
+              <div class="fw-bold fs-7 text-secondary-400 lh-sm">毛寶寶基金會</div>
+             </div>
+             <div class="d-flex justify-content-between">
+              <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700" style="border-radius: 16px;">新北市</div>
+              <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700" style="border-radius: 16px;">已結紮</div>
+              <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700" style="border-radius: 16px;">可領養</div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="col-md-4 col-6">
+            <div class="card border-primary" >
+            <img src="/assets/images/card-img/pet/pet_5.png" alt="#" class="w-100" style="border-radius: 16px; position: relative;">
+            <img src="/assets/icon/type=heat-full.svg" alt="heat" style="position: absolute; top: 10px; right: 10px;">
+            <div class="card-body">
+             <div class="text-center py-3">
+              <div class="fw-bold fs-3 text-primary-600 lh-sm">HaHa</div>
+              <div class="fw-bold fs-7 text-secondary-400 lh-sm">毛寶寶基金會</div>
+             </div>
+             <div class="d-flex justify-content-between">
+              <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700" style="border-radius: 16px;">新北市</div>
+              <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700" style="border-radius: 16px;">已結紮</div>
+              <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700" style="border-radius: 16px;">可領養</div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="col-md-4 col-6">
+            <div class="card border-primary" >
+            <img src="/assets/images/card-img/pet/pet_8.png" alt="#" class="w-100" style="border-radius: 16px; position: relative;">
+            <img src="/assets/icon/type=heat-full.svg" alt="heat" style="position: absolute; top: 10px; right: 10px;">
+            <div class="card-body">
+             <div class="text-center py-3">
+              <div class="fw-bold fs-3 text-primary-600 lh-sm">LuLu</div>
+              <div class="fw-bold fs-7 text-secondary-400 lh-sm">喵了個咪中途之家</div>
+             </div>
+             <div class="d-flex justify-content-between">
+              <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700" style="border-radius: 16px;">新北市</div>
+              <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700" style="border-radius: 16px;">已結紮</div>
+              <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700" style="border-radius: 16px;">可領養</div>
+             </div>
+            </div>
+           </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+
+    <!-- 機構 -->
+    <div class="tab-pane fade" id="org" role="tabpanel">
+      <div class="container scroll-area">
+        <div class="row g-4">
+          
+          <div class="col-md-4 col-6">
+            <div class="card border-primary" >
+            <img src="/assets/images/dog and doctor 1.jpg" alt="#" class="w-100" style="border-radius: 16px; position: relative; height: 200px;" >
+            <img src="/assets/icon/type=heat-full.svg" alt="heat" style="position: absolute; top: 10px; right: 10px;">
+            <div class="card-body">
+             <div class="text-center ">
+          
+              <div class="fw-bold fs-4 text-primary-600 lh-base">毛寶寶基金會</div>
+             </div>
+             
+            </div>
+           </div>
+          </div>
+          <div class="col-md-4 col-6">
+            <div class="card border-primary" >
+            <img src="/assets/images/pet with people.jpg" alt="#" class="w-100" style="border-radius: 16px; position: relative; height: 200px;" >
+            <img src="/assets/icon/type=heat-full.svg" alt="heat" style="position: absolute; top: 10px; right: 10px;">
+            <div class="card-body">
+             <div class="text-center ">
+          
+              <div class="fw-bold fs-4 text-primary-600 lh-base">喵了個咪中途之家</div>
+             </div>
+             
+            </div>
+           </div>
+          </div>
+          <div class="col-md-4 col-6">
+            <div class="card border-primary" >
+            <img src="/assets/images/vet.jpg" alt="#" class="w-100" style="border-radius: 16px; position: relative; height: 200px;" >
+            <img src="/assets/icon/type=heat-full.svg" alt="heat" style="position: absolute; top: 10px; right: 10px;">
+            <div class="card-body">
+             <div class="text-center ">
+          
+              <div class="fw-bold fs-4 text-primary-600 lh-base">小腳印之家</div>
+             </div>
+             
+            </div>
+           </div>
+          </div>
+          <div class="col-md-4 col-6">
+            <div class="card border-primary" >
+            <img src="/assets/images/pet with people.jpg" alt="#" class="w-100" style="border-radius: 16px; position: relative; height: 200px;" >
+            <img src="/assets/icon/type=heat-full.svg" alt="heat" style="position: absolute; top: 10px; right: 10px;">
+            <div class="card-body">
+             <div class="text-center ">
+          
+              <div class="fw-bold fs-4 text-primary-600 lh-base">喵了個咪中途之家</div>
+             </div>
+             
+            </div>
+           </div>
+          </div>
+          
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+                    </div>
+                    <!-- footer -->
+                    <div class="d-flex justify-content-end fs-5 px-4 py-5 bg-white" style="border-bottom-right-radius:16px ; border-bottom-left-radius:16px ;">
+                    </div>
+  
+                  </div>
+                </div>
                 </div>
 
               </div>
@@ -168,6 +623,14 @@
           integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
           crossorigin="anonymous"></script>
         <script type="module" src="../main.js"></script>
+        <script>
+document.querySelectorAll('.content-preview').forEach(block => {
+  block.addEventListener('click', function () {
+    this.classList.toggle('expanded');
+    this.classList.toggle('collapsed');
+  });
+});
+        </script>
 </body>
 
 </html>
