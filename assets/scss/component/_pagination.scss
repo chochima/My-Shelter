@@ -1,0 +1,17 @@
+ .page-item .page-link {
+      border: 0;
+      background-color: transparent;
+      font-size: 20px;
+      color: #aaaaaa;
+    }
+
+    .page-item .page-link:hover {
+      color: var(--bs-primary);
+      background-color: transparent;
+    }
+
+    /* active 狀態（頁碼 1） */
+    .page-item.active .page-link {
+      color: var(--bs-primary);
+      background-color: transparent;
+    }
