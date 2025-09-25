@@ -7,11 +7,12 @@
 
     .page-item .page-link:hover {
       color: var(--bs-primary);
-      background-color: transparent;
     }
+
+
 
     /* active 狀態（頁碼 1） */
     .page-item.active .page-link {
-      color: var(--bs-primary);
-      background-color: transparent;
+      color: #fff;
+      background-color: var(--bs-primary);
     }
