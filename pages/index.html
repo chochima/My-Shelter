@@ -79,7 +79,7 @@
 
 
   <!-- 優惠活動 Slider main container -->
-   <section class="index-content index-content-img">
+   <section class="index-content index-content-img  ">
     <div>
       <%- include('./layout/component/swiper-promotion'); -%>
     </div>
@@ -97,17 +97,29 @@
     <div>
       <%- include('./layout/component/swiper-news'); -%>
     </div>
+   </section>
+  <!-- 最新消息 Slider main container -->
+
+
+
+
+  <!-- 我們在做的事 -->
+  <section class="index-content">
+    <%- include('./layout/component/index-about'); -%>
+  </section>
+  <!-- 我們在做的事 -->
+   
+  
+
+  <section class="index-content-bg">
+    <img class="d-none d-md-block" src="/assets/images/Union.png" alt="首頁貓貓頭-web">
+    <img class="d-block d-md-none" src="/assets/images/Union-mob.png" alt="首頁貓貓頭-mob">
+  </section>
+
+
+
     <%- include('./layout/scroll-top-button'); -%>
-    <img src="/assets/images/index-dog.png"  alt="首頁圖片">
-    <a href="index.html">index.html</a>
-    <a href="./index.html">./index.html</a>
-
-
-    <a href="../index.html">../index.htmll</a>
-
-
-
-      <%- include('./layout/footer'); -%>
+    <%- include('./layout/footer'); -%>
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
