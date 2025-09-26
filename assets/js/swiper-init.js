@@ -10,17 +10,16 @@ import 'swiper/css/bundle';
 document.addEventListener("DOMContentLoaded", () => {
   // 第一個 Swiper：一次顯示 3 個 slide
   new Swiper('.css-mode-3slides', {
-    
     slidesPerView: 3,
     spaceBetween: 24,
     pagination: {
       el: '.css-mode-3slides .swiper-pagination',
       clickable: true,
     },
+
     navigation: {
       nextEl: '.css-mode-3slides .swiper-button-next',
       prevEl: '.css-mode-3slides .swiper-button-prev',
-
     },
 
     breakpoints: {
@@ -39,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 第二個 Swiper：一次顯示 2 個 slide
   new Swiper('.css-mode-2slides', {
-  slidesPerView: 2.48,
+    slidesPerView: 2.48,
     spaceBetween: 24,
     pagination: {
       el: '.css-mode-2slides .swiper-pagination',
@@ -66,7 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Freemode Swiper：自由顯示 slide
   new Swiper('.css-mode-1slides', {
-    
     slidesPerView: 1,
     spaceBetween: 0,
     pagination: {
@@ -76,7 +74,6 @@ document.addEventListener("DOMContentLoaded", () => {
     navigation: {
       nextEl: '.css-mode-1slides .swiper-button-next',
       prevEl: '.css-mode-1slides .swiper-button-prev',
-
     },
 
     breakpoints: {

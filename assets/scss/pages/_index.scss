@@ -72,7 +72,7 @@
 .index-box {
   max-width: 1296px;
   margin: 0PX auto;
-  //background-color: rgb(184, 202, 80);
+  background-color: rgb(184, 202, 80);
 }
 
 .index-lable {
@@ -99,7 +99,7 @@
 
 
 
-/*
+
 .bg01 {
   background-color: aquamarine;
 }
@@ -111,11 +111,11 @@
 }
 .bg04 {
   background-color: rgb(29, 124, 96);
-}*/
+}
 
 .index-content-img {
   position: relative;
-  z-index: -3;
+  z-index: -0;
 
   background-color: $primary-100;
 }
@@ -217,6 +217,7 @@
   text-align: center;
   margin-bottom: -10px;
 }
+
 
 
 
