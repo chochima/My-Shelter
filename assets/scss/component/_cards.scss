@@ -1,71 +1,64 @@
+//優惠活動圖片尺寸
+.promotion-size{
+  width: 100%;
+  max-height: 324px;
+
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+//最新消息圖片尺寸
+.news-size{
+  width: 100%;
+  height: 100%;
+  max-height: 250px;
+
+  object-fit: cover;
+}
+
+@media(max-width: 375px){
+  .news-size{
+    max-height: 120px;
+}
+}
+
+
+
+
 // 卡片文字超過省略設定
 /* 單行截斷 */
 .card-title-truncate {
-  white-space: nowrap;
-  /* 不換行 */
-  overflow: hidden;
-  /* 超過部分隱藏 */
-  text-overflow: ellipsis;
-  /* 顯示省略號 */
+  white-space: nowrap;       /* 不換行 */
+  overflow: hidden;          /* 超過部分隱藏 */
+  text-overflow: ellipsis;   /* 顯示省略號 */
 }
 
 /* 多行截斷（兩行） */
 .card-text-truncate {
-  display: -webkit-box;
-  /* 必須 */
-  -webkit-box-orient: vertical;
-  /* 必須 */
-  -webkit-line-clamp: 2;
-  /* 限制兩行 */
-  line-clamp: 2;
-  /* 標準屬性 */
-  overflow: hidden;
-  /* 超過隱藏 */
-  text-overflow: ellipsis;
-  /* 超過部分顯示… */
+  display: -webkit-box;           /* 必須 */
+  -webkit-box-orient: vertical;   /* 必須 */
+  -webkit-line-clamp: 2;          /* 限制兩行 */
+  line-clamp: 2;                   /* 標準屬性 */
+  overflow: hidden;               /* 超過隱藏 */
+  text-overflow: ellipsis;        /* 超過部分顯示… */
 }
 
 
-.ratio-3x2 {
-  aspect-ratio: 3 / 2;
-}
 
 
-/* 寶貝卡片的設定-圓角 */
-.card-pet {
+
+/* 寶貝卡片的圓角設定 */
+.card-pet-radius {
   border-radius: 0 6rem 2rem 2rem;
-  background-color: var(--bs-primary-100);
 }
-
-  .card-pet img{
-    object-fit: cover;
-  }
 
 @media(min-width:992px) {
-  .card-pet {
+  .card-pet-radius {
     border-radius: 0 6rem 3rem 3rem;
   }
 }
 
-/* 寶貝卡片的設定-hover */
-.card-pet:hover {
-  border: 1px solid var(--bs-primary-500);
-  background-color: var(--bs-primary-300);
-}
 
-/* 寶貝卡片左上愛心設定 */
-.card-heartbtn-position {
-  top: 1rem;
-  left: 1rem;
-}
-
-
-
-
-/* 機構卡片hover設定 */
-.card-agency:hover {
-  background-color: var(--bs-primary-100);
-}
 
 /* 機構卡片左上角help標籤位置設定 */
 .card-helpBadge-position {
@@ -88,7 +81,6 @@
     font-weight: 700;
   }
 }
-
 
 
 
