@@ -32,20 +32,15 @@
   background-color: #dee2e6;
   z-index: 1;
 }
-
-
-
-
   /* 每個步驟 */
-  .step {
+.step {
     position: relative;
     text-align: center;
     z-index: 5;
     flex: 1;
-  }
-
-  /* 圓圈 */
-  .step .circle {
+}
+ /* 圓圈 */
+.step .circle {
     width: 106px;
     height: 106px;
     margin: 0 auto;
@@ -53,25 +48,14 @@
     background-color: #dee2e6;
     color: #fff;
      border: 13px solid #FAFAFA; 
-    line-height: 40px;
-    font-weight: bold;
      position: relative;   
      z-index: 10;          
-  }
-
-  
+}
 
   /* 已完成或進行中的步驟 */
   .step.active .circle,
   .step.completed .circle {
     background-color: #887258; 
-  }
-
-  /* 步驟文字 */
-  .step small {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
   }
 
   /* 已完成的線條 */
@@ -86,7 +70,39 @@
     z-index: 1;
   }
 
-
+@media (max-width: 768px) {
+.step .circle {
+    width: 66px;
+    height: 66px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #dee2e6;
+    color: #fff;
+     border: 13px solid #FAFAFA; 
+     position: relative;   
+     z-index: 10;          
+}
+.stepper::before {
+  content: "";
+  position: absolute;
+  top: 45px; 
+  left: 16%;  
+  width: 68%;
+  height: 2px;
+  background-color: #dee2e6;
+  z-index: 1;
+}
+.stepper .completed::after {
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: #887258;
+    z-index: 1;
+  }
+}
  #myTab .nav-link {
   background-color: #D0D0D0;
   color: #757575;
@@ -149,23 +165,23 @@ color: #EFE7DC;
 </head>
 <body>
   <%- include('./layout/header'); -%>
-    <div class="bg-secondary-100">
+    <div class="bg-secondary-100 pb-80">
       <div class="container py-lg-56 py-8">
           <div class="container">
 
             <!-- 三個步驟 -->
             <div class="stepper">
     <div class="step active">
-      <small class="fs-5 mb-0">購物車</small>
-      <div class="circle fs-1 fw-bold lh-base d-flex justify-content-center align-items-center ">1</div>
+      <small class="fs-md-5 fs-7 mb-0 text-secondary-800">購物車</small>
+      <div class="circle fs-md-1 fs-5 fw-bold lh-base d-flex justify-content-center align-items-center ">1</div>
     </div>
     <div class="step ">
-      <small class="fs-5 mb-0">付款資訊</small>
-      <div class="circle fs-1 fw-bold lh-base d-flex justify-content-center align-items-center">2</div>
+      <small class="fs-md-5 fs-7 mb-0 text-secondary-800">付款資訊</small>
+      <div class="circle fs-md-1 fs-5 fw-bold lh-base d-flex justify-content-center align-items-center">2</div>
     </div>
     <div class="step ">
-        <small class="fs-5 mb-0">訂​單明細​</small>
-      <div class="circle fs-1 fw-bold lh-base d-flex justify-content-center align-items-center">3</div>
+        <small class="fs-md-5 fs-7 mb-0 text-secondary-800">訂​單明細​</small>
+      <div class="circle fs-md-1 fs-5 fw-bold lh-base d-flex justify-content-center align-items-center">3</div>
     </div>
             </div>
   
@@ -231,8 +247,8 @@ color: #EFE7DC;
         <div  class=" fs-8 text-primary-600">喵了個咪中途之家</div>
       </td>
       <td class="text-danger">$250</td>
-      <td >
-        <div class="d-flex gap-2 gap-mb-4">
+      <td  class="text-center">
+        <div class="d-flex gap-2 gap-mb-4 ">
            <button class="btn-circle minus">−</button>
            <span class="mx-2 qty">3</span>
            <button class="btn-circle plus">+</button>
@@ -475,11 +491,10 @@ color: #EFE7DC;
       <div class="lh-base fs-md-7 fs-8 fw-medium text-secondary-700">狗飼料</div>
     </div>
     <div class="d-flex flex-column gap-1 ">
-      <div class="d-flex  align-items-start gap-2 fw-medium lh-base text-secondary-800"><img src="/assets/images/sm-icon.svg" alt="icon">專為台灣寵物設計,大廠研發團隊精心調製納豆益生菌。</div>
-      <div class="d-flex  align-items-start gap-2 fw-medium lh-base text-secondary-800"><img src="/assets/images/sm-icon.svg" alt="icon">100%採用食品級油脂,安全原料來源,杜絕廢油回收摻混風險。</div>
-      <div class="d-flex  align-items-start gap-2 fw-medium lh-base text-secondary-800"><img src="/assets/images/sm-icon.svg" alt="icon">嚴精選黃金亞麻籽,全方位守護毛孩健康。</div>
-      <div class="d-flex  align-items-start gap-2 fw-medium lh-base text-secondary-800"><img src="/assets/images/sm-icon.svg" alt="icon">8~10mm三種造型顆粒設計,增添咬食
-樂趣,高嗜口性!</div>
+      <div class="d-flex  align-items-start gap-2 fw-medium lh-base text-secondary-800"><img src="/assets/images/sm-icon.svg" alt="icon"><div class="d-inline-block text-truncate">專為台灣寵物設計,大廠研發團隊精心調製納豆益生菌。</div></div>
+      <div class="d-flex  align-items-start gap-2 fw-medium lh-base text-secondary-800"><img src="/assets/images/sm-icon.svg" alt="icon"><div class="d-inline-block text-truncate">100%採用食品級油脂,安全原料來源,杜絕廢油回收摻混風險。</div></div>
+      <div class="d-flex  align-items-start gap-2 fw-medium lh-base text-secondary-800"><img src="/assets/images/sm-icon.svg" alt="icon"><div class="d-inline-block text-truncate">嚴精選黃金亞麻籽,全方位守護毛孩健康。</div></div>
+      <div class="d-flex  align-items-start gap-2 fw-medium lh-base text-secondary-800"><img src="/assets/images/sm-icon.svg" alt="icon"><div class="d-inline-block text-truncate">8~10mm三種造型顆粒設計,增添咬食樂趣,高嗜口性!</div></div>
     </div>
     <div class="d-flex  gap-2 justify-content-end align-items-end">
       <div class="fs-md-3 fs-4 text-danger fw-medium lh-sm">$900</div>
@@ -495,6 +510,7 @@ color: #EFE7DC;
             </div>
           </div>
         </div>
+    </div>
     <%- include('./layout/scroll-top-button'); -%>
 
 

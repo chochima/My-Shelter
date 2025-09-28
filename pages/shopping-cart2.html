@@ -13,13 +13,8 @@
 
   <title>2、付款資料</title>
   <style>
-    .box{
-      min-width: 50px;
-      min-height: 50px;
-      background-color: #a87e60;
-      }
-
-      .custom-select {
+ 
+.custom-select {
   appearance: none;       /* for modern browsers */
   -webkit-appearance: none; 
   -moz-appearance: none;
@@ -48,7 +43,104 @@
     width: 75% !important;
   }
 }
-      
+  /* 步驟容器 */
+  .stepper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 2rem;
+  }
+
+  /* 步驟容器 */
+  .stepper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 2rem;
+  }
+
+/* 背景線 */
+.stepper::before {
+  content: "";
+  position: absolute;
+  top: 55px; 
+  left: 16%;  
+  width: 68%;
+  height: 2px;
+  background-color: #dee2e6;
+  z-index: 1;
+}
+  /* 每個步驟 */
+.step {
+    position: relative;
+    text-align: center;
+    z-index: 5;
+    flex: 1;
+}
+ /* 圓圈 */
+.step .circle {
+    width: 106px;
+    height: 106px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #dee2e6;
+    color: #fff;
+     border: 13px solid #F4F0EC; 
+     position: relative;   
+     z-index: 10;          
+}
+
+  /* 已完成或進行中的步驟 */
+  .step.active .circle,
+  .step.completed .circle {
+    background-color: #887258; 
+  }
+
+  /* 已完成的線條 */
+  .stepper .completed::after {
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: #887258;
+    z-index: 1;
+  }
+
+@media (max-width: 768px) {
+.step .circle {
+    width: 66px;
+    height: 66px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #dee2e6;
+    color: #fff;
+     border: 13px solid #F4F0EC; 
+     position: relative;   
+     z-index: 10;          
+}
+.stepper::before {
+  content: "";
+  position: absolute;
+  top: 45px; 
+  left: 16%;  
+  width: 68%;
+  height: 2px;
+  background-color: #dee2e6;
+  z-index: 1;
+}
+.stepper .completed::after {
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: #887258;
+    z-index: 1;
+  }
+}
   </style>
 </head>
 
@@ -58,21 +150,21 @@
       <div class="container pb-80">
        <div>
 
-  <!-- 三個步驟 -->
-  <div class="stepper">
+   <!-- 三個步驟 -->
+            <div class="stepper">
     <div class="step completed">
-      <small class="fs-3">購物車</small>
-      <div class="circle fs-3 d-flex justify-content-center align-items-center">1</div>
+      <small class="fs-md-5 fs-7 mb-0 text-secondary-800">購物車</small>
+      <div class="circle fs-md-1 fs-5 fw-bold lh-base d-flex justify-content-center align-items-center ">1</div>
     </div>
-    <div class="step active">
-      <small class="fs-3">付款資訊</small>
-      <div class="circle fs-3 d-flex justify-content-center align-items-center">2</div>
+    <div class="step active ">
+      <small class="fs-md-5 fs-7 mb-0 text-secondary-800">付款資訊</small>
+      <div class="circle fs-md-1 fs-5 fw-bold lh-base d-flex justify-content-center align-items-center">2</div>
     </div>
     <div class="step ">
-        <small class="fs-3">訂​單明細​</small>
-      <div class="circle fs-3 d-flex justify-content-center align-items-center">3</div>
+        <small class="fs-md-5 fs-7 mb-0 text-secondary-800">訂​單明細​</small>
+      <div class="circle fs-md-1 fs-5 fw-bold lh-base d-flex justify-content-center align-items-center">3</div>
     </div>
-  </div>
+            </div>
 
 </div>
 
@@ -84,7 +176,7 @@
         <table class="table  table-borderless mb-0">
   <thead>
     <tr class="fs-lg-4  border">
-      <th scope="col" class="p-4 align-middle text-center" style="width: 40%;">贊助項目</th>
+      <th scope="col" class="p-4 align-middle ps-7" style="width: 40%;">贊助項目</th>
       <th scope="col" class="p-4 align-middle text-center" style="width: 20%;">價格</th>
       <th scope="col" class="p-4 align-middle text-center" style="width: 20%;">數量</th>
       <th scope="col" class="p-4 align-middle text-center" style="width: 20%;">小計</th>
@@ -96,8 +188,8 @@
         <div class="d-lg-flex align-items-center gap-4">
           <div class="box d-inline-block d-inline-block"></div>
           <div>
-            <div class="fs-lg-6 fs-7 fw-bold text-primary-600">毛寶寶基金會</div>
-            <div class="fs-lg-5 fs-6 fw-bold text-secondary-700">設施重建</div>
+            <div class="fs-mb-5 fs-7 text-secondary-900 lh-base">設施重建</div>
+        <div class=" fs-8 text-primary-600">毛寶寶基金會</div>
           </div>
         </div>
       </th>
@@ -110,8 +202,8 @@
         <div class="d-lg-flex align-items-center gap-4">
           <div class="box d-inline-block"></div>
           <div>
-            <div class="fs-lg-6 fs-7 fw-bold text-primary-600">毛寶寶基金會 - 蹲蹲</div>
-            <div class="fs-lg-5 fs-6 fw-bold text-secondary-700">營養補充劑</div>
+            <div class="fs-mb-5 fs-7 text-secondary-900 lh-base">毛寶寶基金會 - 蹲蹲</div>
+            <div class="fs-8 text-primary-600">營養補充劑</div>
           </div>
         </div>
       </th>
@@ -124,8 +216,8 @@
         <div class="d-lg-flex align-items-center gap-4">
           <div class="box d-inline-block"></div>
           <div>
-            <div class="fs-lg-6 fs-7 fw-bold text-primary-600">喵了個咪中途之家</div>
-            <div class="fs-lg-5 fs-6 fw-bold text-secondary-700">幼貓疫苗(三合一)</div>
+            <div class="fs-mb-5 fs-7 text-secondary-900 lh-base">喵了個咪中途之家</div>
+            <div class="fs-8 text-primary-600">幼貓疫苗(三合一)</div>
           </div>
         </div>
       </th>
@@ -138,8 +230,8 @@
         <div class="d-lg-flex align-items-center gap-4">
           <div class="box d-inline-block"></div>
           <div>
-            <div class="fs-lg-6 fs-7 fw-bold text-primary-600">喵了個咪中途之家 -  阿橘橘</div>
-            <div class="fs-lg-5 fs-6 fw-bold text-secondary-700">磨牙零食</div>
+            <div class="fs-mb-5 fs-7 text-secondary-900 lh-base">喵了個咪中途之家 -  阿橘橘</div>
+            <div class="fs-8 text-primary-600">磨牙零食</div>
           </div>
         </div>
       </th>
@@ -152,8 +244,8 @@
         <div class="d-lg-flex align-items-center gap-4">
           <div class="box d-inline-block"></div>
           <div>
-            <div class="fs-lg-6 fs-7 fw-bold text-primary-600">喵了個咪中途之家 -  阿橘橘</div>
-            <div class="fs-lg-5 fs-6 fw-bold text-secondary-700">健康檢查</div>
+            <div class="fs-mb-5 fs-7 text-secondary-900 lh-base">喵了個咪中途之家 -  阿橘橘</div>
+            <div class="fs-8 text-primary-600">健康檢查</div>
           </div>
         </div>
       </th>
@@ -166,8 +258,8 @@
         <div class="d-lg-flex align-items-center gap-4">
           <div class="box d-inline-block"></div>
           <div>
-            <div class="fs-lg-6 fs-7 fw-bold text-primary-600">為寶貝送一份禮</div>
-            <div class="fs-lg-5 fs-6 fw-bold text-secondary-700"> (貓飼料) 無穀全齡貓-雞肉&鮭魚(低脂) 4磅</div>
+            <div class="fs-mb-5 fs-7 text-secondary-900 lh-base">為寶貝送一份禮</div>
+            <div class="fs-8 text-primary-600"> (貓飼料) 無穀全齡貓-雞肉&鮭魚(低脂) 4磅</div>
           </div>
         </div>
       </th>
@@ -281,77 +373,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
           crossorigin="anonymous"></script>
-          <style>
-  /* 步驟容器 */
-  .stepper {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    margin-bottom: 2rem;
-  }
-
-/* 背景線 */
-.stepper::before {
-  content: "";
-  position: absolute;
-  top: 70px; 
-  left: 16%;  
-  width: 68%;
-  height: 4px;
-  background-color: #dee2e6;
-  z-index: 1;
-}
-
-
-
-
-  /* 每個步驟 */
-  .step {
-    position: relative;
-    text-align: center;
-    z-index: 5;
-    flex: 1;
-  }
-
-  /* 圓圈 */
-  .step .circle {
-    width: 50px;
-    height: 50px;
-    margin: 0 auto;
-    border-radius: 50%;
-    background-color: #dee2e6;
-    color: #fff;
-    line-height: 40px;
-    font-weight: bold;
-     position: relative;   
-     z-index: 10;          
-  }
-
-  /* 已完成或進行中的步驟 */
-  .step.active .circle,
-  .step.completed .circle {
-    background-color: #A88760; 
-  }
-
-  /* 步驟文字 */
-  .step small {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-  }
-
-  /* 已完成的線條 */
-  .stepper .completed::after {
-    content: "";
-    position: absolute;
-    top: 70px;
-    left: 50%;
-    width: 100%;
-    height: 4px;
-    background-color: #a87e60;
-    z-index: 1;
-  }
-</style>
         <script type="module" src="../main.js"></script>
 </body>
 
