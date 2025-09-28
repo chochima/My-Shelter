@@ -11,10 +11,9 @@
   <!-- bootstrap icon -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-  <title>3、完成訂單</title>
+  <title>4、影片</title>
   <style>
-  
-       /* 步驟容器 */
+   /* 步驟容器 */
   .stepper {
     display: flex;
     justify-content: space-between;
@@ -25,9 +24,9 @@
   /* 步驟容器 */
   .stepper {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     position: relative;
-    margin-bottom: 2rem;
+    
   }
 
 /* 背景線 */
@@ -112,6 +111,19 @@
     z-index: 1;
   }
 }
+   .feedback-card {
+      border: 3px solid #887258;
+      border-radius: 16px;
+      background-color: #fff;
+    }
+    textarea {
+      resize: none;
+    }
+    
+    .btn-submit:hover {
+      background-color: #E7DFD7 !important;
+      color: #887258 !important;
+    } 
   </style>
   <script type="module" crossorigin src="/My-Shelter/assets/main-CiW5fVrb.js"></script>
   <link rel="stylesheet" crossorigin href="/My-Shelter/assets/main-Cf94_GDb.css">
@@ -274,26 +286,14 @@
       <div class="container pb-80">
        <div>
 
-  <!-- 三個步驟 -->
-            <div class="stepper">
-    <div class="step completed">
-      <small class="fs-md-5 fs-7 mb-0 text-secondary-800">購物車</small>
-      <div class="circle fs-md-1 fs-5 fw-bold lh-base d-flex justify-content-center align-items-center ">1</div>
-    </div>
-    <div class="step completed ">
-      <small class="fs-md-5 fs-7 mb-0 text-secondary-800">付款資訊</small>
-      <div class="circle fs-md-1 fs-5 fw-bold lh-base d-flex justify-content-center align-items-center">2</div>
-    </div>
-    <div class="step active">
-        <small class="fs-md-5 fs-7 mb-0 text-secondary-800">訂​單明細​</small>
-      <div class="circle fs-md-1 fs-5 fw-bold lh-base d-flex justify-content-center align-items-center">3</div>
-    </div>
-            </div>
-
 </div>
 
       </div>
       <div class="container">
+      <div class="d-flex align-items-center gap-4  mb-5" >
+        <div class="fs-2 lh-base fw-bold text-primary-700">訂單編號</div>
+        <div class="fs-2 lh-base fw-bold text-secondary-900"> ​#2068439</div>
+      </div>
       <div class="border border-3 border-primary-700 mb-4" >
         <div class="bg-primary-400 fw-bold fs-lg-4  fs-5 text-primary-600 p-4"> 贊助訂單明細</div>
        <div class="table-responsive ">
@@ -470,6 +470,68 @@
         </div>
        </div>
       </div>
+      <div class="container py-9">
+        <div class="d-flex align-items-center gap-4  mb-5" >
+        <div><img src="data:image/svg+xml,%3csvg%20width='48'%20height='48'%20viewBox='0%200%2048%2048'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M32.5869%204.5C39.1261%204.5%2044.4339%209.93273%2044.501%2016.5449L44.5%2017.0586C44.4334%2022.1785%2042.6008%2026.8963%2039.0293%2031.4053L38.666%2031.8555C36.8082%2034.1191%2033.5085%2037.6438%2026.0312%2042.7197L26.0303%2042.7188C25.2846%2043.2263%2024.404%2043.4993%2023.502%2043.5H23.499C22.5959%2043.4988%2021.7137%2043.226%2020.9678%2042.7168V42.7158C13.4929%2037.6412%2010.1934%2034.1177%208.33594%2031.8545C4.40063%2027.0583%202.44629%2022.0329%202.50098%2016.5439L2.50781%2016.2344C2.73429%209.76387%207.97829%204.50008%2014.415%204.5C18.5929%204.50008%2021.6033%206.57841%2023.5%208.5127C25.3971%206.57662%2028.4087%204.50017%2032.5869%204.5ZM23.7539%2020.2305C21.5518%2020.2305%2020.8112%2021.5451%2019.4639%2023.7217C18.9758%2024.5096%2018.2261%2024.9488%2017.4355%2025.4131C16.528%2025.9457%2015.5893%2026.4952%2015.1846%2027.5791C15.0272%2027.9698%2014.9482%2028.3848%2014.9512%2028.8027C14.9512%2030.5654%2016.4383%2031.9998%2018.0859%2032C19.7336%2032%2021.9048%2031.2158%2023.7588%2031.2158C25.6126%2031.2159%2027.7527%2031.9999%2029.4209%2032C31.0892%2032%2032.5508%2030.5655%2032.5508%2028.8027C32.5521%2028.3844%2032.4713%2027.9697%2032.3125%2027.5791C31.9092%2026.4932%2030.9699%2025.9423%2030.0625%2025.4102C29.2728%2024.9468%2028.5267%2024.5088%2028.0391%2023.7227C26.6948%2021.5449%2025.9562%2020.2305%2023.7539%2020.2305ZM15.3047%2018.1543C13.8872%2018.1543%2012.7383%2019.549%2012.7383%2021.2695C12.7384%2022.99%2013.8872%2024.3848%2015.3047%2024.3848C16.7221%2024.3847%2017.871%2022.9899%2017.8711%2021.2695C17.8711%2019.549%2016.7221%2018.1544%2015.3047%2018.1543ZM32.1709%2018.1543C30.7535%2018.1545%2029.6045%2019.5491%2029.6045%2021.2695C29.6046%2022.9899%2030.7536%2024.3846%2032.1709%2024.3848C33.5883%2024.3848%2034.7381%2022.99%2034.7383%2021.2695C34.7383%2019.549%2033.5884%2018.1543%2032.1709%2018.1543ZM20.4375%2014C19.0202%2014.0002%2017.8712%2015.3949%2017.8711%2017.1152C17.8711%2018.8357%2019.0201%2020.2302%2020.4375%2020.2305C21.855%2020.2305%2023.0049%2018.8358%2023.0049%2017.1152C23.0048%2015.3947%2021.855%2014%2020.4375%2014ZM27.0381%2014C25.6206%2014%2024.4717%2015.3947%2024.4717%2017.1152C24.4717%2018.8358%2025.6206%2020.2305%2027.0381%2020.2305C28.4555%2020.2303%2029.6045%2018.8357%2029.6045%2017.1152C29.6044%2015.3948%2028.4555%2014.0001%2027.0381%2014Z'%20fill='%237C6952'/%3e%3c/svg%3e" alt="icon"></div>
+        <div class="fs-2 lh-base fw-medium text-primary-700">寶貝影片</div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="bg-primary-700 d-flex justify-content-center align-items-center" style="min-height: 400px; border-radius: 16px;">
+              <div class="text-center fw-bold text-secondary-800 fs-2 ">
+                準備中<br>耐心等候
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex flex-column justify-content-between">
+
+          <div>
+            <div class="d-flex justify-content-end align-items-center pb-8">
+                          <div>
+                            <select class="form-select form-select-lg fs-5" aria-label=".form-select-lg example" style="border-radius: 100px;">
+                                 <option selected>毛寶寶基金會</option>
+                                 <option value="喵了個咪中途之家">喵了個咪中途之家</option>
+                            </select>
+                          </div>
+            </div>
+          </div>
+          <div>
+<!-- 三個步驟 -->
+            <div class="stepper mb-0">
+    <div class="step active">
+      <small class="fs-md-5 fs-7 mb-0 text-secondary-800">準備中</small>
+      <div class="circle fs-md-1 fs-5 fw-bold lh-base d-flex justify-content-center align-items-center">1</div>
+    </div>
+    <div class="step">
+      <small class="fs-md-5 fs-7 mb-0 text-secondary-800">拍攝中</small>
+      <div class="circle fs-md-1 fs-5 fw-bold lh-base d-flex justify-content-center align-items-center">2</div>
+    </div>
+    <div class="step">
+        <small class="fs-md-5 fs-7 mb-0 text-secondary-800">上傳完成​</small>
+      <div class="circle fs-md-1 fs-5 fw-bold lh-base d-flex justify-content-center align-items-center">3</div>
+    </div>
+            </div>
+
+
+          </div>
+          
+          </div>
+        </div>
+
+      </div>
+      <div class="container pt-9">
+    <div class="feedback-card p-8">
+      <h4 class="mb-6 fs-2 fw-bold text-primary-700">留言給我們</h4>
+      <form>
+        <div class="mb-6 border border-3 border-primary-700" style="border-radius: 16px;">
+          <textarea class="form-control" rows="10" placeholder="有任何建議、想法要提供給平台或機構嗎?"></textarea>
+        </div>
+        <div class="text-end">
+          <a href="#" class="bg-primary-700 text-primary-400 fs-3 text-decoration-none px-7 py-3 btn-submit" style="border-radius: 99px;">送出留言</a>
+        </div>
+      </form>
+    </div>
+        </div>
     </div>
     
 
