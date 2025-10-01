@@ -1,0 +1,109 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.body-xuu {
+  color: $secondary-800;
+  max-width:100%;
+}
+
+
+// 寶貝/機構詳情
+.detail-content {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 2%;
+}
+
+//內文
+.detail-text {
+  gap: 24px;
+  padding-bottom: 24px;
+}
+
+.detail-text div > h3{
+  height: 1.5;
+}
+
+.detail-text p {
+  padding: 4px 12px;
+  margin-bottom: 0px;
+  border-radius: 8px;
+  color: $white;
+  background-color: $info;
+}
+
+.detail-text h5{
+  height: 1.5;
+  margin-bottom: 0px;
+}
+
+
+
+
+//認養方式選單
+.dropdown .btn-outline-primary {
+  color: $secondary-800;
+  background-color: $white;
+}
+.dropdown .btn-outline-primary:hover,
+.dropdown .btn-outline-primary:focus,
+.dropdown .btn-outline-primary:active {
+  color: $secondary-800; //hover/focus/active 時仍然保持同色
+  background-color: $secondary-100; //可以改 hover 背景色，或者保持原本透明/
+  border-color: $primary-700; //邊框維持原色/
+}
+
+.dropdown-item {
+  color: $secondary-800;
+  padding: 8px 24px;
+}
+.dropdown-menu button:hover {
+  color: $secondary-600;
+  font-weight: 500;
+}
+//點擊之後要改色，待補
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 375px) {
+.detail-content {
+  margin: 24px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+  //輪播按鈕隱藏
+  .css-mode-3slides .swiper-button-next,
+  .css-mode-3slides .swiper-button-prev,
+  .css-mode-3slides .swiper-pagination 
+  {
+    display: none;
+  }
+}
+
