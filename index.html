@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
   <title>index</title>
-  <script type="module" crossorigin src="/My-Shelter/assets/main-CiW5fVrb.js"></script>
-  <link rel="stylesheet" crossorigin href="/My-Shelter/assets/main-Cf94_GDb.css">
+  <script type="module" crossorigin src="/My-Shelter/assets/main-D1bi3Chx.js"></script>
+  <link rel="stylesheet" crossorigin href="/My-Shelter/assets/main-CAeLyuPF.css">
 </head>
 
 <body class="body-xuu">
@@ -230,9 +230,16 @@
       </div>
 
     
-      <div class="col px-0">
+      <!--lable-機構支援專區-->
+      <div class="col px-0 index-visible">
         <span class="ps-2 ps-lg-4">機構支援專區</span>
       </div>
+
+      <!--lable-你可能還想支援-->
+      <div class="col px-0 index-hidden">
+        <span class="ps-2 ps-lg-4">你可能還想支援...</span>
+      </div>
+
 
       <div class="col-auto px-0 d-none d-lg-block">
         <a href="./agency-list.html">
@@ -261,6 +268,7 @@
 
 
           <div class="swiper-slide">
+            <a href="./agency-detail-01.html" class="card-pet-no-decoration">
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
 
@@ -306,7 +314,8 @@
             <!-- 毛玻璃 hover overlay -->
 
 </div>
-<!-- card 1 機構 -->          </div>
+<!-- card 1 機構 -->            </a>
+          </div>
 
           <div class="swiper-slide">
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -505,7 +514,8 @@
 
 
 
-        
+
+        <div class="index-visible">
         <div class="d-flex justify-content-end swiper-button-style">
 
 
@@ -526,6 +536,7 @@
   </div>            <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
+        </div>
         
 
 
@@ -552,8 +563,23 @@
 
 
 
+<!--非首頁隱藏-->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const path = location.pathname;
+    const isIndex = (path === "/" || path.endsWith("index.html"));
 
-    </div>
+    // 只在首頁顯示
+    document.querySelectorAll(".index-visible").forEach(el => {
+      el.style.display = isIndex ? "block" : "none";
+    });
+
+    // 只在首頁隱藏
+    document.querySelectorAll(".index-hidden").forEach(el => {
+      el.style.display = isIndex ? "none" : "block";
+    });
+  });
+</script>    </div>
    </section>
   <!-- 機構支援專區 Slider main container -->
 
@@ -571,9 +597,15 @@
       </div>
 
     
-      <div class="col px-0">
+      <!--lable-寶貝認養專區-->
+      <div class="col px-0 index-visible">
         <span class="ps-2 ps-lg-4">寶貝認養專區</span>
       </div>
+      <!--lable-你可能還想認養-->
+      <div class="col px-0 index-hidden">
+        <span class="ps-2 ps-lg-4">你可能還想認養...</span>
+      </div>
+      
 
     
       <div class="col-auto px-0 d-none d-lg-block">
@@ -590,7 +622,8 @@
       </div>
 
       <!--lable-搜尋-->
-      <span class="pt-56 px-0">
+      
+      <span class="pt-56 px-0 index-visible">
       <div class="d-flex justify-content-between align-items-center m-auto">
 <div class="d-lg-flex align-items-center gap-5 m-auto  m-lg-0">
  <div class="d-flex gap-5">
@@ -675,6 +708,7 @@
 
 
           <div class="swiper-slide">
+            <a href="./pet-detail-03.html" class="card-pet-no-decoration">
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
 <!-- card 2 寶貝pet -->
@@ -720,6 +754,7 @@
 
 </div>
 <!-- card 2 寶貝pet -->
+            </a>
           </div>
 
           <div class="swiper-slide">
@@ -918,6 +953,7 @@
 
 
 
+        <div class="index-visible">
           <div class="d-flex justify-content-end swiper-button-style">
 
 
@@ -938,6 +974,7 @@
   </div>            <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
+        </div>
         
 
 
@@ -948,6 +985,7 @@
 
 
   <div class="d-flex justify-content-center px-0 d-lg-none">
+    <a href="./pet-list.html">
     <button type="button" class="btn btn-primary-400  more-btn">
     查看更多
 
@@ -956,11 +994,35 @@
     </svg>
 </button>
 
+    </a>
   </div>
 
 
 
-</section>    </div>
+</section>
+
+
+
+
+
+
+<!--非首頁隱藏-->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const path = location.pathname;
+    const isIndex = (path === "/" || path.endsWith("index.html"));
+
+    // 只在首頁顯示
+    document.querySelectorAll(".index-visible").forEach(el => {
+      el.style.display = isIndex ? "block" : "none";
+    });
+
+    // 只在首頁隱藏
+    document.querySelectorAll(".index-hidden").forEach(el => {
+      el.style.display = isIndex ? "none" : "block";
+    });
+  });
+</script>    </div>
    </section>
   <!-- 寶貝認養專區 Slider main container -->
 
@@ -1747,6 +1809,10 @@
   </section>
 
 
+   <button type="button" class="btn btn-info">Info</button>
+
+
+
 
     
 
@@ -1885,7 +1951,7 @@
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-          crossorigin="anonymous"></script>
+          crossorigin="anonymous"></script>
         
 </body>
 
