@@ -10,120 +10,17 @@
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <!-- bootstrap icon -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-
-  <title>4、影片</title>
+  <title>最新消息</title>
   <style>
-   /* 步驟容器 */
-  .stepper {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    margin-bottom: 2rem;
-  }
-
-  /* 步驟容器 */
-  .stepper {
-    display: flex;
-    justify-content: end;
-    position: relative;
-    
-  }
-
-/* 背景線 */
-.stepper::before {
-  content: "";
-  position: absolute;
-  top: 55px; 
-  left: 16%;  
-  width: 68%;
-  height: 2px;
-  background-color: #dee2e6;
-  z-index: 1;
-}
-  /* 每個步驟 */
-.step {
-    position: relative;
-    text-align: center;
-    z-index: 5;
-    flex: 1;
-}
- /* 圓圈 */
-.step .circle {
-    width: 106px;
-    height: 106px;
-    margin: 0 auto;
-    border-radius: 50%;
-    background-color: #dee2e6;
-    color: #fff;
-     border: 13px solid #F4F0EC; 
-     position: relative;   
-     z-index: 10;          
-}
-
-  /* 已完成或進行中的步驟 */
-  .step.active .circle,
-  .step.completed .circle {
-    background-color: #887258; 
-  }
-
-  /* 已完成的線條 */
-  .stepper .completed::after {
-    content: "";
-    position: absolute;
-    top: 55px;
-    left: 50%;
-    width: 100%;
-    height: 2px;
-    background-color: #887258;
-    z-index: 1;
-  }
-
-@media (max-width: 768px) {
-.step .circle {
-    width: 66px;
-    height: 66px;
-    margin: 0 auto;
-    border-radius: 50%;
-    background-color: #dee2e6;
-    color: #fff;
-     border: 13px solid #F4F0EC; 
-     position: relative;   
-     z-index: 10;          
-}
-.stepper::before {
-  content: "";
-  position: absolute;
-  top: 45px; 
-  left: 16%;  
-  width: 68%;
-  height: 2px;
-  background-color: #dee2e6;
-  z-index: 1;
-}
-.stepper .completed::after {
-    content: "";
-    position: absolute;
-    top: 45px;
-    left: 50%;
-    width: 100%;
-    height: 2px;
-    background-color: #887258;
-    z-index: 1;
-  }
-}
-   .feedback-card {
-      border: 3px solid #887258;
-      border-radius: 16px;
-      background-color: #fff;
+    .w-md-40 {
+      width: 100%;
     }
-    textarea {
-      resize: none;
+
+    @media (min-width: 768px) {
+      .w-md-40 {
+        width: 30%;
+      }
     }
-    
-    .btn-submit:hover {
-      background-color: #E7DFD7 !important;
-      color: #887258 !important;
-    } 
   </style>
   <script type="module" crossorigin src="/My-Shelter/assets/main-Cws21Ud6.js"></script>
   <link rel="stylesheet" crossorigin href="/My-Shelter/assets/main-BF3_kuHa.css">
@@ -282,270 +179,150 @@
 </div>
 </div>
 
-    <div class="bg-primary-200 py-80">
-      <div class="container pb-80">
-       <div>
 
-</div>
+    <div class="bg-primary-100">
 
-      </div>
-      <div class="container">
-      <div class="d-flex align-items-center gap-4  mb-5" >
-        <div class="fs-2 lh-base fw-bold text-primary-700">訂單編號</div>
-        <div class="fs-2 lh-base fw-bold text-secondary-900"> ​#2068439</div>
-      </div>
-      <div class="border border-3 border-primary-700 mb-4" >
-        <div class="bg-primary-400 fw-bold fs-lg-4  fs-5 text-primary-600 p-4"> 贊助訂單明細</div>
-       <div class="table-responsive ">
-        <table class="table  table-borderless mb-0">
-  <thead>
-    <tr class="fs-lg-4  border">
-      <th scope="col" class="p-4 align-middle ps-7" style="width: 40%;">贊助項目</th>
-      <th scope="col" class="p-4 align-middle text-center" style="width: 20%;">價格</th>
-      <th scope="col" class="p-4 align-middle text-center" style="width: 20%;">數量</th>
-      <th scope="col" class="p-4 align-middle text-center" style="width: 20%;">小計</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row" class="p-4">
-        <div class="d-lg-flex align-items-center gap-4">
-          <div class="box d-inline-block d-inline-block"></div>
-          <div>
-            <div class="fs-mb-5 fs-7 text-secondary-900 lh-base">毛寶寶基金會</div>
-            <div class="fs-8 text-primary-600">設施重建</div>
+      <div class="container py-56 py-md-80">
+
+
+
+
+        <!-- 下拉選單 -->
+        <div class="mb-8 mb-md-64 d-md-flex justify-content-between align-items-center">
+          <h1 class="px-5 py-3 fw-medium"><i class="bi bi-stars fs-3 "></i> 最新消息</h1>
+          <div
+            class="select-wrapper d-flex  align-items-center  border border-2 border-primary-700 px-5 py-3 cs-btn rounded-pill w-md-40">
+            <select
+              class="form-select custom-select text-primary-700 border-0 shadow-none fs-6 fs-lg-4 lh-sm fw-medium "
+              aria-label="Default select example" style="border-radius: 100px; appearance: none;">
+              <option selected>由新到舊</option>
+              <option value="由舊到新">由舊到新</option>
+            </select>
+
+            <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.3334 1L11 10.3333L1.66669 1" stroke="#7C6952" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
           </div>
         </div>
-      </th>
-      <td class="p-4 fw-bold fs-6 align-middle text-center">$500</td>
-      <td class="p-4 fw-bold fs-6 align-middle text-center">1</td>
-      <td class="p-4 fw-bold fs-6 align-middle text-center text-danger">$500</td>
-    </tr>
-    <tr class="border-bottom">
-      <th scope="row" class="p-4">
-        <div class="d-lg-flex align-items-center gap-4">
-          <div class="box d-inline-block"></div>
-          <div>
-            <div class="fs-mb-5 fs-7 text-secondary-900 lh-base">毛寶寶基金會 - 蹲蹲</div>
-            <div class="fs-8 text-primary-600">營養補充劑</div>
-          </div>
-        </div>
-      </th>
-      <td class="p-4 fw-bold fs-6 align-middle text-center">$85</td>
-      <td class="p-4 fw-bold fs-6 align-middle text-center">3</td>
-      <td class="p-4 fw-bold fs-6 align-middle text-center text-danger">$255</td>
-    </tr>
-     <tr>
-      <th scope="row" class="p-4">
-        <div class="d-lg-flex align-items-center gap-4">
-          <div class="box d-inline-block"></div>
-          <div>
-            <div class="fs-mb-5 fs-7 text-secondary-900 lh-base">喵了個咪中途之家</div>
-            <div class="fs-8 text-primary-600">幼貓疫苗(三合一)</div>
-          </div>
-        </div>
-      </th>
-      <td class="p-4 fw-bold fs-6 align-middle text-center">$250</td>
-      <td class="p-4 fw-bold fs-6 align-middle text-center">3</td>
-      <td class="p-4 fw-bold fs-6 align-middle text-center text-danger">$750</td>
-    </tr>
-     <tr>
-      <th scope="row" class="p-4">
-        <div class="d-lg-flex align-items-center gap-4">
-          <div class="box d-inline-block"></div>
-          <div>
-            <div class="fs-mb-5 fs-7 text-secondary-900 lh-base">喵了個咪中途之家 -  阿橘橘</div>
-            <div class="fs-8 text-primary-600">磨牙零食</div>
-          </div>
-        </div>
-      </th>
-      <td class="p-4 fw-bold fs-6 align-middle text-center">$50</td>
-      <td class="p-4 fw-bold fs-6 align-middle text-center">5</td>
-      <td class="p-4 fw-bold fs-6 align-middle text-center text-danger">$250</td>
-    </tr>
-    <tr class="border-bottom">
-      <th scope="row" class="p-4">
-        <div class="d-lg-flex align-items-center gap-4">
-          <div class="box d-inline-block"></div>
-          <div>
-            <div class="fs-mb-5 fs-7 text-secondary-900 lh-base">喵了個咪中途之家 -  阿橘橘</div>
-            <div class="fs-8 text-primary-600">健康檢查</div>
-          </div>
-        </div>
-      </th>
-      <td class="p-4 fw-bold fs-6 align-middle text-center">$200</td>
-      <td class="p-4 fw-bold fs-6 align-middle text-center">1</td>
-      <td class="p-4 fw-bold fs-6 align-middle text-center text-danger">$200</td>
-    </tr>
-    <tr style="border-bottom: 5px #A88760 solid;">
-      <th scope="row" class="p-4">
-        <div class="d-lg-flex align-items-center gap-4">
-          <div class="box d-inline-block"></div>
-          <div>
-            <div class="fs-mb-5 fs-7 text-secondary-900 lh-base">為寶貝送一份禮</div>
-            <div class="fs-8 text-primary-600"> (貓飼料) 無穀全齡貓-雞肉&鮭魚(低脂) 4磅</div>
-          </div>
-        </div>
-      </th>
-      <td class="p-4 fw-bold fs-6 align-middle text-center">$900</td>
-      <td class="p-4 fw-bold fs-6 align-middle text-center">1</td>
-      <td class="p-4 fw-bold fs-6 align-middle text-center text-danger">$900</td>
-    </tr>
-    <tr>
-      <th scope="row" class="p-4"></th>
-      <td class="p-4 fw-bold fs-6 align-middle text-center"></td>
-      <td class="p-4 fw-bold fs-6 align-middle text-center"></td>
-      <td class="p-4 fw-bold fs-6 align-middle text-center text-danger">$2855</td>
-    </tr>
-    <tr>
-      <th scope="row" class="p-4"></th>
-      <td class="p-4 fw-bold fs-6 align-middle text-center"></td>
-      <td class="p-4 fw-bold fs-6 align-middle text-center">優惠折扣</td>
-      <td class="p-4 fw-bold fs-6 align-middle text-center text-danger">-$50</td>
-    </tr>
-    <tr>
-      <th scope="row" class="p-4"></th>
-      <td class="p-4 fw-bold fs-lg-6 align-middle text-center"></td>
-      <td class="p-4 fw-bold fs-lg-2 align-middle text-center">總計</td>
-      <td class="px-4  py-5 fw-bold fs-lg-2 align-middle text-center text-danger">$2805</td>
-    </tr>
-  </tbody>
-        </table>
-       </div>
-      </div>
-       
-      </div>
-      <div class="container d-lg-flex gap-4 mt-9 ">
-       <div class="p-4 bg-white  w-100 border border-primary-700 border-3 mb-4 mb-lg-0" style="border-radius: 24px;">
-        <div class="text-center fs-3 fw-bold">發票</div>
-        <div>
-          <table class="table table-borderless">
-  <thead>
-    <tr>
-      <th scope="col" class="w-50 p-4 text-center align-middle fs-6 fw-bold">發票號碼</th>
-      <th scope="col" class="w-50 p-4 text-center align-middle fs-6 fw-bold">XKXXXXX</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row" class=" p-4 text-center align-middle fs-6 fw-bold">發票日期</th>
-      <td class=" p-4 text-center align-middle fs-6 fw-bold">
-        <div>2024-02-02</div>
-        <div>19:15:24</div>
-      </td>
-    </tr>
-     <tr>
-      <th scope="row" class=" p-4 text-center align-middle fs-6 fw-bold">開立狀態</th>
-      <td class=" p-4 text-center align-middle fs-6 fw-bold">已開立</td>
-    </tr>
-     <tr>
-      <th scope="row" class=" p-4 text-center align-middle fs-6 fw-bold">發票類型</th>
-      <td class=" p-4 text-center align-middle fs-6 fw-bold">二聯式</td>
-    </tr>
-     <tr>
-      <th scope="row" class=" p-4 text-center align-middle fs-6 fw-bold">載具類型</th>
-      <td class=" p-4 text-center align-middle fs-6 fw-bold">會員載具</td>
-    </tr>
-  </tbody>
-</table>
-        </div>
-       </div>
-       <div class="p-4 bg-white  w-100 border border-primary-700 border-3" style="border-radius: 24px;">
-        <div class="text-center fs-3 fw-bold">付款資訊</div>
-        <div>
-          <table class="table table-borderless">
-  <thead>
-    <tr>
-      <th scope="col" class="w-50 p-4 text-center align-middle fs-6 fw-bold">付款方式</th>
-      <th scope="col" class="w-50 p-4 text-center align-middle fs-6 fw-bold">信用卡</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row" class=" p-4 text-center align-middle fs-6 fw-bold">付款狀態</th>
-      <td class=" p-4 text-center align-middle fs-6 fw-bold">已付款</td>
-    </tr>
-  </tbody>
-</table>
-        </div>
-       </div>
-      </div>
-      <div class="container py-9">
-        <div class="d-flex align-items-center gap-4  mb-5" >
-        <div><img src="data:image/svg+xml,%3csvg%20width='48'%20height='48'%20viewBox='0%200%2048%2048'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M32.5869%204.5C39.1261%204.5%2044.4339%209.93273%2044.501%2016.5449L44.5%2017.0586C44.4334%2022.1785%2042.6008%2026.8963%2039.0293%2031.4053L38.666%2031.8555C36.8082%2034.1191%2033.5085%2037.6438%2026.0312%2042.7197L26.0303%2042.7188C25.2846%2043.2263%2024.404%2043.4993%2023.502%2043.5H23.499C22.5959%2043.4988%2021.7137%2043.226%2020.9678%2042.7168V42.7158C13.4929%2037.6412%2010.1934%2034.1177%208.33594%2031.8545C4.40063%2027.0583%202.44629%2022.0329%202.50098%2016.5439L2.50781%2016.2344C2.73429%209.76387%207.97829%204.50008%2014.415%204.5C18.5929%204.50008%2021.6033%206.57841%2023.5%208.5127C25.3971%206.57662%2028.4087%204.50017%2032.5869%204.5ZM23.7539%2020.2305C21.5518%2020.2305%2020.8112%2021.5451%2019.4639%2023.7217C18.9758%2024.5096%2018.2261%2024.9488%2017.4355%2025.4131C16.528%2025.9457%2015.5893%2026.4952%2015.1846%2027.5791C15.0272%2027.9698%2014.9482%2028.3848%2014.9512%2028.8027C14.9512%2030.5654%2016.4383%2031.9998%2018.0859%2032C19.7336%2032%2021.9048%2031.2158%2023.7588%2031.2158C25.6126%2031.2159%2027.7527%2031.9999%2029.4209%2032C31.0892%2032%2032.5508%2030.5655%2032.5508%2028.8027C32.5521%2028.3844%2032.4713%2027.9697%2032.3125%2027.5791C31.9092%2026.4932%2030.9699%2025.9423%2030.0625%2025.4102C29.2728%2024.9468%2028.5267%2024.5088%2028.0391%2023.7227C26.6948%2021.5449%2025.9562%2020.2305%2023.7539%2020.2305ZM15.3047%2018.1543C13.8872%2018.1543%2012.7383%2019.549%2012.7383%2021.2695C12.7384%2022.99%2013.8872%2024.3848%2015.3047%2024.3848C16.7221%2024.3847%2017.871%2022.9899%2017.8711%2021.2695C17.8711%2019.549%2016.7221%2018.1544%2015.3047%2018.1543ZM32.1709%2018.1543C30.7535%2018.1545%2029.6045%2019.5491%2029.6045%2021.2695C29.6046%2022.9899%2030.7536%2024.3846%2032.1709%2024.3848C33.5883%2024.3848%2034.7381%2022.99%2034.7383%2021.2695C34.7383%2019.549%2033.5884%2018.1543%2032.1709%2018.1543ZM20.4375%2014C19.0202%2014.0002%2017.8712%2015.3949%2017.8711%2017.1152C17.8711%2018.8357%2019.0201%2020.2302%2020.4375%2020.2305C21.855%2020.2305%2023.0049%2018.8358%2023.0049%2017.1152C23.0048%2015.3947%2021.855%2014%2020.4375%2014ZM27.0381%2014C25.6206%2014%2024.4717%2015.3947%2024.4717%2017.1152C24.4717%2018.8358%2025.6206%2020.2305%2027.0381%2020.2305C28.4555%2020.2303%2029.6045%2018.8357%2029.6045%2017.1152C29.6044%2015.3948%2028.4555%2014.0001%2027.0381%2014Z'%20fill='%237C6952'/%3e%3c/svg%3e" alt="icon"></div>
-        <div class="fs-2 lh-base fw-medium text-primary-700">寶貝影片</div>
-        </div>
-        <div class="row g-4">
-          <div class="col-md-6">
-            <div class="bg-primary-700 d-flex justify-content-center align-items-center" style="min-height: 400px; border-radius: 16px;">
-              <div class="text-center fw-bold text-secondary-800 fs-2 ">
-                準備中<br>耐心等候
-              </div>
+
+
+
+        <div class="row mb-56 mb-md-64">
+          <!-- promotion-card 優惠活動卡片 -->
+          <div class="col-md-12 col-lg-6 col-12">
+            <div class="ratio ratio-16x9 ">
+              <img src="/My-Shelter/assets/dog%20in%20park%201-Bh8iwHve.jpg" alt="優惠活動圖片" class=" img-fluid d-block rounded-3">
             </div>
           </div>
-          <div class="col-md-6 d-flex flex-column justify-content-between">
-
-          <div>
-            <div class="d-flex justify-content-end align-items-center pb-8">
-                          <div>
-                            <select class="form-select form-select-lg fs-5" aria-label=".form-select-lg example" style="border-radius: 100px;">
-                                 <option selected>毛寶寶基金會</option>
-                                 <option value="喵了個咪中途之家">喵了個咪中途之家</option>
-                            </select>
-                          </div>
+          <div class="col-md-12 col-lg-6 col-12 p-md-5 pt-4 pb-2 d-flex flex-column ">
+            <div>
+              <h2 class="fw-bold lh-sm text-primary-600 mb-5 mb-md-8"><a href="./new.html" class="text-decoration-none">山友​通報，​近期​有​惡意​人士​在​南投山​區​放置捕獸夾</a></h2>
+              <p class="fs-5">如有發現請聯繫以下單位進行獸夾回收處理!</p>
+            </div>
+            <div class="mt-auto">
+              <p class="fs-6 fs-md-4"><em>📣 &nbsp; 感謝	"熱心小盧" 資訊提供。</em></p>
             </div>
           </div>
-          <div>
-<!-- 三個步驟 -->
-            <div class="stepper mb-0">
-    <div class="step active">
-      <small class="fs-md-5 fs-7 mb-0 text-secondary-800">準備中</small>
-      <div class="circle fs-md-1 fs-5 fw-bold lh-base d-flex justify-content-center align-items-center">1</div>
-    </div>
-    <div class="step">
-      <small class="fs-md-5 fs-7 mb-0 text-secondary-800">拍攝中</small>
-      <div class="circle fs-md-1 fs-5 fw-bold lh-base d-flex justify-content-center align-items-center">2</div>
-    </div>
-    <div class="step">
-        <small class="fs-md-5 fs-7 mb-0 text-secondary-800">上傳完成​</small>
-      <div class="circle fs-md-1 fs-5 fw-bold lh-base d-flex justify-content-center align-items-center">3</div>
-    </div>
-            </div>
-
-
-          </div>
-          
-          </div>
+          <!-- promotion-card 優惠活動卡片 -->
         </div>
+
+        <div class="row mb-56 mb-md-64">
+          <!-- promotion-card 優惠活動卡片 -->
+          <div class="col-md-12 col-lg-6 col-12">
+            <div class="ratio ratio-16x9 ">
+              <img src="/My-Shelter/assets/pet%20with%20people-Bc14RdTJ.jpg" alt="優惠活動圖片" class=" img-fluid d-block rounded-3">
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 col-12 p-md-5 pt-4 pb-2 d-flex flex-column ">
+            <div>
+              <h2 class="fw-bold lh-sm text-primary-600 mb-5 mb-md-8"><a href="#" class="text-decoration-none">114年7月 My-Shelter平台 撥款明細</a></h2>
+              <p class="fs-5"></p>
+            </div>
+            <div class="mt-auto">
+              <p class="fs-6 fs-md-4"><em>&nbsp; </em></p>
+            </div>
+          </div>
+          <!-- promotion-card 優惠活動卡片 -->
+        </div>
+
+        <div class="row mb-56 mb-md-64">
+          <!-- promotion-card 優惠活動卡片 -->
+          <div class="col-md-12 col-lg-6 col-12">
+            <div class="ratio ratio-16x9 ">
+              <img src="/My-Shelter/assets/dog%20and%20doctor%201-ke_sA_Ag.jpg" alt="優惠活動圖片" class=" img-fluid d-block rounded-3">
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 col-12 p-md-5 pt-4 pb-2 d-flex flex-column ">
+            <div>
+              <h2 class="fw-bold lh-sm text-primary-600 mb-5 mb-md-8"><a href="#" class="text-decoration-none">MySelter平台與彼得獸醫院，共同贊助100份犬貓幼仔疫苗免費施打</a></h2>
+              <p class="fs-5">數量有限，請填寫申請書後由專人評估施打時間</p>
+            </div>
+            <!-- <div class="mt-auto">
+              <p class="fs-6 fs-md-4"><em></em></p>
+            </div> -->
+          </div>
+          <!-- promotion-card 優惠活動卡片 -->
+        </div>
+
+        <div class="row mb-56 mb-md-64">
+          <!-- promotion-card 優惠活動卡片 -->
+          <div class="col-md-12 col-lg-6 col-12">
+            <div class="ratio ratio-16x9 ">
+              <img src="/My-Shelter/assets/medical%20students-DIfIjdtm.jpg" alt="優惠活動圖片" class=" img-fluid d-block rounded-3">
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 col-12 p-md-5 pt-4 pb-2 d-flex flex-column ">
+            <div>
+              <h2 class="fw-bold lh-sm text-primary-600 mb-5 mb-md-8"><a href="#" class="text-decoration-none">大感謝-屏科大獸醫系學生協助喵了個咪中途之家的貓貓們做健康檢查</a></h2>
+              <p class="fs-5 card-title-truncate">本次與屏科大獸醫系共同合作，協助喵了個咪中途之家提供健康檢查本次與屏科大獸醫系共同合作，協助喵了個咪中途之家提供健康檢查</p>
+            </div>
+            <!-- <div class="mt-auto">
+              <p class="fs-6 fs-md-4"><em>內容2</em></p>
+            </div> -->
+          </div>
+          <!-- promotion-card 優惠活動卡片 -->
+        </div>
+
+
+
+
+
+        <!-- 分頁 -->
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item fs-md-5 me-md-4"><a class="page-link text-primary" href="#"><i
+                  class="bi bi-chevron-left"></i></a>
+            </li>
+
+            <li class="page-item fs-md-5 me-md-4 active"><a class="page-link" href="#">1</a></li>
+
+            <li class="page-item fs-md-5 me-md-4"><a class="page-link" href="#">2</a></li>
+            <li class="page-item fs-md-5 me-md-4"><a class="page-link" href="#">3</a></li>
+            <li class="page-item fs-md-5 me-md-4"><a class="page-link" href="#">...</a></li>
+            <li class="page-item fs-md-5 me-md-4"><a class="page-link" href="#">7</a></li>
+
+            <li class="page-item"><a class="page-link text-primary" href="#"><i class="bi bi-chevron-right"></i></a>
+            </li>
+          </ul>
+        </nav>
+
+
+
 
       </div>
-      <div class="container pt-9">
-    <div class="feedback-card p-8">
-      <h4 class="mb-6 fs-2 fw-bold text-primary-700">留言給我們</h4>
-      <form>
-        <div class="mb-6 border border-3 border-primary-700" style="border-radius: 16px;">
-          <textarea class="form-control" rows="10" placeholder="有任何建議、想法要提供給平台或機構嗎?"></textarea>
-        </div>
-        <div class="text-end">
-          <a href="#" class="bg-primary-700 text-primary-400 fs-3 text-decoration-none px-7 py-3 btn-submit" style="border-radius: 99px;">送出留言</a>
-        </div>
-      </form>
+
     </div>
-        </div>
-    </div>
-    
-
-<div class="btn-scroll-top position-fixed bottom-0 end-0 m-3">
-    <a href="#" >
-    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 16 16" fill="currentColor" class="icon-Paw-Print-Regular"><path fill="currentColor" d="M9.5 3.875c0-.582.369-.875.625-.875s.625.293.625.875s-.369.875-.625.875s-.625-.293-.625-.875M10.125 2C9.138 2 8.5 2.938 8.5 3.875s.638 1.875 1.625 1.875s1.625-.938 1.625-1.875S11.112 2 10.125 2m-7.75 3.25c-.256 0-.625.293-.625.875S2.119 7 2.375 7S3 6.707 3 6.125s-.369-.875-.625-.875M.75 6.125c0-.937.638-1.875 1.625-1.875S4 5.188 4 6.125S3.362 8 2.375 8S.75 7.062.75 6.125m12.875-.875c-.256 0-.625.293-.625.875s.369.875.625.875s.625-.293.625-.875s-.369-.875-.625-.875M12 6.125c0-.937.638-1.875 1.625-1.875s1.625.938 1.625 1.875S14.612 8 13.625 8S12 7.062 12 6.125M5.875 3c-.256 0-.625.293-.625.875s.369.875.625.875s.625-.293.625-.875S6.131 3 5.875 3m-1.625.875C4.25 2.938 4.888 2 5.875 2S7.5 2.938 7.5 3.875S6.862 5.75 5.875 5.75S4.25 4.812 4.25 3.875M4 12a4 4 0 1 1 8 0c0 .534-.525 1-1.285 1h-5.43C4.525 13 4 12.534 4 12m4-5a5 5 0 0 0-5 5c0 1.298 1.212 2 2.285 2h5.43C11.788 14 13 13.298 13 12a5 5 0 0 0-5-5"/></svg>
-
-    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 16 16" fill="currentColor" class="icon-Paw-Print-Filled"><path fill="currentColor" d="M8.5 3.875C8.5 2.938 9.138 2 10.125 2s1.625.938 1.625 1.875s-.638 1.875-1.625 1.875S8.5 4.812 8.5 3.875m-6.125.375C1.388 4.25.75 5.188.75 6.125S1.388 8 2.375 8S4 7.062 4 6.125S3.362 4.25 2.375 4.25m11.25 0c-.987 0-1.625.938-1.625 1.875S12.638 8 13.625 8s1.625-.938 1.625-1.875s-.638-1.875-1.625-1.875M5.875 2c-.987 0-1.625.938-1.625 1.875S4.888 5.75 5.875 5.75S7.5 4.812 7.5 3.875S6.862 2 5.875 2M8 7a5 5 0 0 0-5 5c0 1.298 1.212 2 2.285 2h5.43C11.788 14 13 13.298 13 12a5 5 0 0 0-5-5"/></svg>
-    
-    <span class="btn-scroll-top-text">TOP</span></a>
-</div>
 
 
-      <div class=" pt-64 pb-5 pt-lg-80 pb-lg-8 d-flex flex-column gap-64 gap-lg-80">
+
+
+
+
+
+
+
+    <div class=" pt-64 pb-5 pt-lg-80 pb-lg-8 d-flex flex-column gap-64 gap-lg-80">
     <div class="container d-flex flex-column flex-lg-row justify-content-between  gap-80">
         <div class="d-flex flex-column justify-content-between gap-7 ">
             <a href="#"  class="text-center text-lg-start pb-4 pb-lg-0  line">
@@ -670,11 +447,19 @@
         <div class="text-secondary-700 ln-base text-center">Copyright @ 2025 My-Shelter | 本網站僅供個人作品使用,不提供商業用途</div>
     </div>
 </div>
-        <!-- JavaScript Bundle with Popper -->
+      
+
+<div class="btn-scroll-top position-fixed bottom-0 end-0 m-3">
+    <a href="#" >
+    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 16 16" fill="currentColor" class="icon-Paw-Print-Regular"><path fill="currentColor" d="M9.5 3.875c0-.582.369-.875.625-.875s.625.293.625.875s-.369.875-.625.875s-.625-.293-.625-.875M10.125 2C9.138 2 8.5 2.938 8.5 3.875s.638 1.875 1.625 1.875s1.625-.938 1.625-1.875S11.112 2 10.125 2m-7.75 3.25c-.256 0-.625.293-.625.875S2.119 7 2.375 7S3 6.707 3 6.125s-.369-.875-.625-.875M.75 6.125c0-.937.638-1.875 1.625-1.875S4 5.188 4 6.125S3.362 8 2.375 8S.75 7.062.75 6.125m12.875-.875c-.256 0-.625.293-.625.875s.369.875.625.875s.625-.293.625-.875s-.369-.875-.625-.875M12 6.125c0-.937.638-1.875 1.625-1.875s1.625.938 1.625 1.875S14.612 8 13.625 8S12 7.062 12 6.125M5.875 3c-.256 0-.625.293-.625.875s.369.875.625.875s.625-.293.625-.875S6.131 3 5.875 3m-1.625.875C4.25 2.938 4.888 2 5.875 2S7.5 2.938 7.5 3.875S6.862 5.75 5.875 5.75S4.25 4.812 4.25 3.875M4 12a4 4 0 1 1 8 0c0 .534-.525 1-1.285 1h-5.43C4.525 13 4 12.534 4 12m4-5a5 5 0 0 0-5 5c0 1.298 1.212 2 2.285 2h5.43C11.788 14 13 13.298 13 12a5 5 0 0 0-5-5"/></svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 16 16" fill="currentColor" class="icon-Paw-Print-Filled"><path fill="currentColor" d="M8.5 3.875C8.5 2.938 9.138 2 10.125 2s1.625.938 1.625 1.875s-.638 1.875-1.625 1.875S8.5 4.812 8.5 3.875m-6.125.375C1.388 4.25.75 5.188.75 6.125S1.388 8 2.375 8S4 7.062 4 6.125S3.362 4.25 2.375 4.25m11.25 0c-.987 0-1.625.938-1.625 1.875S12.638 8 13.625 8s1.625-.938 1.625-1.875s-.638-1.875-1.625-1.875M5.875 2c-.987 0-1.625.938-1.625 1.875S4.888 5.75 5.875 5.75S7.5 4.812 7.5 3.875S6.862 2 5.875 2M8 7a5 5 0 0 0-5 5c0 1.298 1.212 2 2.285 2h5.43C11.788 14 13 13.298 13 12a5 5 0 0 0-5-5"/></svg>
+    
+    <span class="btn-scroll-top-text">TOP</span></a>
+</div>        <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-          crossorigin="anonymous"></script>
-          
+          crossorigin="anonymous"></script>
 </body>
 
 </html>

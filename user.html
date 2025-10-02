@@ -29,73 +29,88 @@
     .user-left-list:hover {
       background-color: bisque;
     }
-    .order:hover{
-      color: black !important; 
+
+    .order:hover {
+      color: black !important;
     }
-    .sm-btn:hover{
-      color: #E7DFD7 !important; 
+
+    .sm-btn:hover {
+      color: #E7DFD7 !important;
       background-color: #887258 !important;
     }
-  /* 收縮 */
-.content-preview {
-  overflow: hidden;
-  display: -webkit-box;   /* Safari / Chrome 需要 */
-  display: box;           /* 舊版 spec */
-  -webkit-box-orient: vertical;
-  box-orient: vertical;   /* 舊版 spec */
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
 
-.content-preview.collapsed {
-  -webkit-line-clamp: 1; /* WebKit 瀏覽器 */
-  line-clamp: 1;         /* 標準屬性 */
-}
+    /* 收縮 */
+    .content-preview {
+      overflow: hidden;
+      display: -webkit-box;
+      /* Safari / Chrome 需要 */
+      display: box;
+      /* 舊版 spec */
+      -webkit-box-orient: vertical;
+      box-orient: vertical;
+      /* 舊版 spec */
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
 
-.content-preview.expanded {
-  -webkit-line-clamp: unset;
-  line-clamp: unset;
-}
+    .content-preview.collapsed {
+      -webkit-line-clamp: 1;
+      /* WebKit 瀏覽器 */
+      line-clamp: 1;
+      /* 標準屬性 */
+    }
 
-/* 卡片容器可以上下滑動 */
-.scroll-area {
-  max-height: 300px; /* 你要顯示的高度 */
-  overflow-y: auto;
-  -ms-overflow-style: none;  /* 隱藏 IE scrollbar */
-  scrollbar-width: none;     /* 隱藏 Firefox scrollbar */
-}
-.scroll-area::-webkit-scrollbar {
-  display: none;             /* 隱藏 Chrome / Safari scrollbar */
-}
+    .content-preview.expanded {
+      -webkit-line-clamp: unset;
+      line-clamp: unset;
+    }
 
-/* 移除 nav-tabs 預設的邊框 */
-.nav-tabs {
-  border-bottom: none !important;
-}
+    /* 卡片容器可以上下滑動 */
+    .scroll-area {
+      max-height: 300px;
+      /* 你要顯示的高度 */
+      overflow-y: auto;
+      -ms-overflow-style: none;
+      /* 隱藏 IE scrollbar */
+      scrollbar-width: none;
+      /* 隱藏 Firefox scrollbar */
+    }
 
-/* 移除按鈕本身的邊框 */
-.nav-tabs .nav-link {
-  border: none !important;
-  border-radius: 6px;  
-  padding: 0.5rem 1.2rem;
-  font-weight: 600;
-  color: #6c757d; /* 預設文字顏色 */
-}
+    .scroll-area::-webkit-scrollbar {
+      display: none;
+      /* 隱藏 Chrome / Safari scrollbar */
+    }
 
-/* active 狀態樣式 */
-.nav-tabs .nav-link.active {
-  background-color: #887258 !important; /* 你要的主色 */
-  color: #E7DFD7 !important;
-}
+    /* 移除 nav-tabs 預設的邊框 */
+    .nav-tabs {
+      border-bottom: none !important;
+    }
+
+    /* 移除按鈕本身的邊框 */
+    .nav-tabs .nav-link {
+      border: none !important;
+      border-radius: 6px;
+      padding: 0.5rem 1.2rem;
+      font-weight: 600;
+      color: #6c757d;
+      /* 預設文字顏色 */
+    }
+
+    /* active 狀態樣式 */
+    .nav-tabs .nav-link.active {
+      background-color: #887258 !important;
+      /* 你要的主色 */
+      color: #E7DFD7 !important;
+    }
   </style>
-  <script type="module" crossorigin src="/My-Shelter/assets/main-CiW5fVrb.js"></script>
-  <link rel="stylesheet" crossorigin href="/My-Shelter/assets/main-Cf94_GDb.css">
+  <script type="module" crossorigin src="/My-Shelter/assets/main-Cws21Ud6.js"></script>
+  <link rel="stylesheet" crossorigin href="/My-Shelter/assets/main-BF3_kuHa.css">
 </head>
 
 <body>
   <div class=" shadow-lg">
     <div class="bg-primary-200">
-        <p class="lh-base  fs-9 fs-lg-5 fw-medium py-2 px-5  text-secondary-900 mb-0">【優惠活動】結帳使用 Pet pay 卡，最高享10%回饋 <a href="#" class="text-secondary-700">查看詳情</a></p>
+        <p class="lh-base  fs-9 fs-lg-5 fw-medium py-2 px-5  text-secondary-900 mb-0">【優惠活動】結帳使用 Pet pay 卡，最高享10%回饋 <a href="./promotions-list.html" class="text-secondary-700">查看詳情</a></p>
     </div>
     <div class="container d-flex  justify-content-between align-items-center p-4">
          <div class="d-lg-none me-6">
@@ -136,9 +151,9 @@
        <div class="d-none d-lg-block">
         <ul class="list-unstyled d-flex gap-2 mb-0">
             <li class="fs-5 lh-base fw-medium py-2 px-3"><a href="#" class="text-decoration-none text-secondary-900">關於我們</a></li>
-            <li class="fs-5 lh-base fw-medium py-2 px-3"><a href="#" class="text-decoration-none text-secondary-900">常見問題</a></li>
-            <li class="fs-5 lh-base fw-medium py-2 px-3"><a href="#" class="text-decoration-none text-secondary-900">機構支援</a></li>
-            <li class="fs-5 lh-base fw-medium py-2 px-3"><a href="#" class="text-decoration-none text-secondary-900">寶貝認養</a></li>
+            <li class="fs-5 lh-base fw-medium py-2 px-3"><a href="./FAQ.html" class="text-decoration-none text-secondary-900">常見問題</a></li>
+            <li class="fs-5 lh-base fw-medium py-2 px-3"><a href="./agency-list.html" class="text-decoration-none text-secondary-900">機構支援</a></li>
+            <li class="fs-5 lh-base fw-medium py-2 px-3"><a href="./pet-list.html" class="text-decoration-none text-secondary-900">寶貝認養</a></li>
         </ul>
        </div>
        <div class="d-flex align-items-center gap-4">
@@ -159,7 +174,7 @@
 <!-- Offcanvas -->
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
     <div class="bg-primary-200">
-        <p class="lh-base  fs-9 fs-lg-5 fw-medium py-2 px-5  text-secondary-900 mb-0">【優惠活動】結帳使用 Pet pay 卡，最高享10%回饋 <a href="#" class="text-secondary-700">查看詳情</a></p>
+        <p class="lh-base  fs-9 fs-lg-5 fw-medium py-2 px-5  text-secondary-900 mb-0">【優惠活動】結帳使用 Pet pay 卡，最高享10%回饋 <a href="/pages/" class="text-secondary-700">查看詳情</a></p>
     </div>
   <div class="d-flex justify-content-between align-items-center py-2 px-4 bg-primary-100">
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -208,8 +223,8 @@
     </div>
     <div class="mb-9">
         <ul class="list-unstyled mb-0 d-flex flex-column justify-content-center align-items-center gap-5">
-            <li class="py-2 px-3"><a href="#" class="fw-medium lh-sm fs-5 text-decoration-none text-secondary-800 ">關於我們</a></li>
-            <li class="py-2 px-3"><a href="#" class="fw-medium lh-sm fs-5 text-decoration-none text-secondary-800 ">常見問題</a></li>
+            <li class="py-2 px-3"><a href="./about.html" class="fw-medium lh-sm fs-5 text-decoration-none text-secondary-800 ">關於我們</a></li>
+            <li class="py-2 px-3"><a href="./FAQ.html" class="fw-medium lh-sm fs-5 text-decoration-none text-secondary-800 ">常見問題</a></li>
             <li class="py-2 px-3"><a href="./agency-list.html" class="fw-medium lh-sm fs-5 text-decoration-none text-secondary-800 ">機構支援</a></li>
             <li class="py-2 px-3"><a href="./pet-list.html" class="fw-medium lh-sm fs-5 text-decoration-none text-secondary-800 ">寶貝認養</a></li>
         </ul>
@@ -221,7 +236,7 @@
                 </div>
             <div>
                 <div>
-                   <img src="data:image/svg+xml,%3csvg%20width='17'%20height='22'%20viewBox='0%200%2017%2022'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.2499%2012.2071C12.661%2012.2071%2016.1836%2015.8756%2016.1836%2020.3334C16.1836%2020.8121%2015.7918%2021.2006%2015.3091%2021.2006H1.19069C0.70799%2021.2006%200.316162%2020.8121%200.316162%2020.3334C0.316162%2015.8756%203.83882%2012.2071%208.2499%2012.2071ZM8.2499%2013.9402C5.14366%2013.9402%202.53248%2016.3239%202.12167%2019.4662H14.3781C13.9673%2016.3239%2011.3561%2013.9402%208.2499%2013.9402ZM11.4092%205.81519C11.4092%203.9729%209.96535%202.53394%208.2499%202.53394C6.53446%202.53394%205.09059%203.9729%205.09059%205.81519C5.09074%207.65734%206.53455%209.09644%208.2499%209.09644C9.96526%209.09644%2011.4091%207.65734%2011.4092%205.81519ZM13.1583%205.81519C13.1581%208.55468%2010.99%2010.8295%208.2499%2010.8295C5.50979%2010.8295%203.34169%208.55468%203.34154%205.81519C3.34154%203.07556%205.50969%200.799561%208.2499%200.799561C10.9901%200.799561%2013.1583%203.07556%2013.1583%205.81519Z'%20fill='%237C6952'/%3e%3c/svg%3e" alt="person"> 
+                   <img src="data:image/svg+xml,%3csvg%20width='17'%20height='22'%20viewBox='0%200%2017%2022'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.2499%2012.2071C12.661%2012.2071%2016.1836%2015.8756%2016.1836%2020.3334C16.1836%2020.8121%2015.7918%2021.2006%2015.3091%2021.2006H1.19069C0.70799%2021.2006%200.316162%2020.8121%200.316162%2020.3334C0.316162%2015.8756%203.83882%2012.2071%208.2499%2012.2071ZM8.2499%2013.9402C5.14366%2013.9402%202.53248%2016.3239%202.12167%2019.4662H14.3781C13.9673%2016.3239%2011.3561%2013.9402%208.2499%2013.9402ZM11.4092%205.81519C11.4092%203.9729%209.96535%202.53394%208.2499%202.53394C6.53446%202.53394%205.09059%203.9729%205.09059%205.81519C5.09074%207.65734%206.53455%209.09644%208.2499%209.09644C9.96526%209.09644%2011.4091%207.65734%2011.4092%205.81519ZM13.1583%205.81519C13.1581%208.55468%2010.99%2010.8295%208.2499%2010.8295C5.50979%2010.8295%203.34169%208.55468%203.34154%205.81519C3.34154%203.07556%205.50969%200.799561%208.2499%200.799561C10.9901%200.799561%2013.1583%203.07556%2013.1583%205.81519Z'%20fill='%237C6952'/%3e%3c/svg%3e" alt="person">
                 </div>
             </div>
             <div class="lh-sm fw-medium fs-5 text-primary-700 ">
@@ -246,63 +261,65 @@
 </div>
 
 
-      <div class="bg-primary-200">
-        <div class="container py-8">
+    <div class="bg-primary-200">
+      <div class="container py-8">
 
-          <div class="row">
-            <!-- 左側選單 -->
-            <div class="col-md-4 bg-light">
+        <div class="row">
+          <!-- 左側選單 -->
+          <div class="col-md-4 bg-light">
 
-              <div class="d-flex align-items-center justify-content-space py-7 px-5 gap-4 mb-4">
-                <div class="ratio ratio-1x1 shadow me-3" style="width:150px;">
-                  <img src="/My-Shelter/assets/dog-C9XCfHyE.jpg" alt="user avatar" class="img-fluid w-100 h-100 object-fit-cover">
-                </div>
-                <div class="text-center">
-                  <h4 class="mb-2">使用者名稱</h4>
-                  <p class="mb-0 text-muted fs-md-8">LV.5 銀牌守護者</p>
-                </div>
+            <div class="d-flex align-items-center justify-content-space py-7 px-5 gap-4 mb-4">
+              <div class="ratio ratio-1x1 shadow me-3" style="width:150px;">
+                <img src="/My-Shelter/assets/dog-C9XCfHyE.jpg" alt="user avatar" class="img-fluid w-100 h-100 object-fit-cover">
               </div>
-
-              <div class="nav flex-row flex-md-column justify-content-center nav-pills" id="v-pills-tab" role="tablist"
-                aria-orientation="vertical">
-
-                <button class="col-3 col-md-12 nav-link active fs-mb-5 rounded-0 p-4 user-left-list"
-                  id="v-pills-user-tab" data-bs-toggle="pill" data-bs-target="#v-pills-user" type="button" role="tab"
-                  aria-controls="v-pills-user" aria-selected="true">個人資訊</button>
-                <button class="col-3 col-md-12 nav-link fs-mb-5 rounded-0 p-4 user-left-list" id="v-pills-messages-tab"
-                  data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab"
-                  aria-controls="v-pills-messages" aria-selected="false">通知訊息</button>
-                <button class="col-3 col-md-12 nav-link fs-mb-5 rounded-0 p-4 user-left-list" id="v-pills-orders-tab"
-                  data-bs-toggle="pill" data-bs-target="#v-pills-orders" type="button" role="tab"
-                  aria-controls="v-pills-orders" aria-selected="false">訂單資訊</button>
-                <button class="col-3 col-md-12 nav-link fs-mb-5 rounded-0 p-4 user-left-list  mb-md-4"
-                  id="v-pills-follow-tab" data-bs-toggle="pill" data-bs-target="#v-pills-follow" type="button"
-                  role="tab" aria-controls="v-pills-follow" aria-selected="false">我的關注</button>
-
-
+              <div class="text-center">
+                <h4 class="mb-2">使用者名稱</h4>
+                <p class="mb-0 text-muted fs-md-8">LV.5 銀牌守護者</p>
               </div>
             </div>
-            <!-- 左側選單 -->
 
-            <!-- 右側選單 -->
-            <div class="col-md-8">
-              <!-- pt-0 -->
-              <div class="tab-content user-right-content pt-md-0" id="v-pills-tabContent">  
+            <div class="nav flex-row flex-md-column justify-content-center nav-pills" id="v-pills-tab" role="tablist"
+              aria-orientation="vertical">
 
-                <!-- 個人資訊 -->
-                <div class="tab-pane fade show active" id="v-pills-user" role="tabpanel"
-                  aria-labelledby="v-pills-user-tab" tabindex="0">
-                  <h4 class="mb-7">個人資訊</h4>
+              <button class="col-3 col-md-12 nav-link active fs-mb-5 rounded-0 p-4 user-left-list" id="v-pills-user-tab"
+                data-bs-toggle="pill" data-bs-target="#v-pills-user" type="button" role="tab"
+                aria-controls="v-pills-user" aria-selected="true">個人資訊</button>
+              <button class="col-3 col-md-12 nav-link fs-mb-5 rounded-0 p-4 user-left-list" id="v-pills-messages-tab"
+                data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab"
+                aria-controls="v-pills-messages" aria-selected="false">通知訊息</button>
+              <button class="col-3 col-md-12 nav-link fs-mb-5 rounded-0 p-4 user-left-list" id="v-pills-orders-tab"
+                data-bs-toggle="pill" data-bs-target="#v-pills-orders" type="button" role="tab"
+                aria-controls="v-pills-orders" aria-selected="false">訂單資訊</button>
+              <button class="col-3 col-md-12 nav-link fs-mb-5 rounded-0 p-4 user-left-list  mb-md-4"
+                id="v-pills-follow-tab" data-bs-toggle="pill" data-bs-target="#v-pills-follow" type="button" role="tab"
+                aria-controls="v-pills-follow" aria-selected="false">我的關注</button>
+
+
+            </div>
+          </div>
+          <!-- 左側選單 -->
+
+          <!-- 右側選單 -->
+          <div class="col-md-8">
+            <!-- pt-0 -->
+            <div class="tab-content user-right-content pt-md-0" id="v-pills-tabContent">
+
+              <!-- 個人資訊 -->
+              <div class="tab-pane fade show active" id="v-pills-user" role="tabpanel"
+                aria-labelledby="v-pills-user-tab" tabindex="0">
+                <div class="bg-white p-5" style="border-radius: 16px;">
+
+                  <h4 class="mb-7 fs-4 fw-bold text-primary-600">個人資訊</h4>
                   <div>
                     <form action="">
                       <!-- 使用者名稱 -->
                       <div class="mb-4">
-                        <label for="userName" class="form-label fs-7 mb-2">使用者名稱</label>
+                        <label for="userName" class="form-label fs-7 mb-2 fw-bold">使用者名稱</label>
                         <input type="text" class="form-control w-auto" id="userName" placeholder="使用者名稱" value="使用者名稱">
                       </div>
                       <!-- 密碼 -->
                       <div class="mb-4">
-                        <label for="userPassword" class="form-label fs-7 mb-2">密碼</label>
+                        <label for="userPassword" class="form-label fs-7 mb-2 fw-bold">密碼</label>
                         <div class="d-flex align-items-center">
                           <input type="password" class="form-control w-auto me-6" id="userPassword" placeholder="密碼"
                             value="********">
@@ -311,19 +328,19 @@
                       </div>
                       <!-- email(唯獨) -->
                       <div class="mb-4">
-                        <label for="userEmail" class="form-label fs-7 mb-2">email 信箱</label>
-                        <input type="email" class="form-control-plaintext w-auto" id="userEmail" placeholder="用戶信箱"
+                        <label for="userEmail" class="form-label fs-7 mb-2 fw-bold">email 信箱</label>
+                        <input type="email" class="form-control-plaintext w-auto text-secondary-400" id="userEmail" placeholder="用戶信箱"
                           value="email@example.com" readonly>
                       </div>
                       <!-- 手機 -->
                       <div class="mb-4">
-                        <label for="userPhone" class="form-label fs-7 mb-2">手機</label>
+                        <label for="userPhone" class="form-label fs-7 mb-2 fw-bold">手機</label>
                         <input type="tel" class="form-control w-auto" id="userPhone" placeholder="手機號碼"
                           value="09xx-xxxxxx">
                       </div>
                       <!-- 生日 -->
                       <div class="mb-md-4 mb-6">
-                        <label for="userBirth" class="form-label fs-7 mb-2">生日</label>
+                        <label for="userBirth" class="form-label fs-7 mb-2 fw-bold">生日</label>
                         <input type="date" class="form-control w-auto" id="userBirth">
                       </div>
                       <!-- 儲存按鈕 -->
@@ -332,62 +349,70 @@
                       </div>
                     </form>
                   </div>
+
                 </div>
 
-                <!-- 通知訊息 -->
-                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"
-                  tabindex="0">
-                  <div class="bg-white" style="border-radius: 16px;">
-                    <div>
-                      <!-- header -->
-                      <div class="d-flex justify-content-between align-items-center p-5">
-                        <div class="d-flex align-items-center gap-2">
-                          <div class="fs-4 fw-bold text-primary-600">通知訊息</div>
-                          <div><a href="#" class="p-3 text-primary-700 bg-primary-400 text-decoration-none sm-btn fs-8 fw-bold" style="border-radius: 16px;">一鍵已讀</a></div>
+              </div>
+
+              <!-- 通知訊息 -->
+              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"
+                tabindex="0">
+                <div class="bg-white" style="border-radius: 16px;">
+                  <div>
+                    <!-- header -->
+                    <div class="d-flex justify-content-between align-items-center p-5">
+                      <div class="d-flex align-items-center gap-2">
+                        <div class="fs-4 fw-bold text-primary-600">通知訊息</div>
+                        <div><a href="#"
+                            class="p-3 text-primary-700 bg-primary-400 text-decoration-none sm-btn fs-8 fw-bold"
+                            style="border-radius: 16px;">一鍵已讀</a></div>
+                      </div>
+
+                      <div class="d-flex align-items-center gap-2">
+                        <div>通知類別</div>
+                        <div>
+                          <select class="form-select form-select-lg fs-8" aria-label=".form-select-lg example"
+                            style="border-radius: 100px;">
+                            <option selected>全部內容</option>
+                            <option value="訂單與領養">訂單與領養</option>
+                            <option value="會員活動與優惠">會員活動與優惠</option>
+                            <option value="系統與帳號">系統與帳號</option>
+                          </select>
                         </div>
-                        
-                        <div class="d-flex align-items-center gap-2">
-                          <div>通知類別</div>
-                          <div>
-                            <select class="form-select form-select-lg fs-8" aria-label=".form-select-lg example" style="border-radius: 100px;">
-                                 <option selected>全部內容</option>
-                                 <option value="訂單與領養">訂單與領養</option>
-                                 <option value="會員活動與優惠">會員活動與優惠</option>
-                                 <option value="系統與帳號">系統與帳號</option>
-                            </select>
-                          </div>
-                        
+
                       </div>
                     </div>
                     <!-- content -->
                     <div class="p-5">
-                      
-                       <div class="py-4">
+
+                      <div class="py-4">
                         <div class="d-flex justify-content-between align-items-center">
                           <div class="fw-bold fs-4 text-primary-600 lh-sm">📣訂單更新</div>
                           <div class="fw-medium text-secondary-400 lh-base">2024-08-18</div>
                         </div>
                         <div class="text-secondary-600">
                           <div class="content-preview collapsed py-4 lh-base fw-medium fs-6">
-                            您的訂單<a href="#" class="text-decoration-none">#4081846</a>  已成功付款，您的愛心已透過雲端送達牠的身邊。<br><br>若有任何訂單問題或需求，歡迎隨時聯繫客服，我們將竭誠為您服務。謝謝您與My-Shelter一起守護每一位毛寶貝的幸福！
+                            您的訂單<a href="#" class="text-decoration-none">#4081846</a>
+                            已成功付款，您的愛心已透過雲端送達牠的身邊。<br><br>若有任何訂單問題或需求，歡迎隨時聯繫客服，我們將竭誠為您服務。謝謝您與My-Shelter一起守護每一位毛寶貝的幸福！
                           </div>
                         </div>
-                       </div>
-                       <div class="py-4">
+                      </div>
+                      <div class="py-4">
                         <div class="d-flex justify-content-between align-items-center">
                           <div class="fw-bold fs-4 text-primary-600 lh-sm">📣領養審核通過</div>
                           <div class="fw-medium text-secondary-400 lh-base">2024-08-16</div>
                         </div>
                         <div class="text-secondary-600">
-                          <div class="content-preview collapsed py-4 lh-base fw-medium fs-6">恭喜！您申請領養的「蹲蹲」已通過初步審核，所屬機構將於7日內與您聯繫，請配合機構完成後續領養程序。
+                          <div class="content-preview collapsed py-4 lh-base fw-medium fs-6">
+                            恭喜！您申請領養的「蹲蹲」已通過初步審核，所屬機構將於7日內與您聯繫，請配合機構完成後續領養程序。
                             <br><br>接下來，所屬機構將安排後續的領養流程與訪視時間。請您保持電話暢通並留意相關訊息，以便順利完成領養手續。
                             <br><br>如有任何問題，歡迎隨時與我們聯繫。祝您與新夥伴生活愉快！<br><br>
                             謝謝您對動物的愛心與支持！
                             <br>My-Shelter 敬上
                           </div>
                         </div>
-                       </div>
-                       <div class="py-4">
+                      </div>
+                      <div class="py-4">
                         <div class="d-flex justify-content-between align-items-center">
                           <div class="fw-bold fs-4 text-primary-600 lh-sm">🎁生日快樂！為你送上生日祝福</div>
                           <div class="fw-medium text-secondary-400 lh-base">2024-08-13</div>
@@ -399,11 +424,13 @@
                             <br><br>感謝您一直以來對毛寶貝們的關懷與支持，這份小小的心意希望能為您的生日增添一點溫暖與喜悅。
                             <br><br>在結帳時使用優惠券即可享有$100折扣優惠。
                             <br><br>優惠券有效期限至2024-09-13，一起向毛寶貝們分享這份喜悅吧！
-                            <div class="my-6"><a href="index.html" class="p-2 bg-primary-400 text-primary-700 text-decoration-none sm-btn" style="border-radius: 4px;">【分享喜悅】</a></div>
+                            <div class="my-6"><a href="index.html"
+                                class="p-2 bg-primary-400 text-primary-700 text-decoration-none sm-btn"
+                                style="border-radius: 4px;">【分享喜悅】</a></div>
                           </div>
                         </div>
-                       </div>
-                       <div class="py-4">
+                      </div>
+                      <div class="py-4">
                         <div class="d-flex justify-content-between align-items-center">
                           <div class="fw-bold fs-4 text-primary-600 lh-sm">🏆等級升級</div>
                           <div class="fw-medium text-secondary-400 lh-base">2024-08-09</div>
@@ -416,351 +443,396 @@
                             <br>My-Shelter 敬上
                           </div>
                         </div>
-                       </div>
-                       <div class="py-4">
+                      </div>
+                      <div class="py-4">
                         <div class="d-flex justify-content-between align-items-center">
                           <div class="fw-bold fs-4 text-primary-600 lh-sm">📣寶貝影片來囉！</div>
                           <div class="fw-medium text-secondary-400 lh-base">2024-07-29</div>
                         </div>
                         <div class="text-secondary-600">
                           <div class="content-preview collapsed py-4 lh-base fw-medium fs-6">
-                           訂單 <a href="shopping-cart4.html" class="text-decoration-none">#2068439 </a>感謝您支援「幼貓疫苗接種協助-幼貓疫苗(三合一)」
-                           <br><br>所屬機構「喵了個咪中途之家」已經將您的回饋影片上傳囉🎥🐾
-                           <br><br>點擊下方連結，感受這些毛孩子滿滿的活力與幸福瞬間吧！
-                            <div class="my-6"><a href="index.html" class="p-2 bg-primary-400 text-primary-700 text-decoration-none sm-btn" style="border-radius: 4px;">【觀看影片】</a></div>
-                          
-                           <br>未來也讓我們一起陪伴寶貝們走過每一步，傳遞更多溫暖。
-                           <br>My-Shelter 敬上
+                            訂單 <a href="#" class="text-decoration-none">#2068439 </a>感謝您支援「幼貓疫苗接種協助-幼貓疫苗(三合一)」
+                            <br><br>所屬機構「喵了個咪中途之家」已經將您的回饋影片上傳囉🎥🐾
+                            <br><br>點擊下方連結，感受這些毛孩子滿滿的活力與幸福瞬間吧！
+                            <div class="my-6"><a href="index.html"
+                                class="p-2 bg-primary-400 text-primary-700 text-decoration-none sm-btn"
+                                style="border-radius: 4px;">【觀看影片】</a></div>
+
+                            <br>未來也讓我們一起陪伴寶貝們走過每一步，傳遞更多溫暖。
+                            <br>My-Shelter 敬上
                           </div>
                         </div>
-                       </div>
-                       <div class="py-4">
+                      </div>
+                      <div class="py-4">
                         <div class="d-flex justify-content-between align-items-center">
                           <div class="fw-bold fs-4 text-primary-600 lh-sm">⚙️系統通知</div>
                           <div class="fw-medium text-secondary-400 lh-base">2024-07-25</div>
                         </div>
                         <div class="text-secondary-600">
                           <div class="content-preview collapsed py-4 lh-base fw-medium fs-6">
-                          為了提升服務品質，我們將於【2024-07-26】進行系統維護作業。屆時平台部分功能可能暫時無法使用，造成不便敬請見諒。
-                          <br><br><span class="text-secondary-900">維護時間：<br>2024-07-26 12:00至2024-07-26 14:00</span> 
-                          <br><br>期間如有緊急問題，請透過客服信箱或電話與我們聯繫，我們將盡快為您處理。感謝您的理解與支持，期待維護後為您帶來更流暢的使用體驗！
-                          <br><br>My-Shelter 敬上 
+                            為了提升服務品質，我們將於【2024-07-26】進行系統維護作業。屆時平台部分功能可能暫時無法使用，造成不便敬請見諒。
+                            <br><br><span class="text-secondary-900">維護時間：<br>2024-07-26 12:00至2024-07-26 14:00</span>
+                            <br><br>期間如有緊急問題，請透過客服信箱或電話與我們聯繫，我們將盡快為您處理。感謝您的理解與支持，期待維護後為您帶來更流暢的使用體驗！
+                            <br><br>My-Shelter 敬上
+                          </div>
                         </div>
-                        </div>
-                       </div>
+                      </div>
 
                     </div>
                     <!-- footer -->
-                    <div class="d-flex justify-content-end fs-5 px-4 py-5 bg-white" style="border-bottom-right-radius:16px ; border-bottom-left-radius:16px ;">
+                    <div class="d-flex justify-content-end fs-5 px-4 py-5 bg-white"
+                      style="border-bottom-right-radius:16px ; border-bottom-left-radius:16px ;">
                     </div>
-  
+
                   </div>
                 </div>
-                </div>
+              </div>
 
-                <!-- 訂單資訊 -->
-                <div class="tab-pane fade" id="v-pills-orders" role="tabpanel" aria-labelledby="v-pills-orders-tab"
-                  tabindex="0">
-                  <div class="bg-white" style="border-radius: 16px;">
-                    <div class=" ">
-                      <div class="d-flex justify-content-between align-items-center p-5">
-                        <div class="fs-4 fw-bold text-primary-600">訂單資訊</div>
-                        <div class="d-flex align-items-center gap-2">
-                          <div>篩選</div>
-                          <div>
-                            <select class="form-select form-select-lg fs-8" aria-label=".form-select-lg example" style="border-radius: 100px;">
-                                 <option selected>3個月</option>
-                                 <option value="1">6個月</option>
-                                 <option value="2">1年內</option>
-                            </select>
-                          </div>
-                        
+              <!-- 訂單資訊 -->
+              <div class="tab-pane fade" id="v-pills-orders" role="tabpanel" aria-labelledby="v-pills-orders-tab"
+                tabindex="0">
+                <div class="bg-white" style="border-radius: 16px;">
+                  <div class=" ">
+                    <div class="d-flex justify-content-between align-items-center p-5">
+                      <div class="fs-4 fw-bold text-primary-600">訂單資訊</div>
+                      <div class="d-flex align-items-center gap-2">
+                        <div>篩選</div>
+                        <div>
+                          <select class="form-select form-select-lg fs-8" aria-label=".form-select-lg example"
+                            style="border-radius: 100px;">
+                            <option selected>3個月</option>
+                            <option value="1">6個月</option>
+                            <option value="2">1年內</option>
+                          </select>
+                        </div>
+
                       </div>
                     </div>
                     <div>
-                     
-    <table class="table align-middle mb-0 table-borderless" >
-  <thead >
-    <tr class="text-center">
-      <th  class="bg-primary-400  py-4 text-secondary-800  fs-7 fw-medium">訂單編號</th>
-      <th  class="bg-primary-400  py-4 text-secondary-800  fs-7 fw-medium">訂單時間</th>
-      <th  class="bg-primary-400  py-4 text-secondary-800  fs-7 fw-medium">訂單狀態</th>
-      <th  class="bg-primary-400  py-4 text-secondary-800  fs-7 fw-medium">付款狀態</th>
-      <th  class="bg-primary-400  py-4 text-secondary-800  fs-7 fw-medium">合計</th>
-    </tr>
-  </thead>
-  <tbod >
-    <tr class="text-center">
-      <td class="py-lg-7"><a href="#" class="text-decoration-none fw-bold text-primary-600 order">4081864</a></td>
-      
-      <td>
-       <div class="text-secondary-400 fw-medium">2024-08-18</div>
-       <div class="text-secondary-400 fw-medium">01:44:13</div>
-      </td>
 
-      <td>處理中</td>
+                      <table class="table align-middle mb-0 table-borderless">
+                        <thead>
+                          <tr class="text-center">
+                            <th class="bg-primary-400  py-4 text-secondary-800  fs-7 fw-medium">訂單編號</th>
+                            <th class="bg-primary-400  py-4 text-secondary-800  fs-7 fw-medium">訂單時間</th>
+                            <th class="bg-primary-400  py-4 text-secondary-800  fs-7 fw-medium">訂單狀態</th>
+                            <th class="bg-primary-400  py-4 text-secondary-800  fs-7 fw-medium">付款狀態</th>
+                            <th class="bg-primary-400  py-4 text-secondary-800  fs-7 fw-medium">合計</th>
+                          </tr>
+                        </thead>
+                        <tbod>
+                          <tr class="text-center">
+                            <td class="py-lg-7"><a href="#"
+                                class="text-decoration-none fw-bold text-primary-600 order">4081864</a></td>
 
-      <td>已付款</td>
+                            <td>
+                              <div class="text-secondary-400 fw-medium">2024-08-18</div>
+                              <div class="text-secondary-400 fw-medium">01:44:13</div>
+                            </td>
 
-      <td class="text-danger fw-medium">$2100</td>
-    </tr>
-    <tr class="text-center">
-      <td class="py-lg-7"><a href="#" class="text-decoration-none fw-bold text-primary-600 order">3080511</a></td>
-      
-      <td>
-       <div class="text-secondary-400 fw-medium">2025-08-05</div>
-       <div class="text-secondary-400 fw-medium">22:26:41</div>
-      </td>
+                            <td>處理中</td>
 
-      <td>已取消</td>
+                            <td>已付款</td>
 
-      <td>超過付款時間</td>
+                            <td class="text-danger fw-medium">$2100</td>
+                          </tr>
+                          <tr class="text-center">
+                            <td class="py-lg-7"><a href="#"
+                                class="text-decoration-none fw-bold text-primary-600 order">3080511</a></td>
 
-      <td class="text-danger fw-medium">$900</td>
-    </tr>
-    <tr class="text-center">
-      <td class="py-lg-7"><a href="shopping-cart4.html" class="text-decoration-none fw-bold text-primary-600 order">2068439</a></td>
-      
-      <td>
-       <div class="text-secondary-400 fw-medium">2025-07-22</div>
-       <div class="text-secondary-400 fw-medium">21:13:08</div>
-      </td>
+                            <td>
+                              <div class="text-secondary-400 fw-medium">2025-08-05</div>
+                              <div class="text-secondary-400 fw-medium">22:26:41</div>
+                            </td>
 
-      <td>已完成</td>
+                            <td>已取消</td>
 
-      <td>已付款</td>
+                            <td>超過付款時間</td>
 
-      <td class="text-danger fw-medium">$1500</td>
-    </tr>
-  </tbody>
-</table>
+                            <td class="text-danger fw-medium">$900</td>
+                          </tr>
+                          <tr class="text-center">
+                            <td class="py-lg-7"><a href="./shopping-cart4.html"
+                                class="text-decoration-none fw-bold text-primary-600 order">2068439</a></td>
 
-<div class="d-flex justify-content-end fs-5 px-4 py-5 bg-white" style="border-bottom-right-radius:16px ; border-bottom-left-radius:16px ;">
-</div>
-  
+                            <td>
+                              <div class="text-secondary-400 fw-medium">2025-07-22</div>
+                              <div class="text-secondary-400 fw-medium">21:13:08</div>
+                            </td>
+
+                            <td>已完成</td>
+
+                            <td>已付款</td>
+
+                            <td class="text-danger fw-medium">$1500</td>
+                          </tr>
+                          </tbody>
+                      </table>
+
+                      <div class="d-flex justify-content-end fs-5 px-4 py-5 bg-white"
+                        style="border-bottom-right-radius:16px ; border-bottom-left-radius:16px ;">
+                      </div>
+
                     </div>
                   </div>
                 </div>
               </div>
 
-                <!-- 我的關注 -->
-                <div class="tab-pane fade" id="v-pills-follow" role="tabpanel" aria-labelledby="v-pills-follow-tab"
-                  tabindex="0">
-                  <div class="bg-white" style="border-radius: 16px;">
-                    <div>
-                      <!-- header -->
-                      <div class="d-flex justify-content-between align-items-center p-5">
-                        <div >
-                          <div class="fs-4 fw-bold text-primary-600">我的收藏</div>
+              <!-- 我的關注 -->
+              <div class="tab-pane fade" id="v-pills-follow" role="tabpanel" aria-labelledby="v-pills-follow-tab"
+                tabindex="0">
+                <div class="bg-white" style="border-radius: 16px;">
+                  <div>
+                    <!-- header -->
+                    <div class="d-flex justify-content-between align-items-center p-5">
+                      <div>
+                        <div class="fs-4 fw-bold text-primary-600">我的收藏</div>
+                      </div>
+
+                      <div class="d-flex align-items-center gap-2">
+                        <div>順序</div>
+                        <div>
+                          <select class="form-select form-select-lg fs-8" aria-label=".form-select-lg example"
+                            style="border-radius: 100px;">
+                            <option selected>新至舊</option>
+                            <option value="舊至新">舊至新</option>
+                          </select>
                         </div>
-                        
-                        <div class="d-flex align-items-center gap-2">
-                          <div>順序</div>
-                          <div>
-                            <select class="form-select form-select-lg fs-8" aria-label=".form-select-lg example" style="border-radius: 100px;">
-                                 <option selected>新至舊</option>
-                                 <option value="舊至新">舊至新</option>
-                            </select>
-                          </div>
-                        
+
                       </div>
                     </div>
                     <!-- content -->
                     <div class="p-5">
-                    <ul class="nav nav-tabs mb-3" id="favTabs" role="tablist">
-                      <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="pets-tab" data-bs-toggle="tab" data-bs-target="#pets" type="button" role="tab">
-                        寶貝
-                      </button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="org-tab" data-bs-toggle="tab" data-bs-target="#org" type="button" role="tab">
-                        機構
-                      </button>
-                      </li>
-                    </ul>
+                      <ul class="nav nav-tabs mb-3" id="favTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="pets-tab" data-bs-toggle="tab" data-bs-target="#pets"
+                            type="button" role="tab">
+                            寶貝
+                          </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="org-tab" data-bs-toggle="tab" data-bs-target="#org" type="button"
+                            role="tab">
+                            機構
+                          </button>
+                        </li>
+                      </ul>
                       <!-- Tab 內容 -->
-  <div class="tab-content">
-    <!-- 寶貝 -->
-    <div class="tab-pane fade show active" id="pets" role="tabpanel">
-      <div class="container scroll-area">
-        <div class="row g-4">
-          
-          <div class="col-md-4 col-6">
-            <div class="card  border-primary " >
-            <img src="/My-Shelter/assets/orange%20cats%201-CEpcw3w_.jpg" alt="#" class="w-100" style="border-radius: 16px; position: relative;">
-            <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%2020C11.753%2019.9997%2011.5118%2019.9239%2011.3077%2019.7824C8.2852%2017.6984%206.97642%2016.2695%206.25454%2015.3762C4.71616%2013.4719%203.97966%2011.5168%204.00043%209.39961C4.02466%206.97344%205.94109%205%208.27251%205C9.9678%205%2011.142%205.96992%2011.8258%206.77773C11.8474%206.80307%2011.8742%206.82338%2011.9043%206.8373C11.9343%206.85122%2011.967%206.85842%2012%206.85842C12.033%206.85842%2012.0657%206.85122%2012.0957%206.8373C12.1258%206.82338%2012.1526%206.80307%2012.1742%206.77773C12.858%205.96914%2014.0322%205%2015.7275%205C18.0589%205%2019.9753%206.97344%2019.9996%209.4C20.0203%2011.5176%2019.2831%2013.4727%2017.7455%2015.3766C17.0236%2016.2699%2015.7148%2017.6988%2012.6923%2019.7828C12.4882%2019.9241%2012.247%2019.9998%2012%2020Z'%20fill='%23E5485D'/%3e%3c/svg%3e" alt="heat" style="position: absolute; top: 10px; right: 10px;">
-            <div class="card-body">
-             <div class="text-center py-3">
-              <div class="fw-bold fs-3 text-primary-600 lh-sm">阿橘橘</div>
-              <div class="fw-bold fs-7 text-secondary-400 lh-sm">喵了個咪中途之家</div>
-             </div>
-             <div class="d-flex justify-content-between">
-              <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700" style="border-radius: 16px;">新北市</div>
-              <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700" style="border-radius: 16px;">已結紮</div>
-              <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700" style="border-radius: 16px;">可領養</div>
-             </div>
-            </div>
-           </div>
-          </div>
-          <div class="col-md-4 col-6">
-            <div class="card border-primary" >
-            <img src="/My-Shelter/assets/mix%20breed%201-D70fZtwf.jpg" alt="#" class="w-100" style="border-radius: 16px; position: relative;">
-            <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%2020C11.753%2019.9997%2011.5118%2019.9239%2011.3077%2019.7824C8.2852%2017.6984%206.97642%2016.2695%206.25454%2015.3762C4.71616%2013.4719%203.97966%2011.5168%204.00043%209.39961C4.02466%206.97344%205.94109%205%208.27251%205C9.9678%205%2011.142%205.96992%2011.8258%206.77773C11.8474%206.80307%2011.8742%206.82338%2011.9043%206.8373C11.9343%206.85122%2011.967%206.85842%2012%206.85842C12.033%206.85842%2012.0657%206.85122%2012.0957%206.8373C12.1258%206.82338%2012.1526%206.80307%2012.1742%206.77773C12.858%205.96914%2014.0322%205%2015.7275%205C18.0589%205%2019.9753%206.97344%2019.9996%209.4C20.0203%2011.5176%2019.2831%2013.4727%2017.7455%2015.3766C17.0236%2016.2699%2015.7148%2017.6988%2012.6923%2019.7828C12.4882%2019.9241%2012.247%2019.9998%2012%2020Z'%20fill='%23E5485D'/%3e%3c/svg%3e" alt="heat" style="position: absolute; top: 10px; right: 10px;">
-            <div class="card-body">
-             <div class="text-center py-3">
-              <div class="fw-bold fs-3 text-primary-600 lh-sm">蹲蹲</div>
-              <div class="fw-bold fs-7 text-secondary-400 lh-sm">毛寶寶基金會</div>
-             </div>
-             <div class="d-flex justify-content-between">
-              <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700" style="border-radius: 16px;">新北市</div>
-              <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700" style="border-radius: 16px;">已結紮</div>
-              <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700" style="border-radius: 16px;">可領養</div>
-             </div>
-            </div>
-           </div>
-          </div>
-          <div class="col-md-4 col-6">
-            <div class="card border-primary" >
-            <img src="/My-Shelter/assets/chihuahua%201-DeRYGi-5.jpg" alt="#" class="w-100" style="border-radius: 16px; position: relative;">
-            <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%2020C11.753%2019.9997%2011.5118%2019.9239%2011.3077%2019.7824C8.2852%2017.6984%206.97642%2016.2695%206.25454%2015.3762C4.71616%2013.4719%203.97966%2011.5168%204.00043%209.39961C4.02466%206.97344%205.94109%205%208.27251%205C9.9678%205%2011.142%205.96992%2011.8258%206.77773C11.8474%206.80307%2011.8742%206.82338%2011.9043%206.8373C11.9343%206.85122%2011.967%206.85842%2012%206.85842C12.033%206.85842%2012.0657%206.85122%2012.0957%206.8373C12.1258%206.82338%2012.1526%206.80307%2012.1742%206.77773C12.858%205.96914%2014.0322%205%2015.7275%205C18.0589%205%2019.9753%206.97344%2019.9996%209.4C20.0203%2011.5176%2019.2831%2013.4727%2017.7455%2015.3766C17.0236%2016.2699%2015.7148%2017.6988%2012.6923%2019.7828C12.4882%2019.9241%2012.247%2019.9998%2012%2020Z'%20fill='%23E5485D'/%3e%3c/svg%3e" alt="heat" style="position: absolute; top: 10px; right: 10px;">
-            <div class="card-body">
-             <div class="text-center py-3">
-              <div class="fw-bold fs-3 text-primary-600 lh-sm">Money</div>
-              <div class="fw-bold fs-7 text-secondary-400 lh-sm">毛寶寶基金會</div>
-             </div>
-             <div class="d-flex justify-content-between">
-              <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700" style="border-radius: 16px;">新北市</div>
-              <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700" style="border-radius: 16px;">已結紮</div>
-              <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700" style="border-radius: 16px;">可領養</div>
-             </div>
-            </div>
-           </div>
-          </div>
-          <div class="col-md-4 col-6">
-            <div class="card border-primary" >
-            <img src="/My-Shelter/assets/pet_8_%E7%81%AB%E8%85%BF%E8%B5%B7%E5%8F%B8-CIkVg4rZ.png" alt="#" class="w-100" style="border-radius: 16px; position: relative;">
-            <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%2020C11.753%2019.9997%2011.5118%2019.9239%2011.3077%2019.7824C8.2852%2017.6984%206.97642%2016.2695%206.25454%2015.3762C4.71616%2013.4719%203.97966%2011.5168%204.00043%209.39961C4.02466%206.97344%205.94109%205%208.27251%205C9.9678%205%2011.142%205.96992%2011.8258%206.77773C11.8474%206.80307%2011.8742%206.82338%2011.9043%206.8373C11.9343%206.85122%2011.967%206.85842%2012%206.85842C12.033%206.85842%2012.0657%206.85122%2012.0957%206.8373C12.1258%206.82338%2012.1526%206.80307%2012.1742%206.77773C12.858%205.96914%2014.0322%205%2015.7275%205C18.0589%205%2019.9753%206.97344%2019.9996%209.4C20.0203%2011.5176%2019.2831%2013.4727%2017.7455%2015.3766C17.0236%2016.2699%2015.7148%2017.6988%2012.6923%2019.7828C12.4882%2019.9241%2012.247%2019.9998%2012%2020Z'%20fill='%23E5485D'/%3e%3c/svg%3e" alt="heat" style="position: absolute; top: 10px; right: 10px;">
-            <div class="card-body">
-             <div class="text-center py-3">
-              <div class="fw-bold fs-3 text-primary-600 lh-sm">火腿起司</div>
-              <div class="fw-bold fs-7 text-secondary-400 lh-sm">毛寶寶基金會</div>
-             </div>
-             <div class="d-flex justify-content-between">
-              <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700" style="border-radius: 16px;">新北市</div>
-              <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700" style="border-radius: 16px;">已結紮</div>
-              <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700" style="border-radius: 16px;">可領養</div>
-             </div>
-            </div>
-           </div>
-          </div>
-          <div class="col-md-4 col-6">
-            <div class="card border-primary" >
-            <img src="/My-Shelter/assets/pet_9_%E8%8A%B1%E7%94%9F%E9%86%AC-1f0K7PTx.png" alt="#" class="w-100" style="border-radius: 16px; position: relative;">
-            <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%2020C11.753%2019.9997%2011.5118%2019.9239%2011.3077%2019.7824C8.2852%2017.6984%206.97642%2016.2695%206.25454%2015.3762C4.71616%2013.4719%203.97966%2011.5168%204.00043%209.39961C4.02466%206.97344%205.94109%205%208.27251%205C9.9678%205%2011.142%205.96992%2011.8258%206.77773C11.8474%206.80307%2011.8742%206.82338%2011.9043%206.8373C11.9343%206.85122%2011.967%206.85842%2012%206.85842C12.033%206.85842%2012.0657%206.85122%2012.0957%206.8373C12.1258%206.82338%2012.1526%206.80307%2012.1742%206.77773C12.858%205.96914%2014.0322%205%2015.7275%205C18.0589%205%2019.9753%206.97344%2019.9996%209.4C20.0203%2011.5176%2019.2831%2013.4727%2017.7455%2015.3766C17.0236%2016.2699%2015.7148%2017.6988%2012.6923%2019.7828C12.4882%2019.9241%2012.247%2019.9998%2012%2020Z'%20fill='%23E5485D'/%3e%3c/svg%3e" alt="heat" style="position: absolute; top: 10px; right: 10px;">
-            <div class="card-body">
-             <div class="text-center py-3">
-              <div class="fw-bold fs-3 text-primary-600 lh-sm">花生醬</div>
-              <div class="fw-bold fs-7 text-secondary-400 lh-sm">喵了個咪中途之家</div>
-             </div>
-             <div class="d-flex justify-content-between">
-              <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700" style="border-radius: 16px;">新北市</div>
-              <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700" style="border-radius: 16px;">已結紮</div>
-              <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700" style="border-radius: 16px;">可領養</div>
-             </div>
-            </div>
-           </div>
-          </div>
-         
-        </div>
-      </div>
-    </div>
+                      <div class="tab-content">
+                        <!-- 寶貝 -->
+                        <div class="tab-pane fade show active" id="pets" role="tabpanel">
+                          <div class="container scroll-area">
+                            <div class="row g-4">
 
-    <!-- 機構 -->
-    <div class="tab-pane fade" id="org" role="tabpanel">
-      <div class="container scroll-area">
-        <div class="row g-4">
-          
-          <div class="col-md-4 col-6">
-            <div class="card border-primary" >
-            <img src="/My-Shelter/assets/dog%20and%20doctor%201-ke_sA_Ag.jpg" alt="#" class="w-100" style="border-radius: 16px; position: relative; height: 200px;" >
-            <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%2020C11.753%2019.9997%2011.5118%2019.9239%2011.3077%2019.7824C8.2852%2017.6984%206.97642%2016.2695%206.25454%2015.3762C4.71616%2013.4719%203.97966%2011.5168%204.00043%209.39961C4.02466%206.97344%205.94109%205%208.27251%205C9.9678%205%2011.142%205.96992%2011.8258%206.77773C11.8474%206.80307%2011.8742%206.82338%2011.9043%206.8373C11.9343%206.85122%2011.967%206.85842%2012%206.85842C12.033%206.85842%2012.0657%206.85122%2012.0957%206.8373C12.1258%206.82338%2012.1526%206.80307%2012.1742%206.77773C12.858%205.96914%2014.0322%205%2015.7275%205C18.0589%205%2019.9753%206.97344%2019.9996%209.4C20.0203%2011.5176%2019.2831%2013.4727%2017.7455%2015.3766C17.0236%2016.2699%2015.7148%2017.6988%2012.6923%2019.7828C12.4882%2019.9241%2012.247%2019.9998%2012%2020Z'%20fill='%23E5485D'/%3e%3c/svg%3e" alt="heat" style="position: absolute; top: 10px; right: 10px;">
-            <div class="card-body">
-             <div class="text-center ">
-          
-              <div class="fw-bold fs-4 text-primary-600 lh-base">毛寶寶基金會</div>
-             </div>
-             
-            </div>
-           </div>
-          </div>
-          <div class="col-md-4 col-6">
-            <div class="card border-primary" >
-            <img src="/My-Shelter/assets/pet%20with%20people-Bc14RdTJ.jpg" alt="#" class="w-100" style="border-radius: 16px; position: relative; height: 200px;" >
-            <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%2020C11.753%2019.9997%2011.5118%2019.9239%2011.3077%2019.7824C8.2852%2017.6984%206.97642%2016.2695%206.25454%2015.3762C4.71616%2013.4719%203.97966%2011.5168%204.00043%209.39961C4.02466%206.97344%205.94109%205%208.27251%205C9.9678%205%2011.142%205.96992%2011.8258%206.77773C11.8474%206.80307%2011.8742%206.82338%2011.9043%206.8373C11.9343%206.85122%2011.967%206.85842%2012%206.85842C12.033%206.85842%2012.0657%206.85122%2012.0957%206.8373C12.1258%206.82338%2012.1526%206.80307%2012.1742%206.77773C12.858%205.96914%2014.0322%205%2015.7275%205C18.0589%205%2019.9753%206.97344%2019.9996%209.4C20.0203%2011.5176%2019.2831%2013.4727%2017.7455%2015.3766C17.0236%2016.2699%2015.7148%2017.6988%2012.6923%2019.7828C12.4882%2019.9241%2012.247%2019.9998%2012%2020Z'%20fill='%23E5485D'/%3e%3c/svg%3e" alt="heat" style="position: absolute; top: 10px; right: 10px;">
-            <div class="card-body">
-             <div class="text-center ">
-          
-              <div class="fw-bold fs-4 text-primary-600 lh-base">喵了個咪中途之家</div>
-             </div>
-             
-            </div>
-           </div>
-          </div>
-          <div class="col-md-4 col-6">
-            <div class="card border-primary" >
-            <img src="/My-Shelter/assets/vet-x2EwFh3Y.jpg" alt="#" class="w-100" style="border-radius: 16px; position: relative; height: 200px;" >
-            <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%2020C11.753%2019.9997%2011.5118%2019.9239%2011.3077%2019.7824C8.2852%2017.6984%206.97642%2016.2695%206.25454%2015.3762C4.71616%2013.4719%203.97966%2011.5168%204.00043%209.39961C4.02466%206.97344%205.94109%205%208.27251%205C9.9678%205%2011.142%205.96992%2011.8258%206.77773C11.8474%206.80307%2011.8742%206.82338%2011.9043%206.8373C11.9343%206.85122%2011.967%206.85842%2012%206.85842C12.033%206.85842%2012.0657%206.85122%2012.0957%206.8373C12.1258%206.82338%2012.1526%206.80307%2012.1742%206.77773C12.858%205.96914%2014.0322%205%2015.7275%205C18.0589%205%2019.9753%206.97344%2019.9996%209.4C20.0203%2011.5176%2019.2831%2013.4727%2017.7455%2015.3766C17.0236%2016.2699%2015.7148%2017.6988%2012.6923%2019.7828C12.4882%2019.9241%2012.247%2019.9998%2012%2020Z'%20fill='%23E5485D'/%3e%3c/svg%3e" alt="heat" style="position: absolute; top: 10px; right: 10px;">
-            <div class="card-body">
-             <div class="text-center ">
-          
-              <div class="fw-bold fs-4 text-primary-600 lh-base">小腳印之家</div>
-             </div>
-             
-            </div>
-           </div>
-          </div>
-          <div class="col-md-4 col-6">
-            <div class="card border-primary" >
-            <img src="/My-Shelter/assets/pet%20with%20people-Bc14RdTJ.jpg" alt="#" class="w-100" style="border-radius: 16px; position: relative; height: 200px;" >
-            <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%2020C11.753%2019.9997%2011.5118%2019.9239%2011.3077%2019.7824C8.2852%2017.6984%206.97642%2016.2695%206.25454%2015.3762C4.71616%2013.4719%203.97966%2011.5168%204.00043%209.39961C4.02466%206.97344%205.94109%205%208.27251%205C9.9678%205%2011.142%205.96992%2011.8258%206.77773C11.8474%206.80307%2011.8742%206.82338%2011.9043%206.8373C11.9343%206.85122%2011.967%206.85842%2012%206.85842C12.033%206.85842%2012.0657%206.85122%2012.0957%206.8373C12.1258%206.82338%2012.1526%206.80307%2012.1742%206.77773C12.858%205.96914%2014.0322%205%2015.7275%205C18.0589%205%2019.9753%206.97344%2019.9996%209.4C20.0203%2011.5176%2019.2831%2013.4727%2017.7455%2015.3766C17.0236%2016.2699%2015.7148%2017.6988%2012.6923%2019.7828C12.4882%2019.9241%2012.247%2019.9998%2012%2020Z'%20fill='%23E5485D'/%3e%3c/svg%3e" alt="heat" style="position: absolute; top: 10px; right: 10px;">
-            <div class="card-body">
-             <div class="text-center ">
-          
-              <div class="fw-bold fs-4 text-primary-600 lh-base">喵了個咪中途之家</div>
-             </div>
-             
-            </div>
-           </div>
-          </div>
-          
-         
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+                              <div class="col-md-4 col-6">
+                                <div class="card  border-primary ">
+                                  <img src="/My-Shelter/assets/orange%20cats%201-CEpcw3w_.jpg" alt="#" class="w-100"
+                                    style="border-radius: 16px; position: relative;">
+                                  <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%2020C11.753%2019.9997%2011.5118%2019.9239%2011.3077%2019.7824C8.2852%2017.6984%206.97642%2016.2695%206.25454%2015.3762C4.71616%2013.4719%203.97966%2011.5168%204.00043%209.39961C4.02466%206.97344%205.94109%205%208.27251%205C9.9678%205%2011.142%205.96992%2011.8258%206.77773C11.8474%206.80307%2011.8742%206.82338%2011.9043%206.8373C11.9343%206.85122%2011.967%206.85842%2012%206.85842C12.033%206.85842%2012.0657%206.85122%2012.0957%206.8373C12.1258%206.82338%2012.1526%206.80307%2012.1742%206.77773C12.858%205.96914%2014.0322%205%2015.7275%205C18.0589%205%2019.9753%206.97344%2019.9996%209.4C20.0203%2011.5176%2019.2831%2013.4727%2017.7455%2015.3766C17.0236%2016.2699%2015.7148%2017.6988%2012.6923%2019.7828C12.4882%2019.9241%2012.247%2019.9998%2012%2020Z'%20fill='%23E5485D'/%3e%3c/svg%3e" alt="heat"
+                                    style="position: absolute; top: 10px; right: 10px;">
+                                  <div class="card-body">
+                                    <div class="text-center py-3">
+                                      <div class="fw-bold fs-3 text-primary-600 lh-sm">阿橘橘</div>
+                                      <div class="fw-bold fs-7 text-secondary-400 lh-sm">喵了個咪中途之家</div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                      <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700"
+                                        style="border-radius: 16px;">新北市</div>
+                                      <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700"
+                                        style="border-radius: 16px;">已結紮</div>
+                                      <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700"
+                                        style="border-radius: 16px;">可領養</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4 col-6">
+                                <div class="card border-primary">
+                                  <img src="/My-Shelter/assets/mix%20breed%201-D70fZtwf.jpg" alt="#" class="w-100"
+                                    style="border-radius: 16px; position: relative;">
+                                  <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%2020C11.753%2019.9997%2011.5118%2019.9239%2011.3077%2019.7824C8.2852%2017.6984%206.97642%2016.2695%206.25454%2015.3762C4.71616%2013.4719%203.97966%2011.5168%204.00043%209.39961C4.02466%206.97344%205.94109%205%208.27251%205C9.9678%205%2011.142%205.96992%2011.8258%206.77773C11.8474%206.80307%2011.8742%206.82338%2011.9043%206.8373C11.9343%206.85122%2011.967%206.85842%2012%206.85842C12.033%206.85842%2012.0657%206.85122%2012.0957%206.8373C12.1258%206.82338%2012.1526%206.80307%2012.1742%206.77773C12.858%205.96914%2014.0322%205%2015.7275%205C18.0589%205%2019.9753%206.97344%2019.9996%209.4C20.0203%2011.5176%2019.2831%2013.4727%2017.7455%2015.3766C17.0236%2016.2699%2015.7148%2017.6988%2012.6923%2019.7828C12.4882%2019.9241%2012.247%2019.9998%2012%2020Z'%20fill='%23E5485D'/%3e%3c/svg%3e" alt="heat"
+                                    style="position: absolute; top: 10px; right: 10px;">
+                                  <div class="card-body">
+                                    <div class="text-center py-3">
+                                      <div class="fw-bold fs-3 text-primary-600 lh-sm">蹲蹲</div>
+                                      <div class="fw-bold fs-7 text-secondary-400 lh-sm">毛寶寶基金會</div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                      <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700"
+                                        style="border-radius: 16px;">新北市</div>
+                                      <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700"
+                                        style="border-radius: 16px;">已結紮</div>
+                                      <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700"
+                                        style="border-radius: 16px;">可領養</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4 col-6">
+                                <div class="card border-primary">
+                                  <img src="/My-Shelter/assets/chihuahua%201-DeRYGi-5.jpg" alt="#" class="w-100"
+                                    style="border-radius: 16px; position: relative;">
+                                  <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%2020C11.753%2019.9997%2011.5118%2019.9239%2011.3077%2019.7824C8.2852%2017.6984%206.97642%2016.2695%206.25454%2015.3762C4.71616%2013.4719%203.97966%2011.5168%204.00043%209.39961C4.02466%206.97344%205.94109%205%208.27251%205C9.9678%205%2011.142%205.96992%2011.8258%206.77773C11.8474%206.80307%2011.8742%206.82338%2011.9043%206.8373C11.9343%206.85122%2011.967%206.85842%2012%206.85842C12.033%206.85842%2012.0657%206.85122%2012.0957%206.8373C12.1258%206.82338%2012.1526%206.80307%2012.1742%206.77773C12.858%205.96914%2014.0322%205%2015.7275%205C18.0589%205%2019.9753%206.97344%2019.9996%209.4C20.0203%2011.5176%2019.2831%2013.4727%2017.7455%2015.3766C17.0236%2016.2699%2015.7148%2017.6988%2012.6923%2019.7828C12.4882%2019.9241%2012.247%2019.9998%2012%2020Z'%20fill='%23E5485D'/%3e%3c/svg%3e" alt="heat"
+                                    style="position: absolute; top: 10px; right: 10px;">
+                                  <div class="card-body">
+                                    <div class="text-center py-3">
+                                      <div class="fw-bold fs-3 text-primary-600 lh-sm">Money</div>
+                                      <div class="fw-bold fs-7 text-secondary-400 lh-sm">毛寶寶基金會</div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                      <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700"
+                                        style="border-radius: 16px;">新北市</div>
+                                      <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700"
+                                        style="border-radius: 16px;">已結紮</div>
+                                      <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700"
+                                        style="border-radius: 16px;">可領養</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4 col-6">
+                                <div class="card border-primary">
+                                  <img src="/assets/images/card-img/pet/pet_5.png" alt="#" class="w-100"
+                                    style="border-radius: 16px; position: relative;">
+                                  <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%2020C11.753%2019.9997%2011.5118%2019.9239%2011.3077%2019.7824C8.2852%2017.6984%206.97642%2016.2695%206.25454%2015.3762C4.71616%2013.4719%203.97966%2011.5168%204.00043%209.39961C4.02466%206.97344%205.94109%205%208.27251%205C9.9678%205%2011.142%205.96992%2011.8258%206.77773C11.8474%206.80307%2011.8742%206.82338%2011.9043%206.8373C11.9343%206.85122%2011.967%206.85842%2012%206.85842C12.033%206.85842%2012.0657%206.85122%2012.0957%206.8373C12.1258%206.82338%2012.1526%206.80307%2012.1742%206.77773C12.858%205.96914%2014.0322%205%2015.7275%205C18.0589%205%2019.9753%206.97344%2019.9996%209.4C20.0203%2011.5176%2019.2831%2013.4727%2017.7455%2015.3766C17.0236%2016.2699%2015.7148%2017.6988%2012.6923%2019.7828C12.4882%2019.9241%2012.247%2019.9998%2012%2020Z'%20fill='%23E5485D'/%3e%3c/svg%3e" alt="heat"
+                                    style="position: absolute; top: 10px; right: 10px;">
+                                  <div class="card-body">
+                                    <div class="text-center py-3">
+                                      <div class="fw-bold fs-3 text-primary-600 lh-sm">HaHa</div>
+                                      <div class="fw-bold fs-7 text-secondary-400 lh-sm">毛寶寶基金會</div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                      <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700"
+                                        style="border-radius: 16px;">新北市</div>
+                                      <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700"
+                                        style="border-radius: 16px;">已結紮</div>
+                                      <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700"
+                                        style="border-radius: 16px;">可領養</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4 col-6">
+                                <div class="card border-primary">
+                                  <img src="/assets/images/card-img/pet/pet_8.png" alt="#" class="w-100"
+                                    style="border-radius: 16px; position: relative;">
+                                  <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%2020C11.753%2019.9997%2011.5118%2019.9239%2011.3077%2019.7824C8.2852%2017.6984%206.97642%2016.2695%206.25454%2015.3762C4.71616%2013.4719%203.97966%2011.5168%204.00043%209.39961C4.02466%206.97344%205.94109%205%208.27251%205C9.9678%205%2011.142%205.96992%2011.8258%206.77773C11.8474%206.80307%2011.8742%206.82338%2011.9043%206.8373C11.9343%206.85122%2011.967%206.85842%2012%206.85842C12.033%206.85842%2012.0657%206.85122%2012.0957%206.8373C12.1258%206.82338%2012.1526%206.80307%2012.1742%206.77773C12.858%205.96914%2014.0322%205%2015.7275%205C18.0589%205%2019.9753%206.97344%2019.9996%209.4C20.0203%2011.5176%2019.2831%2013.4727%2017.7455%2015.3766C17.0236%2016.2699%2015.7148%2017.6988%2012.6923%2019.7828C12.4882%2019.9241%2012.247%2019.9998%2012%2020Z'%20fill='%23E5485D'/%3e%3c/svg%3e" alt="heat"
+                                    style="position: absolute; top: 10px; right: 10px;">
+                                  <div class="card-body">
+                                    <div class="text-center py-3">
+                                      <div class="fw-bold fs-3 text-primary-600 lh-sm">LuLu</div>
+                                      <div class="fw-bold fs-7 text-secondary-400 lh-sm">喵了個咪中途之家</div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                      <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700"
+                                        style="border-radius: 16px;">新北市</div>
+                                      <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700"
+                                        style="border-radius: 16px;">已結紮</div>
+                                      <div class="fw-medium fs-8 p-2 bg-primary-400 text-primary-700"
+                                        style="border-radius: 16px;">可領養</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- 機構 -->
+                        <div class="tab-pane fade" id="org" role="tabpanel">
+                          <div class="container scroll-area">
+                            <div class="row g-4">
+
+                              <div class="col-md-4 col-6">
+                                <div class="card border-primary">
+                                  <img src="/My-Shelter/assets/dog%20and%20doctor%201-ke_sA_Ag.jpg" alt="#" class="w-100"
+                                    style="border-radius: 16px; position: relative; height: 200px;">
+                                  <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%2020C11.753%2019.9997%2011.5118%2019.9239%2011.3077%2019.7824C8.2852%2017.6984%206.97642%2016.2695%206.25454%2015.3762C4.71616%2013.4719%203.97966%2011.5168%204.00043%209.39961C4.02466%206.97344%205.94109%205%208.27251%205C9.9678%205%2011.142%205.96992%2011.8258%206.77773C11.8474%206.80307%2011.8742%206.82338%2011.9043%206.8373C11.9343%206.85122%2011.967%206.85842%2012%206.85842C12.033%206.85842%2012.0657%206.85122%2012.0957%206.8373C12.1258%206.82338%2012.1526%206.80307%2012.1742%206.77773C12.858%205.96914%2014.0322%205%2015.7275%205C18.0589%205%2019.9753%206.97344%2019.9996%209.4C20.0203%2011.5176%2019.2831%2013.4727%2017.7455%2015.3766C17.0236%2016.2699%2015.7148%2017.6988%2012.6923%2019.7828C12.4882%2019.9241%2012.247%2019.9998%2012%2020Z'%20fill='%23E5485D'/%3e%3c/svg%3e" alt="heat"
+                                    style="position: absolute; top: 10px; right: 10px;">
+                                  <div class="card-body">
+                                    <div class="text-center ">
+
+                                      <div class="fw-bold fs-4 text-primary-600 lh-base">毛寶寶基金會</div>
+                                    </div>
+
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4 col-6">
+                                <div class="card border-primary">
+                                  <img src="/My-Shelter/assets/pet%20with%20people-Bc14RdTJ.jpg" alt="#" class="w-100"
+                                    style="border-radius: 16px; position: relative; height: 200px;">
+                                  <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%2020C11.753%2019.9997%2011.5118%2019.9239%2011.3077%2019.7824C8.2852%2017.6984%206.97642%2016.2695%206.25454%2015.3762C4.71616%2013.4719%203.97966%2011.5168%204.00043%209.39961C4.02466%206.97344%205.94109%205%208.27251%205C9.9678%205%2011.142%205.96992%2011.8258%206.77773C11.8474%206.80307%2011.8742%206.82338%2011.9043%206.8373C11.9343%206.85122%2011.967%206.85842%2012%206.85842C12.033%206.85842%2012.0657%206.85122%2012.0957%206.8373C12.1258%206.82338%2012.1526%206.80307%2012.1742%206.77773C12.858%205.96914%2014.0322%205%2015.7275%205C18.0589%205%2019.9753%206.97344%2019.9996%209.4C20.0203%2011.5176%2019.2831%2013.4727%2017.7455%2015.3766C17.0236%2016.2699%2015.7148%2017.6988%2012.6923%2019.7828C12.4882%2019.9241%2012.247%2019.9998%2012%2020Z'%20fill='%23E5485D'/%3e%3c/svg%3e" alt="heat"
+                                    style="position: absolute; top: 10px; right: 10px;">
+                                  <div class="card-body">
+                                    <div class="text-center ">
+
+                                      <div class="fw-bold fs-4 text-primary-600 lh-base">喵了個咪中途之家</div>
+                                    </div>
+
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4 col-6">
+                                <div class="card border-primary">
+                                  <img src="/My-Shelter/assets/vet-x2EwFh3Y.jpg" alt="#" class="w-100"
+                                    style="border-radius: 16px; position: relative; height: 200px;">
+                                  <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%2020C11.753%2019.9997%2011.5118%2019.9239%2011.3077%2019.7824C8.2852%2017.6984%206.97642%2016.2695%206.25454%2015.3762C4.71616%2013.4719%203.97966%2011.5168%204.00043%209.39961C4.02466%206.97344%205.94109%205%208.27251%205C9.9678%205%2011.142%205.96992%2011.8258%206.77773C11.8474%206.80307%2011.8742%206.82338%2011.9043%206.8373C11.9343%206.85122%2011.967%206.85842%2012%206.85842C12.033%206.85842%2012.0657%206.85122%2012.0957%206.8373C12.1258%206.82338%2012.1526%206.80307%2012.1742%206.77773C12.858%205.96914%2014.0322%205%2015.7275%205C18.0589%205%2019.9753%206.97344%2019.9996%209.4C20.0203%2011.5176%2019.2831%2013.4727%2017.7455%2015.3766C17.0236%2016.2699%2015.7148%2017.6988%2012.6923%2019.7828C12.4882%2019.9241%2012.247%2019.9998%2012%2020Z'%20fill='%23E5485D'/%3e%3c/svg%3e" alt="heat"
+                                    style="position: absolute; top: 10px; right: 10px;">
+                                  <div class="card-body">
+                                    <div class="text-center ">
+
+                                      <div class="fw-bold fs-4 text-primary-600 lh-base">小腳印之家</div>
+                                    </div>
+
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4 col-6">
+                                <div class="card border-primary">
+                                  <img src="/My-Shelter/assets/pet%20with%20people-Bc14RdTJ.jpg" alt="#" class="w-100"
+                                    style="border-radius: 16px; position: relative; height: 200px;">
+                                  <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%2020C11.753%2019.9997%2011.5118%2019.9239%2011.3077%2019.7824C8.2852%2017.6984%206.97642%2016.2695%206.25454%2015.3762C4.71616%2013.4719%203.97966%2011.5168%204.00043%209.39961C4.02466%206.97344%205.94109%205%208.27251%205C9.9678%205%2011.142%205.96992%2011.8258%206.77773C11.8474%206.80307%2011.8742%206.82338%2011.9043%206.8373C11.9343%206.85122%2011.967%206.85842%2012%206.85842C12.033%206.85842%2012.0657%206.85122%2012.0957%206.8373C12.1258%206.82338%2012.1526%206.80307%2012.1742%206.77773C12.858%205.96914%2014.0322%205%2015.7275%205C18.0589%205%2019.9753%206.97344%2019.9996%209.4C20.0203%2011.5176%2019.2831%2013.4727%2017.7455%2015.3766C17.0236%2016.2699%2015.7148%2017.6988%2012.6923%2019.7828C12.4882%2019.9241%2012.247%2019.9998%2012%2020Z'%20fill='%23E5485D'/%3e%3c/svg%3e" alt="heat"
+                                    style="position: absolute; top: 10px; right: 10px;">
+                                  <div class="card-body">
+                                    <div class="text-center ">
+
+                                      <div class="fw-bold fs-4 text-primary-600 lh-base">喵了個咪中途之家</div>
+                                    </div>
+
+                                  </div>
+                                </div>
+                              </div>
 
 
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <!-- footer -->
-                    <div class="d-flex justify-content-end fs-5 px-4 py-5 bg-white" style="border-bottom-right-radius:16px ; border-bottom-left-radius:16px ;">
-                    </div>
-  
+
+
                   </div>
-                </div>
-                
-                </div>
+                  <!-- footer -->
+                  <div class="d-flex justify-content-end fs-5 px-4 py-5 bg-white"
+                    style="border-bottom-right-radius:16px ; border-bottom-left-radius:16px ;">
+                  </div>
 
+                </div>
               </div>
-            </div>
-            <!-- 右側選單 -->
 
+            </div>
 
           </div>
         </div>
+        <!-- 右側選單 -->
+
 
       </div>
+    </div>
+
+    </div>
 
 
 
@@ -770,7 +842,7 @@
 
 
 
-      <div class=" pt-64 pb-5 pt-lg-80 pb-lg-8 d-flex flex-column gap-64 gap-lg-80">
+    <div class=" pt-64 pb-5 pt-lg-80 pb-lg-8 d-flex flex-column gap-64 gap-lg-80">
     <div class="container d-flex flex-column flex-lg-row justify-content-between  gap-80">
         <div class="d-flex flex-column justify-content-between gap-7 ">
             <a href="#"  class="text-center text-lg-start pb-4 pb-lg-0  line">
@@ -798,9 +870,9 @@
             </a>
             <ul class="list-unstyled d-flex gap-2  flex-wrap justify-content-center justify-content-lg-start mb-0">
                 <li class="py-2 px-3"><a href="#" class="text-decoration-none text-secondary-800 fs-6">關於我們</a></li>
-                <li class="py-2 px-3"><a href="#" class="text-decoration-none text-secondary-800 fs-6">常見問題</a></li>
-                <li class="py-2 px-3"><a href="#" class="text-decoration-none text-secondary-800 fs-6">機構支援</a></li>
-                <li class="py-2 px-3"><a href="#" class="text-decoration-none text-secondary-800 fs-6">寶貝認養</a></li>
+                <li class="py-2 px-3"><a href="./FAQ.html" class="text-decoration-none text-secondary-800 fs-6">常見問題</a></li>
+                <li class="py-2 px-3"><a href="./agency-list.html" class="text-decoration-none text-secondary-800 fs-6">機構支援</a></li>
+                <li class="py-2 px-3"><a href="./pet-list.html" class="text-decoration-none text-secondary-800 fs-6">寶貝認養</a></li>
                 <li class="py-2 px-3"><a href="#" class="text-decoration-none text-secondary-800 fs-6">聯絡我們</a></li>
             </ul>
         </div>
@@ -832,10 +904,10 @@
                     </a></div>
                 </div>
                 </div>
-                
+
             </div>
             <div>
-                <div class=" d-flex justify-content-between align-items-center border border-primary-700 border-2 mb-7 mb-lg-0" style="border-radius: 4px;"> 
+                <div class=" d-flex justify-content-between align-items-center border border-primary-700 border-2 mb-7 mb-lg-0" style="border-radius: 4px;">
                 <div class="d-flex align-items-center px-2">
                     <div>
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -852,9 +924,9 @@
 
                 </div>
                 <div>
-                    
+
                     <input id="email" type="email" class="form-control border-0 shadow-none fw-medium fs-8 fs-lg-5 ln-base text-secondary-500 py-2 border-0 email-input"  placeholder="請輸入 E-mail" value="請輸入 E-mail">
-        
+
                 </div>
                 </div>
                 <div class="text-white bg-primary-700 fw-medium fs-5 py-2 px-3">
@@ -862,7 +934,7 @@
                 </div>
             </div>
             </div>
-            
+
              <div class="d-lg-none d-block ">
                 <div class="d-flex align-items-center gap-4">
                     <div><a href="#">
@@ -889,7 +961,7 @@
                 </div>
         </div>
         </div>
-        
+
     </div>
     <div class="container pt-lg-8">
         <div class="text-secondary-700 ln-base text-center">Copyright @ 2025 My-Shelter | 本網站僅供個人作品使用,不提供商業用途</div>
@@ -909,12 +981,12 @@
           integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
           crossorigin="anonymous"></script>
         <script>
-document.querySelectorAll('.content-preview').forEach(block => {
-  block.addEventListener('click', function () {
-    this.classList.toggle('expanded');
-    this.classList.toggle('collapsed');
-  });
-});
+          document.querySelectorAll('.content-preview').forEach(block => {
+            block.addEventListener('click', function () {
+              this.classList.toggle('expanded');
+              this.classList.toggle('collapsed');
+            });
+          });
         </script>
 </body>
 
