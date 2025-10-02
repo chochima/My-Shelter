@@ -41,28 +41,15 @@
 
 
 
-//認養方式選單
-.dropdown .btn-outline-primary {
-  color: $secondary-800;
-  background-color: $white;
+//lable
+.detail-lable {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  color: $primary-700;
 }
-.dropdown .btn-outline-primary:hover,
-.dropdown .btn-outline-primary:focus,
-.dropdown .btn-outline-primary:active {
-  color: $secondary-800; //hover/focus/active 時仍然保持同色
-  background-color: $secondary-100; //可以改 hover 背景色，或者保持原本透明/
-  border-color: $primary-700; //邊框維持原色/
-}
-
-.dropdown-item {
-  color: $secondary-800;
-  padding: 8px 24px;
-}
-.dropdown-menu button:hover {
-  color: $secondary-600;
-  font-weight: 500;
-}
-//點擊之後要改色，待補
 
 
 
