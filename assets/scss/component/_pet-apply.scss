@@ -1,0 +1,82 @@
+//分隔線
+.block-line {
+  display: flex;
+  justify-content: center;
+  width: calc(12/12)*8;
+  font-size: 48px;
+  font-weight: 700;
+  padding: 24px;
+  color: $primary-700;
+  border-bottom: 2px solid $primary-700;
+}
+
+//
+
+//內文
+.apply-text {
+  gap: 8px;
+  padding-bottom: 32px;
+}
+
+.apply-text h3{
+  height: 1.5;
+  color: $primary-700;
+  
+}
+
+//確認框
+.form-check-input {
+  width: 24px;
+  height: 24px;
+}
+.form-check-label {
+  font-size: 24px;
+}
+
+.apply-text h5{
+  height: 1.5;
+  margin-bottom: 0px;
+}
+
+
+
+//表單樣式
+.apply-form {
+  padding-top: 24px;
+}
+
+.apply-form span{
+  color: $secondary-600;
+}
+
+.apply-form input{
+  padding: 8px;
+  margin: 8px 0px;
+  border-radius: 8px;
+
+}
+
+//
+.form-check-label {
+  font-size: 18px;
+  color: $secondary-800;
+}
+
+
+
+
+
+
+
+@media(max-width: 375px) {
+
+
+
+
+
+
+
+
+
+
+}

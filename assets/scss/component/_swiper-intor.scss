@@ -1,0 +1,67 @@
+// 寶貝/機構詳情-輪播主圖
+/* 將高度設定在外層 swiper container */
+.thumbs-main-slides {
+  width: 100%;
+  height: 460px;       /* 固定桌機高度 */
+  margin-bottom: 16px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* 確保 wrapper 與每個 slide 填滿高度 */
+.thumbs-main-slides .swiper-wrapper,
+.thumbs-main-slides .swiper-slide {
+  height: 100%;
+}
+
+/* 圖片填滿 slide 並等比裁切 */
+.thumbs-main-slides .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+
+// 寶貝/機構詳情-輪播縮圖
+.swiper-intro-thumb .swiper-slide{
+  max-height: 120px;
+  aspect-ratio: 1 / 1;  
+  overflow: hidden;
+  background-color: brown;
+}
+
+.swiper-intro-thumb div > img{
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center center;
+}
+
+
+
+
+
+
+
+
+@media(max-width: 375px) {
+// 寶貝/機構詳情-輪播主圖
+.thumbs-main-slides {
+  height: 248px;       /* 固定手機高度 */
+}
+
+// 寶貝/機構詳情-輪播縮圖
+.swiper-intro-thumb .swiper-slide{
+  max-height: 80px;
+}
+
+
+
+}
+
+
+

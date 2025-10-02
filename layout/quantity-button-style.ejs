@@ -1,0 +1,38 @@
+<div class="container px-0">
+    <div class="d-flex align-items-center">
+      <button id="decrement" class="btn-quantity-circle">
+        <span class="">
+          <svg class="icon-quantity" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 36 36"><path fill="currentColor" d="M34 18a3 3 0 0 1-3 3H5a3 3 0 1 1 0-6h26a3 3 0 0 1 3 3z"/></svg>
+        </span>
+      </button>
+
+      <input type="text" id="number" class="form-control text-center bg-transparent text-primary-700 border-0 shadow-none fs-2" value="0" readonly>
+
+      <button id="increment" class="btn-quantity-circle">
+        <span class="">
+          <svg class="icon-quantity" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 42 42"><path fill="currentColor" d="M39.5 22.5v-3c0-1.48-.43-2-2-2h-13v-13c0-1.48-.49-2-2-2h-3c-1.55 0-2 .52-2 2v13h-14c-1.48 0-2 .49-2 2v3c0 1.55.52 2 2 2h14v14c0 1.51.48 2 2 2h3c1.48 0 2-.43 2-2v-14h13c1.51 0 2-.48 2-2z"/></svg>
+        </span>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- Bootstrap JS & Popper -->
+
+  <script>
+    const decrementBtn = document.getElementById('decrement');
+    const incrementBtn = document.getElementById('increment');
+    const numberInput = document.getElementById('number');
+
+    decrementBtn.addEventListener('click', () => {
+      let currentValue = parseInt(numberInput.value);
+      if(currentValue > 0) { // 防止數字小於0
+        numberInput.value = currentValue - 1;
+      }
+    });
+
+    incrementBtn.addEventListener('click', () => {
+      let currentValue = parseInt(numberInput.value);
+      numberInput.value = currentValue + 1;
+    });
+  </script>

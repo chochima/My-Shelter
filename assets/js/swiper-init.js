@@ -8,7 +8,7 @@ import 'swiper/css/bundle';
 //基礎預設
 
 document.addEventListener("DOMContentLoaded", () => {
-  // 第一個 Swiper：一次顯示 3 個 slide
+  //Swiper：一次顯示 3 個 slide
   new Swiper('.css-mode-3slides', {
     slidesPerView: 3,
     spaceBetween: 24,
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // 第二個 Swiper：一次顯示 2 個 slide
+  //Swiper：一次顯示 2 個 slide
   new Swiper('.css-mode-2slides', {
     slidesPerView: 2.48,
     spaceBetween: 24,
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
-  // Freemode Swiper：自由顯示 slide
+  //Swiper：一次顯示 1 個 slide
   new Swiper('.css-mode-1slides', {
     slidesPerView: 1,
     spaceBetween: 0,
@@ -88,4 +88,59 @@ document.addEventListener("DOMContentLoaded", () => {
       },   
     }
   });
+
+
+
+  //Swiper：寶貝/機構詳情 slide (下半部)
+  const thumbsSwiper = new Swiper('.thumbs-slides', {
+
+    slidesPerView: 3.75,
+    spaceBetween: 16,
+
+    navigation: {
+    nextEl: '.thumbs-main-slides .swiper-button-next',
+    prevEl: '.thumbs-main-slides .swiper-button-prev',
+    },
+
+    pagination: {
+    el: '.thumbs-main-slides .swiper-pagination',
+    clickable: true,
+    },
+
+    // 必要，讓主 Swiper 可以知道縮圖狀態
+    watchSlidesProgress: true, 
+
+    breakpoints: {
+      320: { // 手機
+        slidesPerView: 3.75, 
+        spaceBetween: 16 
+      },  
+
+      576: { // >= 576px 顯示 4.75 張
+        slidesPerView: 4.75, 
+        spaceBetween: 16 
+      },   
+    }
+  });
+
+
+  //Swiper：寶貝/機構詳情 slide (上半部-主圖)
+  const mainSwiper = new Swiper('.thumbs-main-slides', {
+    spaceBetween: 0,
+
+    thumbs: {
+    swiper: thumbsSwiper // 綁定縮圖
+    }
+
+  });
+
+
+  
+
+
+
+
+
+
+
 });

@@ -1,3 +1,5 @@
+
+
 //寶貝認養圖片尺寸
 .pet-size {
   width: 100%;
@@ -63,6 +65,16 @@
   /* 超過部分顯示… */
 }
 
+
+
+//寶貝卡片<a>連結底線刪除
+.card-pet-no-decoration {
+  text-decoration: none;
+}
+.card-pet-no-decoration h3,
+.card-pet-no-decoration p{
+  color: $secondary-800;
+}
 
 
 

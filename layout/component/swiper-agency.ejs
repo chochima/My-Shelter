@@ -9,12 +9,21 @@
       </div>
 
     
-      <div class="col px-0">
+      <!--lable-機構支援專區-->
+      <div class="col px-0 index-visible">
         <span class="ps-2 ps-lg-4">機構支援專區</span>
       </div>
 
+      <!--lable-你可能還想支援-->
+      <div class="col px-0 index-hidden">
+        <span class="ps-2 ps-lg-4">你可能還想支援...</span>
+      </div>
+
+
       <div class="col-auto px-0 d-none d-lg-block">
+        <a href="./agency-list.html">
         <%- include('./layout/more-button'); -%>
+        </a>
       </div>
 
 
@@ -31,7 +40,9 @@
 
 
           <div class="swiper-slide">
+            <a href="./agency-detail-01.html" class="card-pet-no-decoration">
             <%- include('./layout/cards/agency-01'); -%>
+            </a>
           </div>
 
           <div class="swiper-slide">
@@ -55,11 +66,13 @@
 
 
 
-        
+
+        <div class="index-visible">
         <%- include('./layout/swiper-button'); -%>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
+        </div>
         
 
 
@@ -79,4 +92,20 @@
 
 
 
+<!--非首頁隱藏-->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const path = location.pathname;
+    const isIndex = (path === "/" || path.endsWith("index.html"));
 
+    // 只在首頁顯示
+    document.querySelectorAll(".index-visible").forEach(el => {
+      el.style.display = isIndex ? "block" : "none";
+    });
+
+    // 只在首頁隱藏
+    document.querySelectorAll(".index-hidden").forEach(el => {
+      el.style.display = isIndex ? "none" : "block";
+    });
+  });
+</script>
