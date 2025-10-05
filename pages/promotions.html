@@ -6,15 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>優惠活動</title>
     <style>
-      .step-btn:hover{
-          background-color: #E7DFD7 !important;
-          color: #887258 !important; 
+      .step-btn{
+          background-color: #FFFFFF !important;
+          color: #7C6952 !important; 
+          border: 2px solid #7C6952;
+          border-radius:16px;
+       }
+       .step-btn:hover{
+          background-color: #FFFCF5 !important;
+          transition: background-color 0.3s;
        }
     </style>
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <div class="bg-primary-300 py-9">
+    <div class="bg-primary-200 py-9">
       <div class="container">
       <div  class="py-9">
         <img src="/assets/images/dogs.jpg" alt="banner" class="w-100"  style="max-width: 1296px; max-height:432px ; border-radius: 16px; border-radius: 16px; border: 5px solid #887258;">
@@ -41,7 +47,7 @@
         </div>
       </div>
       <div class="py-9 text-center">
-        <a href="#" class="text-decoration-none px-5 py-3 bg-primary-700 text-primary-400 fw-bold fs-3 step-btn" style="border-radius: 99px;">我要參加</a>
+        <a href="#" class="text-decoration-none px-5 py-3  fw-medium fs-3 step-btn">我要參加</a>
       </div>
     </div>
     </div>
