@@ -50,13 +50,13 @@
       box-orient: vertical;
       /* 舊版 spec */
       cursor: pointer;
-      transition: all 0.3s ease;
+      transition: all 0.5s ease;
     }
 
     .content-preview.collapsed {
       -webkit-line-clamp: 1;
       /* WebKit 瀏覽器 */
-      line-clamp:2;
+      line-clamp:1;
       /* 標準屬性 */
     }
 
@@ -111,10 +111,10 @@
   <style>
 
 .text-btn:hover {
-  background-color:#7C6952 !important; 
-  color: #EFE7DC !important;
-  transition: background-color 0.3s;
+  color: #7C6952 !important;
+  border-bottom: 1px solid #7C6952;
   transition: color 0.3s;
+  transition: border-bottom 0.3s;
 }
 </style>
 <div class=" shadow-lg">
@@ -159,10 +159,10 @@
         </div>
        <div class="d-none d-lg-block">
         <ul class="list-unstyled d-flex gap-2 mb-0">
-            <li class="fs-5 lh-base fw-medium"><a href="#" class="text-decoration-none text-secondary-900  py-2 px-3 text-btn" style="border-radius: 100px;">關於我們</a></li>
-            <li class="fs-5 lh-base fw-medium"><a href="./FAQ.html" class="text-decoration-none text-secondary-900  py-2 px-3 text-btn" style="border-radius: 100px;">常見問題</a></li>
-            <li class="fs-5 lh-base fw-medium"><a href="./agency-list.html" class="text-decoration-none text-secondary-900  py-2 px-3 text-btn" style="border-radius: 100px;">機構支援</a></li>
-            <li class="fs-5 lh-base fw-medium"><a href="./pet-list.html" class="text-decoration-none text-secondary-900  py-2 px-3 text-btn" style="border-radius: 100px;">寶貝認養</a></li>
+            <li class="fs-5 lh-base fw-medium"><a href="#" class="text-decoration-none text-secondary-900  py-2 px-3 text-btn" >關於我們</a></li>
+            <li class="fs-5 lh-base fw-medium"><a href="./FAQ.html" class="text-decoration-none text-secondary-900  py-2 px-3 text-btn" >常見問題</a></li>
+            <li class="fs-5 lh-base fw-medium"><a href="./agency-list.html" class="text-decoration-none text-secondary-900  py-2 px-3 text-btn" >機構支援</a></li>
+            <li class="fs-5 lh-base fw-medium"><a href="./pet-list.html" class="text-decoration-none text-secondary-900  py-2 px-3 text-btn" >寶貝認養</a></li>
         </ul>
        </div>
        <div class="d-flex align-items-center gap-4">
@@ -413,7 +413,7 @@
                         </div>
                         <div class="text-secondary-600">
                           <div class="content-preview collapsed py-4 lh-base fw-medium fs-6">
-                            恭喜！您申請領養的「蹲蹲」已通過初步審核，所屬機構將於7日內與您聯繫，請配合機構完成後續領養程序。
+                            恭喜！您申請領養的「蹲蹲」已通過初步審核，所屬機構將於7日內與您聯繫，請配合<br><br>機構完成後續領養程序。
                             <br><br>接下來，所屬機構將安排後續的領養流程與訪視時間。請您保持電話暢通並留意相關訊息，以便順利完成領養手續。
                             <br><br>如有任何問題，歡迎隨時與我們聯繫。祝您與新夥伴生活愉快！<br><br>
                             謝謝您對動物的愛心與支持！
@@ -446,7 +446,7 @@
                         </div>
                         <div class="text-secondary-600">
                           <div class="content-preview collapsed py-4 lh-base fw-medium fs-6">
-                            恭喜您！您的會員等級已升級為「Lv.5銀牌守護者」，感謝您持續的支持與愛心，讓更多寶貝們感受到世界的溫暖與關懷。🐾💖
+                            恭喜您！您的會員等級已升級為「Lv.5銀牌守護者」，感謝您持續的支持與愛心，<br><br>讓更多寶貝們感受到世界的溫暖與關懷。🐾💖
                             <br><br>身為銀牌守護者，您將享有更多專屬福利與驚喜禮遇，未來也請繼續與我們一同守護這些可愛的小生命！
                             <br><br>感謝您為寶貝的愛心與對我們的信任！
                             <br>My-Shelter 敬上
@@ -479,7 +479,7 @@
                         </div>
                         <div class="text-secondary-600">
                           <div class="content-preview collapsed py-4 lh-base fw-medium fs-6">
-                            為了提升服務品質，我們將於【2024-07-26】進行系統維護作業。屆時平台部分功能可能暫時無法使用，造成不便敬請見諒。
+                            為了提升服務品質，我們將於【2024-07-26】進行系統維護作業。<br><br>屆時平台部分功能可能暫時無法使用，造成不便敬請見諒。
                             <br><br><span class="text-secondary-900">維護時間：<br>2024-07-26 12:00至2024-07-26 14:00</span>
                             <br><br>期間如有緊急問題，請透過客服信箱或電話與我們聯繫，我們將盡快為您處理。感謝您的理解與支持，期待維護後為您帶來更流暢的使用體驗！
                             <br><br>My-Shelter 敬上
@@ -853,12 +853,6 @@
 
     <style>
 
-.text-btn:hover {
-  background-color:#7C6952 !important; 
-  color: #EFE7DC !important;
-  transition: background-color 0.3s;
-  transition: color 0.3s;
-}
 </style>
 <div class=" pt-64 pb-5 pt-lg-80 pb-lg-8 d-flex flex-column gap-64 gap-lg-80">
     <div class="container d-flex flex-column flex-lg-row justify-content-between  gap-80">
@@ -887,11 +881,11 @@
 
             </a>
             <ul class="list-unstyled d-flex gap-2  flex-wrap justify-content-center justify-content-lg-start mb-0">
-                <li ><a href="#" class="text-decoration-none text-secondary-800 fs-6 py-2 px-3 text-btn" style="border-radius: 100px;">關於我們</a></li>
-                <li ><a href="./FAQ.html" class="text-decoration-none text-secondary-800 fs-6 py-2 px-3 text-btn" style="border-radius: 100px;">常見問題</a></li>
-                <li ><a href="./agency-list.html" class="text-decoration-none text-secondary-800 fs-6 py-2 px-3 text-btn" style="border-radius: 100px;">機構支援</a></li>
-                <li ><a href="./pet-list.html" class="text-decoration-none text-secondary-800 fs-6 py-2 px-3 text-btn" style="border-radius: 100px;">寶貝認養</a></li>
-                <li ><a href="#" class="text-decoration-none text-secondary-800 fs-6 py-2 px-3 text-btn" style="border-radius: 100px;">聯絡我們</a></li>
+                <li ><a href="#" class="text-decoration-none text-secondary-800 fs-6 py-2 px-3 text-btn">關於我們</a></li>
+                <li ><a href="./FAQ.html" class="text-decoration-none text-secondary-800 fs-6 py-2 px-3 text-btn">常見問題</a></li>
+                <li ><a href="./agency-list.html" class="text-decoration-none text-secondary-800 fs-6 py-2 px-3 text-btn">機構支援</a></li>
+                <li ><a href="./pet-list.html" class="text-decoration-none text-secondary-800 fs-6 py-2 px-3 text-btn">寶貝認養</a></li>
+                <li ><a href="#" class="text-decoration-none text-secondary-800 fs-6 py-2 px-3 text-btn">聯絡我們</a></li>
             </ul>
         </div>
          <div  class="d-flex flex-column justify-content-between align-items-center d-lg-block">
