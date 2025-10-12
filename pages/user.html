@@ -27,7 +27,7 @@
     }
 
     .user-left-list:hover {
-      background-color: bisque;
+      background-color: var(--bs-primary-400);
     }
 
     .order:hover {
@@ -137,9 +137,13 @@
               <button class="col-3 col-md-12 nav-link fs-mb-5 rounded-0 p-4 user-left-list" id="v-pills-orders-tab"
                 data-bs-toggle="pill" data-bs-target="#v-pills-orders" type="button" role="tab"
                 aria-controls="v-pills-orders" aria-selected="false">訂單資訊</button>
-              <button class="col-3 col-md-12 nav-link fs-mb-5 rounded-0 p-4 user-left-list  mb-md-4"
-                id="v-pills-follow-tab" data-bs-toggle="pill" data-bs-target="#v-pills-follow" type="button" role="tab"
+              <button class="col-3 col-md-12 nav-link fs-mb-5 rounded-0 p-4 user-left-list  " id="v-pills-follow-tab"
+                data-bs-toggle="pill" data-bs-target="#v-pills-follow" type="button" role="tab"
                 aria-controls="v-pills-follow" aria-selected="false">我的關注</button>
+              <a href="./index.html" class="text-decoration-none">
+                <button class="col-3 col-md-12 nav-link fs-mb-5 rounded-0 p-4 user-left-list mb-md-4"
+                  type="button">登出</button></a>
+
 
 
             </div>
@@ -170,14 +174,14 @@
                         <div class="d-flex align-items-center">
                           <input type="password" class="form-control w-auto me-6" id="userPassword" placeholder="密碼"
                             value="********">
-                          <a href="#" class="text-info fs-8">修改密碼</a>
+                          <a href="#" class="text-info fs-8 underline-link">修改密碼</a>
                         </div>
                       </div>
                       <!-- email(唯獨) -->
                       <div class="mb-4">
                         <label for="userEmail" class="form-label fs-7 mb-2 fw-bold">email 信箱</label>
-                        <input type="email" class="form-control-plaintext w-auto text-secondary-400" id="userEmail" placeholder="用戶信箱"
-                          value="email@example.com" readonly>
+                        <input type="email" class="form-control-plaintext w-auto text-secondary-400" id="userEmail"
+                          placeholder="用戶信箱" value="email@example.com" readonly>
                       </div>
                       <!-- 手機 -->
                       <div class="mb-4">
