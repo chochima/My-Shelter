@@ -2,15 +2,20 @@
 .btn-scroll-top {
     width: 100px;
     height: 100px;
+    z-index: 9999; /* 全局最上層 */
+    cursor: pointer;
+
+    /* 動畫設定 */
+    transition: color 0.3s ease;
 }
 .scroll-top{
     display: inline-block;
     position: relative;
-    position: fixed;
-    z-index: 1;
 
     width: 100%;
     height: 100%;
+
+
 }
 
 .btn-scroll-top-text {
@@ -49,19 +54,22 @@
 }
 .icon-Paw-Print-Filled path{
     fill: $white;
+    transition: fill 0.3s ease; // ⬅ SVG 填色動畫
 }
 
 
 .btn-scroll-top:hover .btn-scroll-top-text {
     color: $primary-100;
+
 }
 
 .btn-scroll-top:hover .icon-Paw-Print-Filled path {
     fill: $primary-600;
+    transition: fill 0.3s ease; // ⬅ SVG 填色動畫
 }
 
 
-@media(max-width: 375px) {
+@media(max-width: 430px) {
   .btn-scroll-top {
     width: 50px;  // 不超過 100px
     height: 50px;
@@ -110,7 +118,7 @@
     padding-left: 8px;
 }
 
-@media(max-width: 375px) {
+@media(max-width: 430px) {
     .more-btn {
     font-size: $font-size-base;
     border-radius: 8px;
@@ -180,7 +188,7 @@
     margin-bottom: 1px;
 }
 
-@media(max-width: 375px) {
+@media(max-width: 430px) {
 .btn-detail-radius {
     font-size: 16px;
     line-height: 1.5;
@@ -244,7 +252,7 @@
     
 }
 
-@media(max-width: 375px) {
+@media(max-width: 430px) {
     .swiper-button-style,
     .swiper-button-next-style,
     .swiper-button-prev-style
