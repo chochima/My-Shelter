@@ -96,6 +96,7 @@
 
 
 
+
 //查看更多按鈕
 .more-btn {
     display: inline-flex;
@@ -159,11 +160,15 @@
 
     cursor: pointer;
     transition: background-color 0.2s;
+
+
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
+    // x偏移, y偏移, 模糊半徑, 顏色
 }
 
 .btn-quantity-circle:hover {
-    color: #EFE7DC; 
-    background-color: #7C6952;
+    background-color: $primary-200;
+    color: $primary-700;
 }
 
 .icon-quantity {
@@ -216,6 +221,11 @@
 
 
 
+
+
+
+
+
 //輪播按鈕
 .swiper-button-style {
     padding-right: 24px;
@@ -249,14 +259,126 @@
     border: 1px solid $primary-500;
     fill: $primary-700;
     border-radius: 50%;
+
+
+
+    
     
 }
 
-@media(max-width: 430px) {
-    .swiper-button-style,
-    .swiper-button-next-style,
-    .swiper-button-prev-style
-    {
-        display: none;
-    }
+
+
+
+
+
+
+
+
+
+
+//按鈕換色
+.btn-primary-400 {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
+    // x偏移, y偏移, 模糊半徑, 顏色
 }
+.btn-primary-400:hover {
+    background-color: $primary-200;
+    color: $primary-700;
+}
+
+
+.btn-outline-primary {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
+    // x偏移, y偏移, 模糊半徑, 顏色
+}
+
+.btn-outline-primary-700{
+    background-color: $white;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
+    // x偏移, y偏移, 模糊半徑, 顏色
+}
+.btn-outline-primary:hover,
+.btn-outline-primary-700:hover {
+    background-color: $primary-100;
+    color: $primary-700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//select樣式
+.select-style {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.select-dropdown {
+    min-width: 220px;
+    border-radius: 50px;
+}
+.select-dropdown-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    text-align: start;
+    font-weight: 500;
+    
+    color: $primary-700;
+    background-color: $input-bg;
+}
+.select-dropdown-btn::after {
+    display: none;
+}
+.select-dropdown-btn:hover {
+    background-color: $primary-200;
+    color: $primary-700;
+}
+
+.select-search {
+    min-width: 220px;
+    border-radius: 50px;
+}
+
+
+
+@media(max-width: 430px) {
+.select-style {
+    justify-content: space-between;
+}
+
+.select-dropdown {
+    min-width: 50%;
+}
+.select-dropdown-btn {
+    font-size: 16px;
+}
+
+.select-dropdown > button > svg {
+    width: 16px;
+    height: 16px;
+}
+
+.select-search {
+    max-width: 100%;
+    margin-top: 16px;
+}
+.select-search > input > svg {
+    width: 16px;
+    height: 16px;
+}
+
+
+}
+
+

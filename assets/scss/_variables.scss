@@ -1097,7 +1097,7 @@ $form-select-box-shadow:          var(--#{$prefix}box-shadow-inset) !default;
 
 $form-select-focus-border-color:  $input-focus-border-color !default;
 $form-select-focus-width:         $input-focus-width !default;
-$form-select-focus-box-shadow:    0 0 0 $form-select-focus-width $input-btn-focus-color !default;
+$form-select-focus-box-shadow:    0 0 0 $form-select-focus-width $input-btn-focus-color  !default;
 
 $form-select-padding-y-sm:        $input-padding-y-sm !default;
 $form-select-padding-x-sm:        $input-padding-x-sm !default;
@@ -1324,17 +1324,19 @@ $dropdown-box-shadow:               var(--#{$prefix}box-shadow) !default;
 
 $dropdown-link-color:               var(--#{$prefix}body-color) !default;
 $dropdown-link-hover-color:         $dropdown-link-color !default;
-$dropdown-link-hover-bg:            var(--#{$prefix}tertiary-bg) !default;
+//$dropdown-link-hover-bg:            var(--#{$prefix}tertiary-bg) !default;
+$dropdown-link-hover-bg:            $primary-300;
 
 $dropdown-link-active-color:        $component-active-color !default;
-$dropdown-link-active-bg:           $component-active-bg !default;
+//$dropdown-link-active-bg:           $component-active-bg !default;
+$dropdown-link-active-bg:           $primary-400;
 
 $dropdown-link-disabled-color:      var(--#{$prefix}tertiary-color) !default;
 
 $dropdown-item-padding-y:           $spacer * .25 !default;
 $dropdown-item-padding-x:           $spacer !default;
 
-$dropdown-header-color:             $gray-600 !default;
+$dropdown-header-color:             $gray-800 !default;
 $dropdown-header-padding-x:         $dropdown-item-padding-x !default;
 $dropdown-header-padding-y:         $dropdown-padding-y !default;
 // fusv-disable
@@ -1343,6 +1345,7 @@ $dropdown-header-padding:           $dropdown-header-padding-y $dropdown-header-
 // scss-docs-end dropdown-variables
 
 // scss-docs-start dropdown-dark-variables
+//下拉選單
 $dropdown-dark-color:               $gray-300 !default;
 $dropdown-dark-bg:                  $gray-800 !default;
 $dropdown-dark-border-color:        $dropdown-border-color !default;

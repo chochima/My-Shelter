@@ -53,7 +53,8 @@
   align-items: center;
   justify-content: center;
 
-  padding: 9.5px 9.5px;
+  padding-top: 9.5px;
+  padding-bottom: 9.5px;
 
   border: 1px solid  $primary-700;
   border-radius: 8px;
@@ -63,25 +64,42 @@
 
 
 
-@media(max-width: 375px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 768px) {
 
 //機構介紹
 .agency-content {
   display: flex;
   justify-content: start;
-  gap:16px;
+  gap:24px;
 
   font-weight: 500;
   line-height: 1.5;
 
-  padding: 8px;
+  padding: 16px;
+  padding-top: 24px;
 }
 .agency-content div > img{
-  max-width: 40px;
-  min-height: 40px;
+  max-width: 48px;
+  min-height: 48px;
 }
-.agency-content div > h5{
-  padding: 5px 0px;
+.agency-content div > h3{
+  display: flex;
+  align-items: center;
+  padding: 0px 0px 0px 16px;
   margin-bottom: 0px;
   color: $primary-700;
 }
@@ -95,11 +113,8 @@
   margin-top: 8px;
 }
 
-
-
-
-
-
-
+.agency-content-tag div {
+  gap:12px;
+}
 
 }

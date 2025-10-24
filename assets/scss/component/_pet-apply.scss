@@ -10,7 +10,16 @@
   border-bottom: 2px solid $primary-700;
 }
 
-//
+//表單標題
+.accordion-item {
+  color: $secondary-800;
+}
+.accordion-button {
+  font-size: 18px;
+  font-weight: 500;
+  color: $primary-700;
+}
+
 
 //內文
 .apply-text {
@@ -24,14 +33,7 @@
   
 }
 
-//確認框
-.form-check-input {
-  width: 24px;
-  height: 24px;
-}
-.form-check-label {
-  font-size: 24px;
-}
+
 
 .apply-text h5{
   height: 1.5;
@@ -68,15 +70,13 @@
 
 
 
-@media(max-width: 375px) {
+@media(max-width: 768px) {
+.accordion-body > ol >li {
+  padding: 8px 0px;
+}
 
-
-
-
-
-
-
-
-
-
+.apply-title {
+  font-size: 32px;
+  text-align: center;
+}
 }

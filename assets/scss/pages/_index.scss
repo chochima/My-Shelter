@@ -239,7 +239,7 @@
 
 
 
-@media(max-width: 430px) {
+@media(max-width: 768px) {
   .index-main {
     padding-bottom: 80px;
     
@@ -404,7 +404,8 @@
   }
 }
 
-@media(min-width: 1024px) {
+/*
+@media(max-width: 1500px) {
   .index-main {
     padding-bottom: 80px;
   }
@@ -413,7 +414,6 @@
     max-width: 100%;
     min-height: 768px;
     
-    padding-bottom: 40px;
   }
 
   .index-content {
@@ -429,4 +429,4 @@
   bottom: 0px;
   }
 }
-
+*/

@@ -53,6 +53,31 @@
 
 
 
+//下拉選單
+.dropdown-item {
+  padding: 8px 16px;
+}
+.dropdown-item .option-title {
+  font-size: 24px;
+  color: $secondary-800;
+}
+
+.dropdown-item .option-desc {
+  font-size: 16px;
+  color: $secondary-700;
+}
+.dropdown-item:hover,
+.dropdown-item:focus {
+  //background-color: $primary-300;
+  border-radius: 12px
+
+}
+
+
+.dropdown-menu .dropdown-item {
+    white-space: normal;   /* 允許換行 */
+    word-wrap: break-word; /* 超長單字自動斷行 */
+}
 
 
 
@@ -67,13 +92,10 @@
 
 
 
-
-
-
-
-@media(max-width: 375px) {
+@media(max-width: 768px) {
 .detail-content {
   margin: 24px 0px;
+  
 }
 
 
