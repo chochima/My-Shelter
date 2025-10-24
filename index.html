@@ -11,9 +11,12 @@
   <!-- bootstrap icon -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+  <!-- AOS .js -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <title>index</title>
-  <script type="module" crossorigin src="/My-Shelter/assets/main-DU6eGzQk.js"></script>
-  <link rel="stylesheet" crossorigin href="/My-Shelter/assets/main-CK9Awu4Z.css">
+  <script type="module" crossorigin src="/My-Shelter/assets/main-CHNEOTkO.js"></script>
+  <link rel="stylesheet" crossorigin href="/My-Shelter/assets/main-Bv7HktYc.css">
 </head>
 
 <body class="body-xuu">
@@ -176,13 +179,13 @@
   <!--banner-->
   
   <section class="bg-primary-200 d-flex flex-column align-items-center">
-  <section class="index-main">
+  <section class="index-main pb-80 pb-lg-0">
 
     <div class="index-main-img">
       <img src="/My-Shelter/assets/index-dog-ClYWidAN.jpg" alt="首頁圖片">
     </div>
 
-    <div class="col align-self-center index-main-content">
+    <div class="col align-self-center index-main-content pt-56 pt-lg-0">
       <p>我們相信，
       <br class="d-block d-md-none">每一個生命都值得被愛、被珍惜。
       </p>
@@ -192,7 +195,7 @@
       
       <div class="d-flex gap-5 gap-lg-8">
         <a href="./agency-list.html" class="card-pet-no-decoration">
-          <button type="button" class="btn btn-outline-primary border border-2 border border-primary text-sm-wrap text-nowrap index-main-btn">
+          <button type="button" class="btn btn-outline-primary  border border-2 border border-primary text-sm-wrap text-nowrap index-main-btn">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
           <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1"/>
           </svg>
@@ -223,7 +226,8 @@
 
   <!-- 機構支援專區 Slider main container -->
    <section class="index-content">
-    <div>
+    <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
       <section class="index-box">
 
 
@@ -452,25 +456,8 @@
 
 
 
-        <div class="index-visible">
-        <div class="d-flex justify-content-end swiper-button-style">
-
-
-  <div class="swiper-button-prev-style text-primary-700">
-    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
-    </svg>
-  </div>
-
-
-  <div class="swiper-button-next-style text-primary-700">
-    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
-    </svg>
-  </div>
-
-     
-  </div>            <div class="swiper-button-next"></div>
+        <div class="index-visible" style="padding-top: 96px;">
+            <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
         </div>
@@ -482,7 +469,7 @@
 
   </div>
 
-  <div class="d-flex justify-content-center px-0 d-lg-none">
+  <div class="d-flex justify-content-center px-0 d-lg-none pt-md-56">
     <a href="./agency-list.html">
     <button type="button" class="btn btn-primary-400  more-btn">
     查看更多
@@ -525,7 +512,8 @@
 
   <!-- 寶貝認養專區 Slider main container -->
    <section class="index-content">
-    <div>
+    <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
       <section class="index-box">
     <!--lable-->
     <nav class="row mx-0 index-lable d-flex align-items-center">
@@ -562,80 +550,137 @@
 
       <!--lable-搜尋-->
       
-      <span class="pt-56 px-0 index-visible">
-      <div class="d-flex justify-content-between align-items-center m-auto">
-<div class="d-lg-flex align-items-center gap-5 m-auto  m-lg-0">
- <div class="d-flex gap-5">
-<div class="select-wrapper d-flex justify-content-between align-items-center border border-2 border-primary-700 px-3 py-2 px-lg-5 py-lg-3 cs-btn" style="border-radius: 100px;">
-  <select id="regionSelect" class="form-select custom-select text-primary-700 border-0 shadow-none fs-lg-4 lh-sm fw-medium" style="border-radius: 100px;">
-    <option selected>地區</option>
-    <option value="北部">北部</option>
-    <option value="中部">中部</option>
-    <option value="南部">南部</option>
-    <option value="東部">東部</option>
-    <option value="離島">離島</option>
-  </select> 
+      <div class="index-visible px-0">
+      <span class="d-flex justify-content-center justify-content-lg-end pt-56 px-0">
+      <section class="row select-style">
+
   
-  <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M20.3334 1L11 10.3333L1.66669 1" stroke="#7C6952" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+      <!-- 地區 -->
+      <div class="col dropdown select-dropdown">
+        <!-- 顯示按鈕 -->
+        <button class="btn btn-light dropdown-toggle w-100 border border-2 border-primary-700 px-3 fs-5 fs-lg-4 py-2 px-lg-5 py-lg-3 select-dropdown-btn" type="button" id="regionDropdown" data-bs-toggle="dropdown" aria-expanded="true" style="border-radius: 100px;">
+          地區
 
-</div>
-<div class="select-wrapper d-flex justify-content-between align-items-center border border-2 border-primary-700 px-3 py-2 px-lg-5 py-lg-3 cs-btn" style="border-radius: 100px;">
-  <select class="form-select custom-select text-primary-700 border-0 shadow-none fs-lg-4 lh-sm fw-medium " 
-          aria-label="Default select example" 
-          style="border-radius: 100px; appearance: none; ">
-    <option selected>寶貝類型</option>
-    <option value="糧食緊缺">糧食緊缺</option>
-    <option value="醫療幫助">醫療幫助</option>
-    <option value="建設幫助">建設幫助</option>
-    <option value="設備支援">設備支援</option>
-    <option value="生命禮儀">生命禮儀</option>
-  </select>
+          <svg width="18" height="18" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.3334 1L11 10.3333L1.66669 1" stroke="#7C6952" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <!-- 下拉選單 -->
+        <ul class="dropdown-menu w-100 text-primary-300 border border-2 border-primary-700 fs-lg-4 lh-sm fw-medium mt-4" aria-labelledby="regionDropdown">
+          <li class="px-2"><a class="dropdown-item" href="#">北部</a></li>
+          <li class="px-2"><a class="dropdown-item" href="#">中部</a></li>
+          <li class="px-2"><a class="dropdown-item" href="#">南部</a></li>
+          <li class="px-2"><a class="dropdown-item" href="#">東部</a></li>
+          <li class="px-2"><a class="dropdown-item" href="#">離島</a></li>
+        </ul>
+      </div>
+
+
+      <!-- 寶貝類型 -->
+      <div class="col dropdown select-dropdown">
+        <!-- 顯示按鈕 -->
+        <button class="btn btn-light dropdown-toggle w-100 border border-2 border-primary-700 px-3 fs-5 fs-lg-4 py-2 px-lg-5 py-lg-3 select-dropdown-btn" type="button" id="pet-type-Dropdown" data-bs-toggle="dropdown" aria-expanded="true" style="border-radius: 100px;">
+          寶貝類型
+
+          <svg width="18" height="18" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.3334 1L11 10.3333L1.66669 1" stroke="#7C6952" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <!-- 下拉選單 -->
+        <ul class="dropdown-menu w-100 text-primary-300 border border-2 border-primary-700 shadow-none fs-lg-4 fw-medium mt-4" aria-labelledby="pet-type-Dropdown">
+          <li class="px-2"><a class="dropdown-item" href="#">狗狗</a></li>
+          <li class="px-2"><a class="dropdown-item" href="#">貓咪</a></li>
+          <li class="px-2"><a class="dropdown-item" href="#">兔子/鼠鼠</a></li>
+          <li class="px-2"><a class="dropdown-item" href="#">鳥類</a></li>
+          <li class="px-2"><a class="dropdown-item" href="#">爬蟲</a></li>
+        </ul>
+      </div>
+
+
+      <!-- 搜尋 -->
+      <div class="col">
+      <div class=" d-flex align-items-center justify-content-between border border-2 border-primary-700 px-3 py-2 px-lg-5 py-lg-3 select-search">
+    
+        <input type="search" class="border-0 secondary-600 border-0 fs-5 fs-lg-4 fw-medium"  placeholder="搜尋寶貝" style="border: none; outline: none; background: transparent;">
  
-    <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M20.3334 1L11 10.3333L1.66669 1" stroke="#7C6952" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="36" height="36" rx="18" fill="#7C6952"/>
+            <path d="M17.1111 24.2223C21.0385 24.2223 24.2223 21.0385 24.2223 17.1111C24.2223 13.1838 21.0385 10 17.1111 10C13.1838 10 10 13.1838 10 17.1111C10 21.0385 13.1838 24.2223 17.1111 24.2223Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M26 26L22.1333 22.1333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
 
-</div>
-</div>
-<div>
-<div class=" d-flex  align-items-center border border-2 border-primary-700 px-3 py-2 px-lg-5 py-lg-3 mt-4 mt-lg-0" style="border-radius: 100px;">
-  <input type="search" class="border-0 secondary-600 border-0 fs-lg-4 lh-sm fw-medium "  placeholder="搜尋寶貝" style="border: none; outline: none; background: transparent; width: 100%;">
- 
-    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="36" height="36" rx="18" fill="#7C6952"/>
-<path d="M17.1111 24.2223C21.0385 24.2223 24.2223 21.0385 24.2223 17.1111C24.2223 13.1838 21.0385 10 17.1111 10C13.1838 10 10 13.1838 10 17.1111C10 21.0385 13.1838 24.2223 17.1111 24.2223Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M26 26L22.1333 22.1333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+      </div>
+      </div>
+
+    <!-- 由新到舊 -->
+    <div class="index-hidden">
+    <div class="col dropdown select-dropdown d-none d-lg-block ">
+        <!-- 顯示按鈕 -->
+        <button class="btn btn-light dropdown-toggle w-100 border border-2 border-primary-700 px-3 fs-5 fs-lg-4 py-2 px-lg-5 py-lg-3 select-dropdown-btn" type="button" id="sortDropdown" data-bs-toggle="dropdown" aria-expanded="true" style="border-radius: 100px;">
+          由新到舊
+
+          <svg width="18" height="18" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.3334 1L11 10.3333L1.66669 1" stroke="#7C6952" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <!-- 下拉選單 -->
+        <ul class="dropdown-menu w-100 text-primary-300 border border-2 border-primary-700 fs-lg-4 lh-sm fw-medium mt-4" aria-labelledby="sortDropdown">
+          <li class="px-2"><a class="dropdown-item" href="#">由新到舊</a></li>
+          <li class="px-2"><a class="dropdown-item" href="#">由舊到新</a></li>
+          <li class="px-2"><a class="dropdown-item" href="#">醫療幫助</a></li>
+          <li class="px-2"><a class="dropdown-item" href="#">關注中</a></li>
+        </ul>
+    </div></div>
+
+    
+
+</section>
 
 
-</div>
-</div>
-</div>
 
 
-<div class="d-none d-lg-block">
-    <div class="select-wrapper d-flex  align-items-center  border border-2 border-primary-700 px-5 py-3 cs-btn" style="border-radius: 100px;">
-  <select class="form-select custom-select text-primary-700 border-0 shadow-none fs-4 lh-sm fw-medium " 
-          aria-label="Default select example" 
-          style="border-radius: 100px; appearance: none;">
-    <option selected>由新到舊</option>
-    <option value="由舊到新">由舊到新</option>
-    <option value="急需幫助">醫療幫助</option>
-    <option value="關注中">關注中</option>
 
-  </select>
- 
-    <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M20.3334 1L11 10.3333L1.66669 1" stroke="#7C6952" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
 
-</div>
-</div>
-</div>
 
-      </span><!--lable-->
+<!--非首頁隱藏-->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const path = location.pathname;
+    const isIndex = (path === "/" || path.endsWith("index.html"));
+
+    // 只在首頁顯示
+    document.querySelectorAll(".index-visible").forEach(el => {
+      el.style.display = isIndex ? "block" : "none";
+    });
+
+    // 只在首頁隱藏
+    document.querySelectorAll(".index-hidden").forEach(el => {
+      el.style.display = isIndex ? "none" : "block";
+    });
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </span>
+      </div><!--lable-->
     </nav>
     <!--lable-->
 
@@ -879,25 +924,8 @@
 
 
 
-        <div class="index-visible">
-          <div class="d-flex justify-content-end swiper-button-style">
-
-
-  <div class="swiper-button-prev-style text-primary-700">
-    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
-    </svg>
-  </div>
-
-
-  <div class="swiper-button-next-style text-primary-700">
-    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
-    </svg>
-  </div>
-
-     
-  </div>            <div class="swiper-button-next"></div>
+        <div class="index-visible" style="padding-top: 96px;">
+            <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
         </div>
@@ -910,7 +938,7 @@
     </div>
 
 
-  <div class="d-flex justify-content-center px-0 d-lg-none">
+  <div class="d-flex justify-content-center px-0 d-lg-none pt-md-56">
     <a href="./pet-list.html">
     <button type="button" class="btn btn-primary-400  more-btn">
     查看更多
@@ -955,7 +983,8 @@
 
   <!-- 優惠活動 Slider main container -->
    <section class="index-content index-content-img">
-    <div>
+    <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
       <section class="index-box ">
     <!--lable-->
     <nav class="row mx-0 index-lable d-flex align-items-center">
@@ -1097,26 +1126,11 @@
 
 
 
-        <div class="d-flex justify-content-end swiper-button-style">
-
-
-  <div class="swiper-button-prev-style text-primary-700">
-    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
-    </svg>
-  </div>
-
-
-  <div class="swiper-button-next-style text-primary-700">
-    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
-    </svg>
-  </div>
-
-     
-  </div>            <div class="swiper-button-next"></div>
+        <div style="padding-top: 96px;">
+            <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
+        </div>
         
 
 
@@ -1236,7 +1250,7 @@
 
 
   <div class="d-flex justify-content-center px-0 d-lg-none">
-    <a href="./promotions-list.html" class="card-pet-no-decoration">
+    <a href="./promotions-list.html" class="card-pet-no-decoration pt-56">
     <button type="button" class="btn btn-primary-400  more-btn">
     查看更多
 
@@ -1266,7 +1280,8 @@
 
   <!-- 最新消息 Slider main container -->
    <section class="index-content">
-    <div>
+    <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
       <section class="index-box">
 
 
@@ -1449,27 +1464,12 @@
 
 
 
-        <div class="d-flex justify-content-end swiper-button-style">
-
-
-  <div class="swiper-button-prev-style text-primary-700">
-    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
-    </svg>
-  </div>
-
-
-  <div class="swiper-button-next-style text-primary-700">
-    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
-    </svg>
-  </div>
-
-     
-  </div>        
+        
+          <div style="padding-top: 96px;">
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
+          </div>
         
 
 
@@ -1625,7 +1625,7 @@
   <!-- 手機版靜態列表 -->
 
 
-  <div class="d-flex justify-content-center px-0 d-lg-none">
+  <div class="d-flex justify-content-center d-lg-none pt-md-56">
     <a href="./news-list.html" class="card-pet-no-decoration">
     <button type="button" class="btn btn-primary-400  more-btn">
     查看更多
@@ -1657,7 +1657,9 @@
   <div class="row row-cols-1 row-cols-md-2 align-items-center">
 
   <!--文字-->
-  <div class="col index-content-about-text">
+  <div class="col index-content-about-text" 
+     data-aos="fade-right"
+     data-aos-anchor-placement="top-bottom">
     <h3>我們在做的事</h3>
     <p>當每一份關愛被具體實現，寶貝們的未來就更有希望。</p>
     <p>My-Shelter 雲端寶貝致力於打造一個有温度的公益電商平台,串聯收容機構與認養人，讓每一份善意都能成為實質的幫助。</p>
@@ -1672,12 +1674,18 @@
 
     <div class="flex-fill index-content-about-img
     ps-4 pt-0 pe-2 pb-2">
-      <img src="/My-Shelter/assets/about-dogs-om5zQboT.jpg" alt="我們在做的事-圖片01">
+      <img src="/My-Shelter/assets/about-dogs-om5zQboT.jpg" alt="我們在做的事-圖片01"
+      data-aos="fade-left"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-delay="350">
     </div>
 
     <div class="flex-fill index-content-about-img
     ps-2 pt-2 pe-4 pb-0">
-      <img src="/My-Shelter/assets/about-cats-CsXigXm9.jpg" alt="我們在做的事-圖片02">
+      <img src="/My-Shelter/assets/about-cats-CsXigXm9.jpg" alt="我們在做的事-圖片02"
+      data-aos="fade-left"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-delay="450">
     </div>
   </div>
   </div>
@@ -1695,7 +1703,10 @@
 
 
 <!--5張小圖-->
-<section class="container pt-8 pt-lg-56">
+<section class="container pt-8 pt-lg-56" 
+     data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom"
+     data-aos-delay="600">
   
   <div class="index-content-about-intro
   row row-cols-3 row-cols-md-5
@@ -1746,7 +1757,7 @@
 
 
 <!--圖片 MOB-->
-<section class="index-content-about container ">
+<section class="index-content-about container">
     <div class="row row-cols-1 row-cols-md-2 align-items-center d-block d-md-none">
 
       <div class="col align-self-center">
@@ -1754,12 +1765,18 @@
 
         <div class="flex-fill index-content-about-img
         ps-2 pt-6 pe-3 pb-0">
-          <img src="/My-Shelter/assets/about-dogs-om5zQboT.jpg" alt="我們在做的事-圖片01">
+          <img src="/My-Shelter/assets/about-dogs-om5zQboT.jpg" alt="我們在做的事-圖片01"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-delay="550">
         </div>
 
         <div class="flex-fill  index-content-about-img
         ps-3 pt-0 pe-2 pb-6">
-          <img src="/My-Shelter/assets/about-cats-CsXigXm9.jpg" alt="我們在做的事-圖片02">
+          <img src="/My-Shelter/assets/about-cats-CsXigXm9.jpg" alt="我們在做的事-圖片02"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-delay="750">
         </div>
 
       </div>
@@ -1910,6 +1927,13 @@
           crossorigin="anonymous"></script>
 
         <!-- Scroll to Top Button -->
+
+        <!-- AOS .JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        
         
 </body>
 
