@@ -43,7 +43,11 @@ document.addEventListener("DOMContentLoaded", () => {
       },   
     },
 
-    
+    on: {
+    init: function() {
+      //AOS.refresh(); // Swiper 準備好後 refresh AOS
+    }
+  }
     
   });
 
@@ -78,7 +82,11 @@ document.addEventListener("DOMContentLoaded", () => {
       },   
     },
 
-    
+    on: {
+    init: function() {
+      AOS.refresh(); // Swiper 準備好後 refresh AOS
+    }
+  }
   });
 
 
@@ -110,7 +118,11 @@ document.addEventListener("DOMContentLoaded", () => {
     },
 
     
-    
+    on: {
+    init: function() {
+      AOS.refresh(); // Swiper 準備好後 refresh AOS
+    }
+  }
   });
 
 
