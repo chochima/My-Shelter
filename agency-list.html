@@ -261,11 +261,11 @@
         <img src="/My-Shelter/assets/angencylist_banner-CIrtx7p9.png" alt="banner"
           class="rounded-3 mb-8 mb-md-56 img-fluid d-none d-md-block" style="max-height: 432px;">
 
-        <div class="mb-8 mb-md-56 ">
-          <div class="d-flex justify-content-between align-items-center m-auto">
+        <div class="mb-8 mb-md-56">
+          <div class="d-flex justify-content-between align-items-center">
 
   <div class="d-lg-flex align-items-center gap-5 m-auto m-lg-0">
-    <div class="d-flex gap-5 ">
+    <div class="d-flex gap-5">
       <div
         class="select-wrapper d-flex justify-content-between align-items-center border border-2 border-primary-700 px-3 py-2 px-lg-5 py-lg-3 cs-btn rounded-pill"
         >
@@ -291,12 +291,12 @@
         >
         <select class="form-select custom-select text-primary-700 border-0 shadow-none fs-lg-4 lh-sm fw-medium rounded-pill"
           aria-label="Default select example" style="appearance: none; ">
-          <option selected>支援類型</option>
-          <option value="狗狗">糧食警缺</option>
-          <option value="貓咪">醫療幫助</option>
-          <option value="兔子/鼠鼠">建設幫助</option>
-          <option value="鳥類">設備支援</option>
-          <option value="爬蟲">生命禮儀</option>
+          <option selected>機構類型</option>
+          <option value="糧食緊缺">糧食緊缺</option>
+          <option value="醫療幫助">醫療幫助</option>
+          <option value="建設幫助">建設幫助</option>
+          <option value="設備支援">設備支援</option>
+          <option value="生命禮儀">生命禮儀</option>
         </select>
 
         <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -309,8 +309,9 @@
 
     <!-- 搜尋框和手機版下拉式排序的容器 -->
     <div class="d-flex align-items-center justify-content-between">
-<!-- 搜尋框 -->
-      <div class=" d-flex  align-items-center border border-2 border-primary-700 px-3 py-2 px-lg-5 py-lg-3 rounded-pill "> <!-- mt-4 mt-lg-0 -->
+
+      <!-- 搜尋框 -->
+      <div class=" d-flex align-items-center border border-2 border-primary-700 px-3 py-2 px-lg-5 py-lg-3 rounded-pill mt-4 mt-lg-0"> <!-- mt-4 mt-lg-0 -->
         <input type="search" class="border-0 secondary-600 border-0 fs-lg-4 lh-sm fw-medium " placeholder="搜尋機構"
           style="border: none; outline: none; background: transparent; width: 100%;">
 
@@ -325,17 +326,20 @@
       </div>
 
       <!-- 排序-手機版 -->
-      <div class="dropdown d-lg-none">
+
+
+      <div class="d-lg-none d-flex align-items-end justify-content-center">
         <button class="btn-lg btn bg-transparent border-0 text-primary" type="button" data-bs-toggle="dropdown"
           aria-expanded="false" style="font-size: 40px;">
           <i class="bi bi-filter-right"></i>
         </button>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">由新到舊</a></li>
-          <li><a class="dropdown-item" href="#">由舊到新</a></li>
-          <li><a class="dropdown-item" href="#">醫療幫助</a></li>
-          <li><a class="dropdown-item" href="#">關注中</a></li>
+          <li class="px-2"><a class="dropdown-item" href="#">由新到舊</a></li>
+          <li class="px-2"><a class="dropdown-item" href="#">由舊到新</a></li>
+          <li class="px-2"><a class="dropdown-item" href="#">醫療幫助</a></li>
+          <li class="px-2"><a class="dropdown-item" href="#">關注中</a></li>
         </ul>
+
       </div>
 
     </div><!-- 搜尋框和手機版下拉式排序的容器 -->
@@ -345,8 +349,8 @@
 
 
 
-<!-- 排序-電腦版 -->
-  <div class="d-none  d-lg-block">
+    <!-- 排序-電腦版 -->
+    <div class="d-none d-lg-block">
     <div class="select-wrapper d-flex  align-items-center  border border-2 border-primary-700 px-5 py-3 cs-btn rounded-pill">
       <select class="form-select custom-select text-primary-700 border-0 shadow-none fs-4 lh-sm fw-medium "
         aria-label="Default select example" style="border-radius: 100px; appearance: none;">
@@ -362,7 +366,9 @@
       </svg>
 
     </div>
-  </div>
+    </div>
+
+    
 
 
 
