@@ -6,8 +6,11 @@
       letter-spacing: 2%;
     }
 
+
+
     .page-item .page-link:hover {
       color: var(--bs-primary);
+      border-bottom: 0.75px solid var(--bs-primary);
     }
 
 
