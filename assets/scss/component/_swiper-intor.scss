@@ -29,7 +29,6 @@
   max-height: 120px;
   aspect-ratio: 1 / 1;  
   overflow: hidden;
-  background-color: brown;
 }
 
 .swiper-intro-thumb div > img{
@@ -48,15 +47,15 @@
 
 
 
-@media(max-width: 375px) {
+@media(max-width: 430px) {
 // 寶貝/機構詳情-輪播主圖
 .thumbs-main-slides {
-  height: 248px;       /* 固定手機高度 */
+  height: 285px;       /* 固定手機高度 */
 }
 
 // 寶貝/機構詳情-輪播縮圖
 .swiper-intro-thumb .swiper-slide{
-  max-height: 80px;
+  max-height: 96.53px;
 }
 
 

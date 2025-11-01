@@ -11,6 +11,9 @@
   <!-- bootstrap icon -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+  <!-- AOS .js -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <title>index</title>
 </head>
 
@@ -21,13 +24,13 @@
   <!--banner-->
   
   <section class="bg-primary-200 d-flex flex-column align-items-center">
-  <section class="index-main">
+  <section class="index-main pb-80 pb-lg-0">
 
     <div class="index-main-img">
       <img src="/assets/images/index-dog.jpg" alt="首頁圖片">
     </div>
 
-    <div class="col align-self-center index-main-content">
+    <div class="col align-self-center index-main-content pt-56 pt-lg-0">
       <p>我們相信，
       <br class="d-block d-md-none">每一個生命都值得被愛、被珍惜。
       </p>
@@ -35,9 +38,9 @@
       <br class="d-block d-md-none">讓雲端的溫柔，成為守護動物的力量。
       </p>
       
-      <div class="d-flex gap-lg-8 gap-5 ">
+      <div class="d-flex gap-5 gap-lg-8">
         <a href="./agency-list.html" class="card-pet-no-decoration">
-          <button type="button" class="btn btn-outline-primary border border-2 border border-primary index-main-btn">
+          <button type="button" class="btn btn-outline-primary  border border-2 border border-primary text-sm-wrap text-nowrap index-main-btn">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
           <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1"/>
           </svg>
@@ -48,7 +51,7 @@
         </a>
 
         <a href="./pet-list.html" class="card-pet-no-decoration">
-          <button type="button" class="btn btn-primary-400 text-primary-700 index-main-btn border-2">
+          <button type="button" class="btn btn-primary-400 text-primary-700 text-sm-wrap text-nowrap index-main-btn border-2">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
           <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
           </svg>
@@ -68,7 +71,8 @@
 
   <!-- 機構支援專區 Slider main container -->
    <section class="index-content">
-    <div>
+    <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
       <%- include('./layout/component/swiper-agency'); -%>
     </div>
    </section>
@@ -77,7 +81,8 @@
 
   <!-- 寶貝認養專區 Slider main container -->
    <section class="index-content">
-    <div>
+    <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
       <%- include('./layout/component/swiper-pet'); -%>
     </div>
    </section>
@@ -86,7 +91,8 @@
 
   <!-- 優惠活動 Slider main container -->
    <section class="index-content index-content-img">
-    <div>
+    <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
       <%- include('./layout/component/swiper-promotion'); -%>
     </div>
 
@@ -100,7 +106,8 @@
 
   <!-- 最新消息 Slider main container -->
    <section class="index-content">
-    <div>
+    <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
       <%- include('./layout/component/swiper-news'); -%>
     </div>
    </section>
@@ -133,6 +140,15 @@
           integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
           crossorigin="anonymous"></script>
         <script type="module" src="../main.js"></script>
+
+        <!-- Scroll to Top Button -->
+
+        <!-- AOS .JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        
         
 </body>
 

@@ -3,6 +3,8 @@
 import Swiper from 'swiper/bundle';
 // 引入樣式
 import 'swiper/css/bundle';
+import '../css/navigation.css';
+import '../css/pagination.css';
 
 
 //基礎預設
@@ -22,6 +24,12 @@ document.addEventListener("DOMContentLoaded", () => {
       prevEl: '.css-mode-3slides .swiper-button-prev',
     },
 
+    loop: true,
+    autoplay: {
+    delay: 3500,            // 每 2.5 秒切換
+    disableOnInteraction: false, // 用戶操作後繼續自動輪播
+    },
+
     breakpoints: {
       320: { // 手機
         slidesPerView: 1.3,
@@ -33,7 +41,14 @@ document.addEventListener("DOMContentLoaded", () => {
         slidesPerView: 3,
         spaceBetween: 16
       },   
+    },
+
+    on: {
+    init: function() {
+      //AOS.refresh(); // Swiper 準備好後 refresh AOS
     }
+  }
+    
   });
 
   //Swiper：一次顯示 2 個 slide
@@ -49,6 +64,12 @@ document.addEventListener("DOMContentLoaded", () => {
       prevEl: '.css-mode-2slides .swiper-button-prev',
     },
 
+    loop: true,
+    autoplay: {
+    delay: 3500,            // 每 2.5 秒切換
+    disableOnInteraction: false, // 用戶操作後繼續自動輪播
+    },
+
     breakpoints: {
       320: { // 手機
         slidesPerView: 1.3, 
@@ -59,7 +80,13 @@ document.addEventListener("DOMContentLoaded", () => {
         slidesPerView: 2.48, 
         spaceBetween: 16 
       },   
+    },
+
+    on: {
+    init: function() {
+      AOS.refresh(); // Swiper 準備好後 refresh AOS
     }
+  }
   });
 
 
@@ -76,6 +103,8 @@ document.addEventListener("DOMContentLoaded", () => {
       prevEl: '.css-mode-1slides .swiper-button-prev',
     },
 
+    
+
     breakpoints: {
       320: { // 手機
         slidesPerView: 1, 
@@ -86,13 +115,26 @@ document.addEventListener("DOMContentLoaded", () => {
         slidesPerView: 1, 
         spaceBetween: 0 
       },   
+    },
+
+    
+    on: {
+    init: function() {
+      AOS.refresh(); // Swiper 準備好後 refresh AOS
     }
+  }
   });
 
 
 
   //Swiper：寶貝/機構詳情 slide (下半部)
   const thumbsSwiper = new Swiper('.thumbs-slides', {
+    loop: true,
+    autoplay: {
+    delay: 2500,            // 每 2.5 秒切換
+    disableOnInteraction: false, // 用戶操作後繼續自動輪播
+    },
+
 
     slidesPerView: 3.75,
     spaceBetween: 16,
@@ -120,7 +162,10 @@ document.addEventListener("DOMContentLoaded", () => {
         slidesPerView: 4.75, 
         spaceBetween: 16 
       },   
-    }
+    },
+
+    
+    
   });
 
 
@@ -130,8 +175,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     thumbs: {
     swiper: thumbsSwiper // 綁定縮圖
-    }
+    },
 
+    loop: true,
+    autoplay: {
+    delay: 2500,            // 每 2.5 秒切換
+    disableOnInteraction: false, // 用戶操作後繼續自動輪播
+    }
   });
 
 

@@ -16,8 +16,8 @@
 
 
 
-<body class="body-xuu px-4 px-lg-0">
-  <%- include('./layout/header'); -%>
+<body class="body-xuu px-lg-0">
+  <%- include('./layout/header-or'); -%>
   <div class="bg-secondary-100">
 
 
@@ -92,10 +92,6 @@
             </div>
 
 
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-
           </div>
 
 
@@ -146,7 +142,7 @@
           <!--支援選單-->
           <div class="dropdown col-12 col-lg-8 mx-0">
             <button class="btn btn-outline-primary w-100 border-2 text-start d-flex flex-column align-items-start p-5 shadow-none" 
-            type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"   aria-expanded="false" style="border-radius: 24px;">
+            type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"   aria-expanded="false" style="border-radius: 16px;">
 
               <div class="d-flex w-100 align-items-center justify-content-between pb-4">
                 <span class="selected-title fw-medium fs-4">場地修復</span>
@@ -165,24 +161,24 @@
               <!-- 下拉選單 -->
               <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
 
-                <li><button class="dropdown-item">
+                <li class="px-2"><button class="dropdown-item">
                   <div class="option-title fw-medium fs-4 ">場地修復</div>
                   <small class="option-desc text-muted">疏通排水道、掉落物清理，還給毛寶寶一個安全的場地</small>
                 </button></li>
 
-                <li><button class="dropdown-item">
+                <li class="px-2"><button class="dropdown-item">
                   <div class="option-title fw-medium fs-4 ">設施重建</div>
                   <small class="option-desc text-muted">修補受損的犬舍或圍欄，重新為毛寶寶搭起堅固溫暖的家園</small>
                 </button></li>
       
 
-                <li><button class="dropdown-item">
+                <li class="px-2"><button class="dropdown-item">
                   <div class="option-title fw-medium fs-4">緊急避難棚</div>
                   <small class="option-desc text-muted">準備足夠的急救藥品與醫療耗材，隨時應對突發狀況</small>
                 </button></li>
       
       
-                <li><button class="dropdown-item">
+                <li class="px-2"><button class="dropdown-item">
                   <div class="option-title fw-medium fs-4">糧食提供</div>
                   <small class="option-desc text-muted">提供新鮮飼料與飲水，為毛寶寶們緩解糧食泡水的危機</small>
                 </button></li>
@@ -198,7 +194,7 @@
           <!--關注/購物車按鈕-->
             <div class="row gx-5 mx-0 mt-5">
               <div class="col-6 ps-0">
-              <button type="button" class="btn btn-outline-primary border-2 border-primary w-100 bg-white btn-detail-radius">
+              <button type="button" class="btn btn-outline-primary-700 border-2 border-primary w-100 btn-detail-radius">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart icon-detail-style" viewBox="0 0 16 16">
                 <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
                 </svg>
@@ -208,7 +204,7 @@
               </div>
 
               <div class="col-6 pe-0">
-              <button type="button" class="btn btn-outline-primary border-2 border-primary w-100 bg-white btn-detail-radius">
+              <button type="button" class="btn btn-outline-primary-700 border-2 border-primary w-100 btn-detail-radius">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bag-heart icon-detail-style mb-1" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1M8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
                 </svg>
@@ -245,7 +241,7 @@
 
   
   <!--你可能還想認養-->
-  <section class="container px-0 py-mb-80 py-56">
+  <section class="container px-4 py-mb-80 py-56">
   <%- include('./layout/component/swiper-agency'); -%>
   </section>
 

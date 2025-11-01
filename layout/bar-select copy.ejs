@@ -1,0 +1,127 @@
+<section class="row select-style">
+
+  
+      <!-- 地區 -->
+      <div class="col dropdown select-dropdown">
+        <!-- 顯示按鈕 -->
+        <button class="btn btn-light dropdown-toggle w-100 border border-2 border-primary-700 px-3 fs-5 fs-lg-4 py-2 px-lg-5 py-lg-3 select-dropdown-btn" type="button" id="regionDropdown" data-bs-toggle="dropdown" aria-expanded="true" style="border-radius: 100px;">
+          地區
+
+          <svg width="18" height="18" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.3334 1L11 10.3333L1.66669 1" stroke="#7C6952" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <!-- 下拉選單 -->
+        <ul class="dropdown-menu w-100 text-primary-300 border border-2 border-primary-700 fs-lg-4 lh-sm fw-medium mt-4" aria-labelledby="regionDropdown">
+          <li class="px-2"><a class="dropdown-item" href="#">北部</a></li>
+          <li class="px-2"><a class="dropdown-item" href="#">中部</a></li>
+          <li class="px-2"><a class="dropdown-item" href="#">南部</a></li>
+          <li class="px-2"><a class="dropdown-item" href="#">東部</a></li>
+          <li class="px-2"><a class="dropdown-item" href="#">離島</a></li>
+        </ul>
+      </div>
+
+
+      <!-- 寶貝類型 -->
+      <div class="col dropdown select-dropdown">
+        <!-- 顯示按鈕 -->
+        <button class="btn btn-light dropdown-toggle w-100 border border-2 border-primary-700 px-3 fs-5 fs-lg-4 py-2 px-lg-5 py-lg-3 select-dropdown-btn" type="button" id="pet-type-Dropdown" data-bs-toggle="dropdown" aria-expanded="true" style="border-radius: 100px;">
+          寶貝類型
+
+          <svg width="18" height="18" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.3334 1L11 10.3333L1.66669 1" stroke="#7C6952" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <!-- 下拉選單 -->
+        <ul class="dropdown-menu w-100 text-primary-300 border border-2 border-primary-700 shadow-none fs-lg-4 fw-medium mt-4" aria-labelledby="pet-type-Dropdown">
+          <li class="px-2"><a class="dropdown-item" href="#">狗狗</a></li>
+          <li class="px-2"><a class="dropdown-item" href="#">貓咪</a></li>
+          <li class="px-2"><a class="dropdown-item" href="#">兔子/鼠鼠</a></li>
+          <li class="px-2"><a class="dropdown-item" href="#">鳥類</a></li>
+          <li class="px-2"><a class="dropdown-item" href="#">爬蟲</a></li>
+        </ul>
+      </div>
+
+
+      <!-- 搜尋 -->
+      <div class="col">
+      <div class=" d-flex align-items-center justify-content-between border border-2 border-primary-700 px-3 py-2 px-lg-5 py-lg-3 select-search">
+    
+        <input type="search" class="border-0 secondary-600 border-0 fs-5 fs-lg-4 fw-medium"  placeholder="搜尋寶貝" style="border: none; outline: none; background: transparent;">
+ 
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="36" height="36" rx="18" fill="#7C6952"/>
+            <path d="M17.1111 24.2223C21.0385 24.2223 24.2223 21.0385 24.2223 17.1111C24.2223 13.1838 21.0385 10 17.1111 10C13.1838 10 10 13.1838 10 17.1111C10 21.0385 13.1838 24.2223 17.1111 24.2223Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M26 26L22.1333 22.1333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+      </div>
+      </div>
+
+    <!-- 由新到舊 -->
+    <div class="index-hidden">
+    <div class="col dropdown select-dropdown d-none d-lg-block ">
+        <!-- 顯示按鈕 -->
+        <button class="btn btn-light dropdown-toggle w-100 border border-2 border-primary-700 px-3 fs-5 fs-lg-4 py-2 px-lg-5 py-lg-3 select-dropdown-btn" type="button" id="sortDropdown" data-bs-toggle="dropdown" aria-expanded="true" style="border-radius: 100px;">
+          由新到舊
+
+          <svg width="18" height="18" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.3334 1L11 10.3333L1.66669 1" stroke="#7C6952" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <!-- 下拉選單 -->
+        <ul class="dropdown-menu w-100 text-primary-300 border border-2 border-primary-700 fs-lg-4 lh-sm fw-medium mt-4" aria-labelledby="sortDropdown">
+          <li class="px-2"><a class="dropdown-item" href="#">由新到舊</a></li>
+          <li class="px-2"><a class="dropdown-item" href="#">由舊到新</a></li>
+          <li class="px-2"><a class="dropdown-item" href="#">醫療幫助</a></li>
+          <li class="px-2"><a class="dropdown-item" href="#">關注中</a></li>
+        </ul>
+    </div></div>
+
+    
+
+</section>
+
+
+
+
+
+
+
+<!--非首頁隱藏-->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const path = location.pathname;
+    const isIndex = (path === "/" || path.endsWith("index.html"));
+
+    // 只在首頁顯示
+    document.querySelectorAll(".index-visible").forEach(el => {
+      el.style.display = isIndex ? "block" : "none";
+    });
+
+    // 只在首頁隱藏
+    document.querySelectorAll(".index-hidden").forEach(el => {
+      el.style.display = isIndex ? "none" : "block";
+    });
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
