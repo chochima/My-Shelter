@@ -1,16 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
-    <h1>我是about</h1>
-    <%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>關於我們</title>
+  <style>
+    .about-title {
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 300px;
+      padding-bottom: 300px;
+      background-image: url(https://images.unsplash.com/photo-1586269327975-a58da503932a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1680);
+      background-repeat: no-repeat;
+      /* 不重複平鋪 */
+      background-size: cover;
+      /* 覆蓋整個區塊（等比例放大） */
+      background-position: center;
+    }
+
+    .about-title h1 {
+      color: #fff;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    }
+  </style>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+
+    <div class="bg-gray-200">
+
+      <div class="text-center about-title  mb-md-56 mb-2">
+        <h1 class="fs-2">
+          讓每一份關愛被具體實現，寶貝們的未來更有希望。
+        </h1>
+      </div>
+
+      <div class="container py-md-56 py-8  text-secondary">
+
+        <div class="row align-items-start justify-content-center mb-md-8 mb-4">
+          <div class="col-md-6 d-none d-md-block">
+            <img
+              src="https://images.unsplash.com/photo-1653515717458-c20843677573?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&h=700&w=1280"
+              alt="thankQ" class="img-fluid mb-8 mb-md-6 rounded-3">
+          </div>
+          <div class="col-md-6 col-12 p-md-8 p-5">
+            <h4 class="fw-bold">關於我們 About</h4>
+            <div class="py-6">
+              <p>雲端寶貝是一個有溫度的公益電商平台，專注於串聯收容機構與認養人，讓每一份善意都能成為實質的幫助。</p>
+              <p>我們相信，每一隻生命都值得被溫柔對待。無論是透過認養、贊助收容機構，還是簡單的一次關注與分享，您都能成為改變牠們命運的一份力量。</p>
+              <p>在雲端寶貝，您的愛心將化為食物、醫療與溫暖的棲身之所，陪伴牠們在等待家的路上，也能感受到世界的溫暖與愛。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-start justify-content-center mb-md-8 mb-4">
+          <div class="col-md-6 col-12 p-md-8 p-5">
+            <h4 class="fw-bold">我們的使命 Mission</h4>
+            <p>讓愛心不再停留於心意，而是成為真實的改變。</p>
+            <div class="py-6">
+
+              <p>雲端寶貝致力於：</p>
+              <ul>
+                <li><b class="fs-6 me-4 text-primary">串聯</b> 收容機構、認養人與愛心人士，建立穩固的支持網絡</li>
+                <li><b class="fs-6 me-4 text-primary">轉化</b> 愛心行動為實際資源，提供食物、醫療與生活照護</li>
+                <li><b class="fs-6 me-4 text-primary">推廣</b> 領養代替購買的理念，讓更多生命獲得幸福的機會
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 d-none d-md-block">
+            <img
+              src="https://images.unsplash.com/photo-1589924749359-9697080c3577?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1280&h=700"
+              alt="thankQ" class="img-fluid mb-8 mb-md-6 rounded-3">
+          </div>
+        </div>
+
+        <div class="row align-items-start justify-content-center">
+          <div class="col-md-6 d-none d-md-block">
+            <img
+              src="https://images.unsplash.com/photo-1594922009922-d1665ed9ce44?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1280&h=700"
+              alt="thankQ" class="img-fluid mb-8 mb-md-6 rounded-3">
+          </div>
+          <div class="col-md-6 col-12 p-md-8 p-5">
+            <h4 class="fw-bold">我們的願景 Vision</h4>
+            <p>我們期望打造一個讓公益更簡單、更透明、更有溫度的平台。</p>
+            <div class="py-6">
+              <p>
+                在這裡，每一份捐助、每一次分享、每一段互動，<br>
+                都能推動改變的齒輪轉動，讓每一隻毛寶貝，<br>
+                在等待家的路上，<br>
+                也能感受到世界的溫暖與愛。
+              </p>
+            </div>
+          </div>
+          <hr class="col-md-10 col-12 my-md-80 my-56">
+        </div>
+
+
+
+        <!-- 下方表單 -->
+        <div class="row justify-content-center text-center">
+          <h3>聯 絡 我 們</h3>
+          <div class="col-md-8 col-11 py-5  px-lg-56 px-4 text-center">
+            <form action="">
+              <div class="mb-8">
+                <p>尊敬的支援者您好</p>
+                <p>如您對我們提供的服務內容有任何問題，建議您可先參考<a href="/pages/FAQ.html">常見問題</a>，以便快速獲得解答</p>
+                <p>若您的問題仍未解決，請填寫下方表格，我們將於收到您的來信後盡快為您處理。</p>
+              </div>
+              <div>
+
+                <input type="text" class="form-control mb-5 p-3" id="FAQname" placeholder="姓名">
+                <input type="email" class="form-control mb-5 p-3" id="FAQemail" placeholder="email">
+                <textarea class="form-control mb-8 p-3" id="FAQtextarea" rows="8"
+                  placeholder="請描述您的問題，我們將透過您提供的電子郵件聯絡您。"></textarea>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-info px-6 text-light rounded-1 ">送出</button>
+                </div>
+
+
+              </div>
+
+
+            </form>
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <%- include('./layout/scroll-top-button'); -%>
+      <%- include('./layout/footer'); -%>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+          crossorigin="anonymous"></script>
+        <script type="module" src="../main.js"></script>
+</body>
+
 </html>
