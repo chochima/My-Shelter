@@ -13,8 +13,8 @@
 
   <title>註冊</title>
 
-  <script type="module" crossorigin src="/My-Shelter/assets/main-CIejnc6K.js"></script>
-  <link rel="stylesheet" crossorigin href="/My-Shelter/assets/main-DuI7jd6d.css">
+  <script type="module" crossorigin src="/My-Shelter/assets/main-BqHxAlSX.js"></script>
+  <link rel="stylesheet" crossorigin href="/My-Shelter/assets/main-D0g4lU4F.css">
 </head>
 
 <body>
@@ -26,6 +26,15 @@
   transition: color 0.3s;
   transition: border-bottom 0.3s;
 }
+
+.enlarge-sm img {
+  transition: transform 0.3s ease; 
+}
+
+.enlarge-sm img:hover {
+  transform: scale(1.1); 
+}
+/* 動畫設定 */
 .marquee {
   overflow: hidden;
   white-space: nowrap;
@@ -46,56 +55,125 @@
     transform: translateX(-100%);
   }
 }
-.enlarge-sm img {
-  transition: transform 0.3s ease; /* 平滑過渡 */
+.user-menu {
+  position: relative;
+  display: inline-block;
 }
 
-.enlarge-sm img:hover {
-  transform: scale(1.1); /* 放大 1.1 倍 */
+
+/* 下拉選單 */
+.dropdown {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 10px 0;
+  width: 160px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 10;
 }
+
+/* 滑到頭像時顯示 */
+.user-menu:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* 選單項目 */
+.dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown li {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #2C2C2C;
+  cursor: pointer;
+  position: relative;
+}
+
+.dropdown li:hover {
+  background-color: #f6f6f6;
+}
+
+/* 紅點 */
+.dropdown .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #e74c3c;
+  border-radius: 50%;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
 .off-btn:hover{
   background-color:#FFFCF5 !important ;
 }
 </style>
 <div class=" shadow-lg">
-    
+  
      <div class="bg-primary-200 marquee d-flex justify-content-end">
         <p class="lh-base  fs-9 fs-lg-5 fw-medium py-2 px-5  text-secondary-900 mb-0">【優惠活動】結帳使用 Pet pay 卡，最高享10%回饋 <a href="./promotions-list.html" class="text-secondary-700">查看詳情</a></p>
     </div>
-
+ 
+   
     <div class="container d-flex  justify-content-between align-items-center p-4">
          <div class="d-lg-none me-6">
             <div>
                 <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                  <img src="data:image/svg+xml,%3csvg%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cline%20x1='7.91675'%20y1='8.75'%20x2='32.0834'%20y2='8.75'%20stroke='%232C2C2C'%20stroke-width='2.5'%20stroke-linecap='round'/%3e%3cline%20x1='7.91675'%20y1='18.75'%20x2='32.0834'%20y2='18.75'%20stroke='%232C2C2C'%20stroke-width='2.5'%20stroke-linecap='round'/%3e%3cline%20x1='7.91675'%20y1='28.75'%20x2='32.0834'%20y2='28.75'%20stroke='%232C2C2C'%20stroke-width='2.5'%20stroke-linecap='round'/%3e%3c/svg%3e" alt="three-line">
+                   <img src="data:image/svg+xml,%3csvg%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cline%20x1='7.91675'%20y1='8.75'%20x2='32.0834'%20y2='8.75'%20stroke='%232C2C2C'%20stroke-width='2.5'%20stroke-linecap='round'/%3e%3cline%20x1='7.91675'%20y1='18.75'%20x2='32.0834'%20y2='18.75'%20stroke='%232C2C2C'%20stroke-width='2.5'%20stroke-linecap='round'/%3e%3cline%20x1='7.91675'%20y1='28.75'%20x2='32.0834'%20y2='28.75'%20stroke='%232C2C2C'%20stroke-width='2.5'%20stroke-linecap='round'/%3e%3c/svg%3e" alt="three-line">
                 </a>
             </div>
           </div>
         <div class="enlarge-sm">
           <a href="./index.html">
-            <img src="/My-Shelter/assets/logo-CAK05FOW.svg" alt="logo" class="d-md-block d-none">
-            <img src="/My-Shelter/assets/Logo-sm-eMsKFrK4.svg" alt="logo" class="d-block d-md-none">
+            <img src="/My-Shelter/assets/logo-DgVtB4V8.svg" alt="logo" class="d-md-block d-none">
+            <img src="/My-Shelter/assets/Logo-sm-oFRpyl-h.svg" alt="logo" class="d-block d-md-none">
           </a>
         </div>
        <div class="d-none d-lg-block">
         <ul class="list-unstyled d-flex gap-2 mb-0">
-            <li class="fs-5 lh-base fw-medium"><a href="./about.html" class="text-decoration-none text-secondary-900 py-2 px-3 text-btn" >關於我們</a></li>
-            <li class="fs-5 lh-base fw-medium"><a href="./FAQ.html" class="text-decoration-none text-secondary-900 py-2 px-3 text-btn" >常見問題</a></li>
-            <li class="fs-5 lh-base fw-medium"><a href="./agency-list.html" class="text-decoration-none text-secondary-900 py-2 px-3 text-btn" >機構支援</a></li>
-            <li class="fs-5 lh-base fw-medium"><a href="./pet-list.html" class="text-decoration-none text-secondary-900 py-2 px-3 text-btn" >寶貝認養</a></li>
+            <li class="fs-5 lh-base fw-medium"><a href="./about.html" class="text-decoration-none text-secondary-900  py-2 px-3 text-btn" >關於我們</a></li>
+            <li class="fs-5 lh-base fw-medium"><a href="./FAQ.html" class="text-decoration-none text-secondary-900  py-2 px-3 text-btn" >常見問題</a></li>
+            <li class="fs-5 lh-base fw-medium"><a href="./agency-list.html" class="text-decoration-none text-secondary-900  py-2 px-3 text-btn" >機構支援</a></li>
+            <li class="fs-5 lh-base fw-medium"><a href="./pet-list.html" class="text-decoration-none text-secondary-900  py-2 px-3 text-btn" >寶貝認養</a></li>
         </ul>
        </div>
        <div class="d-flex align-items-center gap-4">
-        <div class="enlarge-sm">
+        
+          <div class="enlarge-sm ">
             <a href="./shopping-cart1.html">
-              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAL9SURBVHgB7Zk9bxMxGMf/jx1aCTHkI2RlopHYST8B14iddkG5qekGNKVXKQU2MpEIhmYHtccnIDAxIDVMjKTfIAtIFY2N3TaXIzSk5/OFBvknRbk4vpf/+fHzYgMOh8PhcDgc8wrBAo98z2NgL2AN2ReQO8+aYYiUpBb4sOIVcsQO1WEedumfSFF83gp7SAFDSjix97AvTpPnjA6QklQjWKt42yAWDH+LE15c4D/7SMEJ8SVlopEwCdHYbYYbMMRYoJ53HOwgdqWd+sv9ABbY8stVCYzmtBTL9VbYgQFGAvW806apTi6cN32oN/dLsEjNX1GmTyV9LCF7AymXTeZjDgbkQHsYiQNJfKtVygGsIo+i64OUI4O+5zISkngEH1fKq+zsZjNHSLH2tBW2k5yT2Iuy2MjNGhVrC0iIkYlGkOxC4AuyhOEWJC3BkHQCBb2rt+x4zkmczm2CscDUgf6q898LTGeiF3CeAOyp2NX/viiLjUb418wmHlPlQGzsvgobsIj1EeSS1tVXXseuGz9QmtZfveFClDAwmto/KVmYaBSg5SXcOglm7EAug3WBJKgbHXN5d1p/yWJ9BHVgGfsmykSsSKXSE3/l/qS+Ww+8Kmhkltd+O9cO1gUGKiFWcyp6UAFqb2ohY2hxko9WAVQ+2w5SFrcXYd2LaviiWBscsyV57jxICdn0V9a1+RKhLwmejBXJpKoFrpYokAGZxMFAhQauajg1kr1hm/aq6m6eEreKcXGqFMpi9DSZBXr9wGoki7oQjgsdotr6+j+uYmVW4jSZmOiQ4CzIB/pTq9wrCYiCbl8Y8G7w+k0XMyBTgXHqrbcd/ANcsj3vOIHzjhM47ziB45BAVKHrUkdX5MiIatXLq9QuqkYIooeEJA70/Lpoq0R6WyfLpJbzckSHm3451YbLJOj4NGeN8lYOdJAQo72JPzZHZoHh5g6HAR8/f/105/bNIzpbr8xibzBCJ+UkhV9vHhgtRqXe4Q0ynIOn18+w0nA4HA6Hw+G42vwCrZvvAtxUNmgAAAAASUVORK5CYII=" alt="shop">
+              <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16.3496%206.9541L14.6699%204.65039H7.33008L5.65039%206.9541V16.3428C5.65039%2016.5399%205.72626%2016.7254%205.85645%2016.8594C5.98602%2016.9926%206.15789%2017.0644%206.33301%2017.0645H15.667C15.8421%2017.0644%2016.014%2016.9926%2016.1436%2016.8594C16.2737%2016.7254%2016.3496%2016.5399%2016.3496%2016.3428V6.9541ZM17.6504%2016.3428C17.6504%2016.8731%2017.445%2017.3852%2017.0752%2017.7656C16.7048%2018.1465%2016.1988%2018.3642%2015.667%2018.3643H6.33301C5.80117%2018.3642%205.29516%2018.1465%204.9248%2017.7656C4.55496%2017.3852%204.34961%2016.8731%204.34961%2016.3428V6.74316C4.34961%206.60568%204.39369%206.4715%204.47461%206.36035L6.47461%203.61719C6.59697%203.44938%206.79232%203.34961%207%203.34961H15L15.0771%203.35449C15.2553%203.37577%2015.4183%203.47035%2015.5254%203.61719L17.5254%206.36035C17.6063%206.4715%2017.6504%206.60568%2017.6504%206.74316V16.3428Z'%20fill='%237C6952'/%3e%3cpath%20d='M17%206.09253C17.359%206.09253%2017.6504%206.38393%2017.6504%206.74292C17.6504%207.1019%2017.359%207.39331%2017%207.39331H5C4.64101%207.39331%204.34961%207.1019%204.34961%206.74292C4.34961%206.38393%204.64101%206.09253%205%206.09253H17Z'%20fill='%237C6952'/%3e%3cpath%20d='M7.68311%209.48572C7.68311%209.12673%207.97451%208.83533%208.3335%208.83533C8.69248%208.83533%208.98389%209.12673%208.98389%209.48572C8.98389%2010.0466%209.20029%2010.5809%209.58057%2010.972C9.96027%2011.3626%2010.4716%2011.5785%2011.0005%2011.5785C11.5292%2011.5784%2012.0398%2011.3624%2012.4194%2010.972C12.7997%2010.5809%2013.0171%2010.0466%2013.0171%209.48572C13.0171%209.12684%2013.3077%208.8355%2013.6665%208.83533C14.0255%208.83533%2014.3169%209.12673%2014.3169%209.48572C14.3169%2010.3797%2013.9719%2011.2407%2013.3521%2011.8783C12.7316%2012.5164%2011.886%2012.8782%2011.0005%2012.8783C10.1149%2012.8783%209.2694%2012.5164%208.64893%2011.8783C8.02904%2011.2407%207.68311%2010.3797%207.68311%209.48572Z'%20fill='%237C6952'/%3e%3crect%20x='15'%20width='9'%20height='9'%20rx='4.5'%20fill='%23E5485D'/%3e%3cpath%20d='M17.5993%207V6.03661L19.495%204.51445C19.6208%204.4133%2019.7283%204.31856%2019.8176%204.23025C19.9086%204.14033%2019.9781%204.04801%2020.0261%203.95328C20.0757%203.85854%2020.1005%203.75337%2020.1005%203.63777C20.1005%203.51092%2020.0724%203.40254%2020.0161%203.31262C19.9615%203.2227%2019.8854%203.15366%2019.7878%203.10549C19.6902%203.05572%2019.5777%203.03083%2019.4504%203.03083C19.323%203.03083%2019.2105%203.05572%2019.1129%203.10549C19.017%203.15527%2018.9425%203.22832%2018.8896%203.32466C18.8366%203.421%2018.8102%203.53821%2018.8102%203.6763H17.5C17.5%203.32948%2017.5802%203.03083%2017.7407%202.78035C17.9012%202.52987%2018.1278%202.33719%2018.4206%202.20231C18.7134%202.06744%2019.0567%202%2019.4504%202C19.8573%202%2020.2097%202.06342%2020.5074%202.19027C20.8069%202.31551%2021.0376%202.49213%2021.1998%202.72013C21.3635%202.94814%2021.4454%203.21548%2021.4454%203.52216C21.4454%203.71162%2021.4049%203.90029%2021.3238%204.08815C21.2428%204.27441%2021.0972%204.48073%2020.8871%204.70713C20.677%204.93353%2020.3784%205.20328%2019.9913%205.51638L19.5149%205.90173V5.93064H21.5V7H17.5993Z'%20fill='white'/%3e%3c/svg%3e" alt="shop" style="width: 56px; height: 56px;">
+            </a>
+          </div>
+      
+        
+        <div class="user-menu">
+          <div class="d-md-block d-none enlarge-sm">
+            <a href="./user.html">
+             <img src="/My-Shelter/assets/type_notify-DxJ3dcDX.svg" alt="person" style="width: 56px; height: 56px;">
             </a>
         </div>
-        <div class="enlarge-sm">
-            <a href="./login.html">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOnSURBVHgB7ZlNUtRQEMe7X1JiIYt4AoYbjCcATmDGKtfAQgvcgDugUENBoTtxBaULYG9pPAHDDcYTMN4gC60aJXltv8xHAjIQMh1LrPdb0cxkMv90v/4aAIvFYrFYLJbbCsJfYGPRn0FQcxqpzrf0kKhNgG0EfbS9HzahQioVaIQRqgO+SW3YewionRDNvtkP21ABCiqCxb0CVMdXiTMgYM1FdfpyqTEHFVCJB9eWfN8B9Tl3k4gQ3gFhy41VO3bIA0zm+ZW8qEjHenbnQ9gCQVwQZnXRrylQb/s2cgg6HILB3h8h2AwW/SBhL1PXyx66aB7KFAgiHqIsbqYflgNxQ86X+b9DetZ4uPt+rK099X0QRF6gouWBQbQZXJM8zOtEHL6D63EeJL8PCBKs+B6fs3rfdjgMi12pB+9DxGkQRNaDHfByVhQUTP3uXcgnFg8EqaxM/CvICrzbTRY9PM6StSKXxR0YhLVJTCCI7BncDVkgNft2DGq+yHWEucRC2ARBxEMUE/ySGbC8eo0X15/4dcwVfAJ1BIKIC3TG9SHXtXbP9BzE42EiTa+qXHXct9mTre39j00QpJJWLWCvJG7aoWQZUUPI9e6EFESouWtR9JBrwkz2Ra5uCspS2TSxwf0oj0gHVCDtp+JiagTCfaihsjKxvReG3IY9QMqdyUvgJxymnqtAXO/zq8eUi0QrnxRxQlEegeYwxZY5r93Ma7EMo9IQXeHme4K7FA3oK8JJzqC9joUiJB5wAb4qoLDKvUwlAnvClnllsQIFsqjZyxCPVjv74SEIIy6wt644gBJTgRHKG7cFSY+KCuwtmoILN4jYO0ccpq07idMC5yyKwa0B8l4GNNdKnKaLiynSAYvcBAHEBF4Ul64hSD/fKhB2L5YemVBePidUSKSIwEs8d+KOaf8mNS6tldkCKiUB3XjNDQOMwMgCTSNt9pq5Dwy39j41oARm5RH/wuPc2iP6PqandkdoBkZu1VzAg/7faU85phegJMbjrqZGfhq518lWkGUYyYNm3DHb677tkp6SmAYufi578X5ZL47kwfwkzoX7UGrU6ZaJbDMw0UnraSlGDNFsxSc9iZ/fDFDpVWJpgevPHtdzP6xE0pO4mTQyC2dMdwQlKP3bhKKzWvZ8qF10g1aYjjkC8I0f4qQxx3+kD/PGM2NpgZioGjkDqx4jnoIw+QyosJzA/37xW9qD5ozEP3lKv+YHTglMXdx+P1pHY7FYLBaLxXL7+A1S3XYbdtoYpAAAAABJRU5ErkJggg==" alt="person">
-            </a>
+        <div class="dropdown">
+    <ul>
+      <a href="./user.html" class="text-decoration-none text-secondary-900"><li>我的帳戶 <span class="dot"></span></li></a>
+      <a href="./user.html" class="text-decoration-none text-secondary-900"><li>我的訂單</li></a>
+      <a href="./user.html" class="text-decoration-none text-secondary-900"><li>我關注的</li></a>
+      <a href="./index.html" class="text-decoration-none text-secondary-900"><li>登出</li></a>
+    </ul>
+  </div>
         </div>
+        
        </div>
 
     </div>
@@ -103,23 +181,18 @@
 <!-- Offcanvas -->
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
     <div class="bg-primary-200">
-        <p class="lh-base  fs-9 fs-lg-5 fw-medium py-2 px-5  text-secondary-900 mb-0">【優惠活動】結帳使用 Pet pay 卡，最高享10%回饋 <a href="#" class="text-secondary-700">查看詳情</a></p>
+        <p class="lh-base  fs-9 fs-lg-5 fw-medium py-2 px-5  text-secondary-900 mb-0">【優惠活動】結帳使用 Pet pay 卡，最高享10%回饋 <a href="/pages/" class="text-secondary-700">查看詳情</a></p>
     </div>
   <div class="d-flex justify-content-between align-items-center py-2 px-4 bg-primary-100">
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     <div class="enlarge-sm">
         <a href="#">
-            <img src="/My-Shelter/assets/Logo-sm-eMsKFrK4.svg" alt="logo">
+            <img src="/My-Shelter/assets/Logo-sm-oFRpyl-h.svg" alt="logo">
         </a>
     </div>
-    <div>
-        <a href="#">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M28.9155 13.2568L26.1161 9.41724H13.883L11.0835 13.2568V28.9045C11.0835 29.233 11.21 29.5423 11.4269 29.7655C11.6429 29.9877 11.9293 30.1072 12.2212 30.1073H27.7778C28.0697 30.1072 28.3562 29.9877 28.5721 29.7655C28.7891 29.5423 28.9155 29.233 28.9155 28.9045V13.2568ZM31.0835 28.9045C31.0835 29.7884 30.7412 30.6419 30.1248 31.276C29.5076 31.9108 28.6642 32.2735 27.7778 32.2737H12.2212C11.3348 32.2735 10.4915 31.9108 9.87419 31.276C9.25779 30.6419 8.91553 29.7884 8.91553 28.9045V12.9052C8.91553 12.676 8.989 12.4524 9.12386 12.2672L12.4572 7.69523C12.6611 7.41556 12.9867 7.24927 13.3328 7.24927H26.6662L26.7948 7.25741C27.0917 7.29287 27.3634 7.4505 27.5418 7.69523L30.8752 12.2672C31.01 12.4524 31.0835 12.676 31.0835 12.9052V28.9045Z" fill="#7C6952"/>
-<path d="M29.9995 11.8209C30.5978 11.8209 31.0835 12.3066 31.0835 12.9049C31.0835 13.5032 30.5978 13.9889 29.9995 13.9889H9.99951C9.4012 13.9889 8.91553 13.5032 8.91553 12.9049C8.91553 12.3066 9.4012 11.8209 9.99951 11.8209H29.9995Z" fill="#7C6952"/>
-<path d="M14.4717 17.4763C14.4717 16.878 14.9574 16.3923 15.5557 16.3923C16.154 16.3923 16.6396 16.878 16.6396 17.4763C16.6396 18.4111 17.0003 19.3016 17.6341 19.9535C18.2669 20.6044 19.1192 20.9643 20.0007 20.9643C20.8818 20.9641 21.7329 20.6042 22.3656 19.9535C22.9994 19.3016 23.3617 18.4111 23.3617 17.4763C23.3617 16.8782 23.846 16.3926 24.444 16.3923C25.0423 16.3923 25.528 16.878 25.528 17.4763C25.528 18.9663 24.9529 20.4013 23.9199 21.4639C22.8859 22.5275 21.4765 23.1305 20.0007 23.1306C18.5247 23.1306 17.1155 22.5274 16.0814 21.4639C15.0482 20.4013 14.4717 18.9664 14.4717 17.4763Z" fill="#7C6952"/>
-</svg>
-
+    <div class="enlarge-sm">
+        <a href="/pages/shopping-cart1.html">
+          <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16.3496%206.9541L14.6699%204.65039H7.33008L5.65039%206.9541V16.3428C5.65039%2016.5399%205.72626%2016.7254%205.85645%2016.8594C5.98602%2016.9926%206.15789%2017.0644%206.33301%2017.0645H15.667C15.8421%2017.0644%2016.014%2016.9926%2016.1436%2016.8594C16.2737%2016.7254%2016.3496%2016.5399%2016.3496%2016.3428V6.9541ZM17.6504%2016.3428C17.6504%2016.8731%2017.445%2017.3852%2017.0752%2017.7656C16.7048%2018.1465%2016.1988%2018.3642%2015.667%2018.3643H6.33301C5.80117%2018.3642%205.29516%2018.1465%204.9248%2017.7656C4.55496%2017.3852%204.34961%2016.8731%204.34961%2016.3428V6.74316C4.34961%206.60568%204.39369%206.4715%204.47461%206.36035L6.47461%203.61719C6.59697%203.44938%206.79232%203.34961%207%203.34961H15L15.0771%203.35449C15.2553%203.37577%2015.4183%203.47035%2015.5254%203.61719L17.5254%206.36035C17.6063%206.4715%2017.6504%206.60568%2017.6504%206.74316V16.3428Z'%20fill='%237C6952'/%3e%3cpath%20d='M17%206.09253C17.359%206.09253%2017.6504%206.38393%2017.6504%206.74292C17.6504%207.1019%2017.359%207.39331%2017%207.39331H5C4.64101%207.39331%204.34961%207.1019%204.34961%206.74292C4.34961%206.38393%204.64101%206.09253%205%206.09253H17Z'%20fill='%237C6952'/%3e%3cpath%20d='M7.68311%209.48572C7.68311%209.12673%207.97451%208.83533%208.3335%208.83533C8.69248%208.83533%208.98389%209.12673%208.98389%209.48572C8.98389%2010.0466%209.20029%2010.5809%209.58057%2010.972C9.96027%2011.3626%2010.4716%2011.5785%2011.0005%2011.5785C11.5292%2011.5784%2012.0398%2011.3624%2012.4194%2010.972C12.7997%2010.5809%2013.0171%2010.0466%2013.0171%209.48572C13.0171%209.12684%2013.3077%208.8355%2013.6665%208.83533C14.0255%208.83533%2014.3169%209.12673%2014.3169%209.48572C14.3169%2010.3797%2013.9719%2011.2407%2013.3521%2011.8783C12.7316%2012.5164%2011.886%2012.8782%2011.0005%2012.8783C10.1149%2012.8783%209.2694%2012.5164%208.64893%2011.8783C8.02904%2011.2407%207.68311%2010.3797%207.68311%209.48572Z'%20fill='%237C6952'/%3e%3crect%20x='15'%20width='9'%20height='9'%20rx='4.5'%20fill='%23E5485D'/%3e%3cpath%20d='M17.5993%207V6.03661L19.495%204.51445C19.6208%204.4133%2019.7283%204.31856%2019.8176%204.23025C19.9086%204.14033%2019.9781%204.04801%2020.0261%203.95328C20.0757%203.85854%2020.1005%203.75337%2020.1005%203.63777C20.1005%203.51092%2020.0724%203.40254%2020.0161%203.31262C19.9615%203.2227%2019.8854%203.15366%2019.7878%203.10549C19.6902%203.05572%2019.5777%203.03083%2019.4504%203.03083C19.323%203.03083%2019.2105%203.05572%2019.1129%203.10549C19.017%203.15527%2018.9425%203.22832%2018.8896%203.32466C18.8366%203.421%2018.8102%203.53821%2018.8102%203.6763H17.5C17.5%203.32948%2017.5802%203.03083%2017.7407%202.78035C17.9012%202.52987%2018.1278%202.33719%2018.4206%202.20231C18.7134%202.06744%2019.0567%202%2019.4504%202C19.8573%202%2020.2097%202.06342%2020.5074%202.19027C20.8069%202.31551%2021.0376%202.49213%2021.1998%202.72013C21.3635%202.94814%2021.4454%203.21548%2021.4454%203.52216C21.4454%203.71162%2021.4049%203.90029%2021.3238%204.08815C21.2428%204.27441%2021.0972%204.48073%2020.8871%204.70713C20.677%204.93353%2020.3784%205.20328%2019.9913%205.51638L19.5149%205.90173V5.93064H21.5V7H17.5993Z'%20fill='white'/%3e%3c/svg%3e" alt="shop" style="width: 40px; height: 40px;">
         </a>
     </div>
   </div>
@@ -137,19 +210,21 @@
     </div>
     <div class="mb-9">
         <ul class="list-unstyled mb-0 d-flex flex-column justify-content-center align-items-center gap-5">
-            <li><a href="./about.html" class="fw-medium lh-sm fs-5 text-decoration-none text-secondary-800 py-2 px-3 text-btn ">關於我們</a></li>
-            <li><a href="./FAQ.html" class="fw-medium lh-sm fs-5 text-decoration-none text-secondary-800 py-2 px-3 text-btn ">常見問題</a></li>
-            <li><a href="./agency-list.html" class="fw-medium lh-sm fs-5 text-decoration-none text-secondary-800 py-2 px-3 text-btn ">機構支援</a></li>
-            <li><a href="./pet-list.html" class="fw-medium lh-sm fs-5 text-decoration-none text-secondary-800 py-2 px-3 text-btn ">寶貝認養</a></li>
+            <li ><a href="./about.html" class="fw-medium lh-sm fs-5 text-decoration-none text-secondary-800 py-2 px-3 text-btn ">關於我們</a></li>
+            <li ><a href="./FAQ.html" class="fw-medium lh-sm fs-5 text-decoration-none text-secondary-800 py-2 px-3 text-btn ">常見問題</a></li>
+            <li ><a href="./agency-list.html" class="fw-medium lh-sm fs-5 text-decoration-none text-secondary-800 py-2 px-3 text-btn ">機構支援</a></li>
+            <li ><a href="./pet-list.html" class="fw-medium lh-sm fs-5 text-decoration-none text-secondary-800 py-2 px-3 text-btn ">寶貝認養</a></li>
         </ul>
     </div>
-    <div class="d-flex flex-column align-items-center justify-content-center gap-4">
-        <a href="#" class="d-flex justify-content-center align-items-center text-decoration-none py-3 px-4  border border-2 border-primary-700 bg-white gap-2 off-btn" style="border-radius: 16px;">
+    <div class="d-flex flex-column align-items-center justify-content-center gap-4" >
+        <a href="#" class="d-flex justify-content-center align-items-center text-decoration-none py-3 px-4  border border-2 border-primary-700 bg-white gap-2 off-btn" style="border-radius: 16px; position: relative;">
+             <div>
+                    <img src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='8'%20cy='8'%20r='8'%20fill='%23E5485D'/%3e%3c/svg%3e" alt="red-point" style="position: absolute; top: 5px; left: 5px;">
+                </div>
             <div>
                 <div>
                    <img src="data:image/svg+xml,%3csvg%20width='17'%20height='22'%20viewBox='0%200%2017%2022'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.2499%2012.2071C12.661%2012.2071%2016.1836%2015.8756%2016.1836%2020.3334C16.1836%2020.8121%2015.7918%2021.2006%2015.3091%2021.2006H1.19069C0.70799%2021.2006%200.316162%2020.8121%200.316162%2020.3334C0.316162%2015.8756%203.83882%2012.2071%208.2499%2012.2071ZM8.2499%2013.9402C5.14366%2013.9402%202.53248%2016.3239%202.12167%2019.4662H14.3781C13.9673%2016.3239%2011.3561%2013.9402%208.2499%2013.9402ZM11.4092%205.81519C11.4092%203.9729%209.96535%202.53394%208.2499%202.53394C6.53446%202.53394%205.09059%203.9729%205.09059%205.81519C5.09074%207.65734%206.53455%209.09644%208.2499%209.09644C9.96526%209.09644%2011.4091%207.65734%2011.4092%205.81519ZM13.1583%205.81519C13.1581%208.55468%2010.99%2010.8295%208.2499%2010.8295C5.50979%2010.8295%203.34169%208.55468%203.34154%205.81519C3.34154%203.07556%205.50969%200.799561%208.2499%200.799561C10.9901%200.799561%2013.1583%203.07556%2013.1583%205.81519Z'%20fill='%237C6952'/%3e%3c/svg%3e" alt="person">
                 </div>
-
             </div>
             <div class="lh-sm fw-medium fs-5 text-primary-700 ">
                會員專區
@@ -287,7 +362,7 @@
     <div class="container d-flex flex-column flex-lg-row justify-content-between  gap-80">
         <div class="d-flex flex-column justify-content-between gap-7 ">
             <a href="#" class="text-center text-lg-start pb-4 pb-lg-0  line enlarge-sm">
-                <img src="/My-Shelter/assets/logo-CAK05FOW.svg" alt="logo" >
+                <img src="/My-Shelter/assets/logo-DgVtB4V8.svg" alt="logo" >
             </a>
             <ul class="list-unstyled d-flex gap-2  flex-wrap justify-content-center justify-content-lg-start mb-0">
                 <li><a href="./about.html" class="text-decoration-none text-secondary-800 fs-6 py-2 px-3 text-btn">關於我們</a></li>
